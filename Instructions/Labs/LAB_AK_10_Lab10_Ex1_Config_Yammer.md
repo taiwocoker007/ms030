@@ -65,7 +65,7 @@ In this exercise Holly will configure the Yammer organizational settings for Ada
 
 26. In the **Yammer admin center**, in the left-hand navigation pane, under the **Content and Security** section, select **Security Settings**.
 
-27. Under the **Office 365 Identity Enforcement** section, select the **Enforce Microsoft 365  identity** check box and then select **Save**.
+27. Under the **Office 365 Identity Enforcement** section, verify the **Enforce Office 365  identity** check box is selected by default and then select **Save**.
 
 28. In your Edge browser, close the **Yammer admin center** tab and proceed to the next task.
 
@@ -76,7 +76,7 @@ In this exercise Holly will configure the Yammer organizational settings for Ada
 
 2. At the end of the prior task, you were instructed to close the **Yammer admin center** tab. If you did not do it, then please do so now. 
 
-3. In your Edge browser, on the **Microsoft Office Home** page, select **Yammer**.
+3. In your Edge browser, you will re-open Yammer to start a fresh session with the updated configuration settings from the prior task. On the **Microsoft Office Home** page, select **Yammer**.
 
 4. On the **Yammer** home page, on the right-side of the title bar at the top of the page, select the **gear (Settings)** icon.
 
@@ -84,13 +84,13 @@ In this exercise Holly will configure the Yammer organizational settings for Ada
 
 6. the **Account Settings** page, select the **Notifications** tab at the top of the page.
 
-7. In the list of notifications, select only the following options in the **Email me when...** section (unselect all the rest):
+7. In the list of notifications, all the check boxes in the **Email me when...** section are selected. Unselect all the check boxes except for these three: <br/>
 
-- **I receive a message in my inbox**
+	- **I receive a message in my inbox**
+	- **I log in from somewhere new**
+	- **I post a message via email (This will send a confirmation email)**
 
-- **I log in from somewhere new**
-
-- **I post a message via email (This will send a confirmation email)**
+	Verfify that only these three check boxes are selected and all other check boxes are now blank.
 
 8. Select **Save**.
 
@@ -99,40 +99,23 @@ In this exercise Holly will configure the Yammer organizational settings for Ada
 
 ### Task 3 - Using Yammer
 
+In this task, you will log into Yammer as Nestor Wilke and verify that you receive the Acceptable Use Policy statement that Holly configured in the earlier task.
+
 1. Switch to **LON-CL2**. The last time you used LON-CL2, you were logged into Outlook on the web as the MOD Administrator. You were then instructed to log out of Outlook and close your Edge browsing session at the end of the lab. If your Edge browser is still open, then close it now. 
 
 2. Select the **Microsoft Edge** icon on the taskbar to open a new Edge browsing session, and then enter the following URL in the address bar: **https://portal.office.com**.
 
-2. In the **Pick an account** window, if  Holly Dickson's **Holly@M365xZZZZZZ.onmicrosoft.com** account appears in the list, then select it now; otherwise, select **Use another account** and then sign in as **Holly@M365xZZZZZZ.onmicrosoft.com** (where ZZZZZZ is the tenant ID provided by your lab hosting provider) with a password of **Pa55w.rd**.
+3. In the **Pick an account** window, if Nestor Wilke's **NestorW@M365xZZZZZZ.onmicrosoft.com** account appears in the list, then select it now; otherwise, select **Use another account**, sign in as **NestorW@M365xZZZZZZ.onmicrosoft.com** (where ZZZZZZ is the tenant ID provided by your lab hosting provider), and enter (or copy and paste in) the tenant admin password provided by your lab hosting provider. 
 
-3. On the **Microsoft Office Home** page, select **Yammer**.
+4. On the **Microsoft Office Home** page, select **Yammer**.
 
-4. At the **WHO DO YOU WORK WITH** prompt, type **Christie** in the first text box, and then Select **DONE** and close the window.
+5. If a **Welcome to the new Yammer!** window appears, then close it.
 
-5. Select **I Accept** at the **M365x Acceptable Use Policy** prompt.
+6. A **M365x Acceptable Use Policy** dialog box should appear that displays the Welcome message that Holly configured in the earlier task. Select **I accept**. <br/>
 
-6. Find the post from MOD Administrator in the post list.
-
-7. Select **Like**, and then Select **SHARE**.
-
-8. In the **Share This Conversation** dialog box, select **Post in a Group**, type **All Company** in the drop-down box, and then in the text box, type **Welcome from me too**.
-
-9. Select **Share**.
-
-10. Select **All Company** and in the **What are you working on** text box, type “**free gambling here”**, and then Select **Post**.
-
-11. Log out of Microsoft 365 as Holly, close all browser tabs other than the **Sign out** tab, and then close Microsoft Edge.
-
-12. Open Microsoft Edge and browse to **https://portal.office.com**. This time, log in as the MOD Administrator account (**Admin@M365xZZZZZZ.onmicrosoft.com**, where ZZZZZZ in the tenant ID provided by your lab hosting provider)
-
-14. In the **Microsoft Office Home** page, select **Outlook**.
-
-15. Verify the MOD Administrator received a message from Yammer with a report about a monitored keyword appearance in Beth’s post.
-
-16. On the **Microsoft Office Home** page, select the user icon (the circle with MOD Administrator's **MA** initials) in the upper right-hand corner, and in the **My account** window that appears, select **Sign out**. Once you are signed out, close all other tabs, and then close Microsoft Edge.  
+	You have now verified that a user who is signing into Yammer for the first time receives the Acceptable Use Policy statment. If Nestor were to sign out of Yammer and then sign back in, the **M365x Acceptable Use Policy** dialog box would not appear, since he already accepted it. 
 
 
-
-**Results**: After completing this exercise, you should have enabled Yammer Enterprise for A. Datum Corporation.
+**Results**: After completing this exercise, you should have enabled Yammer Enterprise for ADatum Corporation.
 
 # Proceed to Lab 10 - Exercise 2
