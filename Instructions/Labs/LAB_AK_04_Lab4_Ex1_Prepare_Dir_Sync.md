@@ -24,11 +24,11 @@ For this lab, Adatum has purchased a new domain (provided by your lab hosting pr
 
 	‎In the following Powershell command, the **Set-ADForest** cmdlet modifies the properties of an Active Directory forest, and the **-identity** parameter specifies the Active Directory forest to modify. To perform this task, run the following command to set the **UPNSuffixes** property for the **adatum.com** forest (remember to change xxxUPNxxx to your unique UPN name and xxxCustomDomainxxx.xxx to your lab hosting provider's custom domain name):<br/>
 	
-	‎**Set-ADForest -identity adatum.com -UPNSuffixes @{replace="xxxUPNxxx.xxxCustomDomainxxx.xxx"}**
+		Set-ADForest -identity adatum.com -UPNSuffixes @{replace="xxxUPNxxx.xxxCustomDomainxxx.xxx"}
 
 4. You must then run the following command that changes all existing adatum.com accounts to the new xxxUPNxxx.xxxCustomDomainxxx.xxx domain (remember to change xxxUPNxxx to your unique UPN name and xxxCustomDomainxxx.xxx to your lab hosting provider's custom domain name): <br/>
 
-	‎**Get-ADUser -Filter * -Properties SamAccountName | ForEach-Object { Set-ADUser $_  -UserPrincipalName ($_.SamAccountName + "@xxxUPNxxx.xxxCustomDomainxxx.xxx" )}**
+		Get-ADUser -Filter * -Properties SamAccountName | ForEach-Object { Set-ADUser $_  -UserPrincipalName ($_.SamAccountName + "@xxxUPNxxx.xxxCustomDomainxxx.xxx" )}
 
 5. You will continue using PowerShell on LON-DC1 in the next task.
 
@@ -43,17 +43,17 @@ In this task, you will run a script that breaks various Adatum on-premises user 
 
 1. On LON-DC1, in the Windows PowerShell window, run the following command to change the root source to **C:\labfiles** so that you can access any files from that location: <br/>
 
-	‎<strong>CD C:\labfiles\ </strong>
+		CD C:\labfiles\
 
 2. PowerShell's execution policy settings dictate which PowerShell scripts can be run on a Windows system. Setting this policy to **Unrestricted** enables Holly to load all configuration files and run all scripts. At the command prompt, type the following command, and then press Enter:   <br/>
 
-	‎**Set-ExecutionPolicy Unrestricted**
+		Set-ExecutionPolicy Unrestricted
 
 3. You will then be prompted to confirm the execution policy change. Type **A** and press Enter to select the **[A] Yes to All** option.
 
 4. Enter the following command that runs a PowerShell script that creates problem user accounts. This script is stored in the **C:\labfiles** folder. The users that are included in this script purposely have issues with their user accounts; this will enable you to troubleshoot these accounts in the next task using the IdFix tool.  <br/>
 
-	‎<strong>.\CreateProblemUsers.ps1 </strong> <br/>
+		CreateProblemUsers.ps1 
 	
 	**Note:** Wait until the script has completed before proceeding to the next task. This Windows PowerShell script will make the following changes in AD DS:
 
