@@ -58,30 +58,30 @@ In this exercise, Holly will configure a private Microsoft 365 group through the
 
 3. In **Windows PowerShell**, at the command prompt type the following command and then press Enter to store your administrative credentials as a macro ($cred):
 
-	**$cred = Get-Credential**
+		$cred = Get-Credential
 
 4. In the **Windows PowerShell credential request** window, sign in as **admin@M365xZZZZZZ.onmicrosoft.com** (replace ZZZZZZ with the tenant ID provided by your lab hosting provider) and then enter (or copy and paste in) the tenant admin password provided by your lab hosting provider.
 
 5. At the command prompt type the following command and then press Enter to create a session with Microsoft Exchange Online:
 
-	**$session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $cred -Authentication Basic -AllowRedirection**
+		$session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $cred -Authentication Basic -AllowRedirection
 
 6. At the command prompt type the following command and then press Enter to  import the session into the PowerShell console (Ignore the warning message that is generated):
 
-	**Import-PSSession $Session –AllowClobber**
+		Import-PSSession $Session –AllowClobber
 
 7. At the command prompt type the following command and then press Enter to   create a new public Microsoft 365 group called Planning (replace ZZZZZZ with the tenant ID provided by your lab hosting provider):
 
-	**New-UnifiedGroup –DisplayName "Planning" -Alias "Planning" –EmailAddresses Planning@M365xZZZZZZ.onmicrosoft.com**
+		New-UnifiedGroup –DisplayName "Planning" -Alias "Planning" –EmailAddresses Planning@M365xZZZZZZ.onmicrosoft.com
 
 8. At the command prompt type the following command and then press Enter to add the MOD Administrator as the owner for the group (replace ZZZZZZ with the tenant ID provided by your lab hosting provider):
 
-	**Add-UnifiedGroupLinks "Planning" –Links Admin@C –LinkType Owner**
+		Add-UnifiedGroupLinks "Planning" –Links Admin@C –LinkType Owner
 
 
 9. At the command prompt type the following command and then press Enter to add Ada Russell as a member of the group (replace ZZZZZZ with the tenant ID provided by your lab hosting provider):
 
-	**Add-UnifiedGroupLinks "Planning" –Links Ada@M365xZZZZZZ.onmicrosoft.com –LinkType Member**
+		Add-UnifiedGroupLinks "Planning" –Links Ada@M365xZZZZZZ.onmicrosoft.com –LinkType Member
 
 10. Minimize the Windows PowerShell window and proceed to the next task.
 

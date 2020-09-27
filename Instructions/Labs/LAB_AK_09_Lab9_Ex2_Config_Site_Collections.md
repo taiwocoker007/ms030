@@ -72,13 +72,13 @@ Now that you have experience creating a site collection using the SharePoint adm
 
 12. Maximize the **SharePoint Online Management Shell** window. At the command prompt, type the following command and then press Enter (where ZZZZZZ is the unique tenant ID provided by your lab hosting provider): <br/>
 
-    **Connect-SPOService –Url https://M365xZZZZZZ-admin.sharepoint.com –credential admin@M365xZZZZZZ.onmicrosoft.com**
+		Connect-SPOService –Url https://M365xZZZZZZ-admin.sharepoint.com –credential admin@M365xZZZZZZ.onmicrosoft.com
 
 13. In the **Enter your credentials** dialog box, enter (or copy and paste in) the tenant admin password provided by your lab hosting provider and then Select **OK**.
 
 14. At the command prompt, type the following command and then press Enter to add a new site collection titled **Accounting** (where ZZZZZZ is the tenant ID provided by your lab hosting provider): <br/>
 
-    **New-SPOSite -Url https://M365xZZZZZZ.sharepoint.com/sites/Accounting -Owner Admin@M365xZZZZZZ.onmicrosoft.com -StorageQuota 500 -NoWait -Template PROJECTSITE#0 –Title “Accounting”**
+		New-SPOSite -Url https://M365xZZZZZZ.sharepoint.com/sites/Accounting -Owner Admin@M365xZZZZZZ.onmicrosoft.com -StorageQuota 500 -NoWait -Template PROJECTSITE#0 –Title “Accounting”
 
 15. Close the **SharePoint Online Management Shell** window.
 

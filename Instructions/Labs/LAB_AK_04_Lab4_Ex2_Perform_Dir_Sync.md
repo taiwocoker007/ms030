@@ -165,7 +165,7 @@ In this task, you will force a sync between Adatum’s on-premises AD and Azure 
 
 3. In **Windows PowerShell**, run the following command to manually run a sync cycle between Adatum’s on-premises AD and Azure AD. The **Delta** switch is used here so that only the updates are synchronized.   <br/>
 
-	‎**Start-ADSyncSyncCycle -PolicyType Delta** <br/>
+		Start-ADSyncSyncCycle -PolicyType Delta
 	
 	‎**Note:** If for any reason the Domain Controller VM was restarted after the original full synchronization run, the Microsoft Azure AD Sync service may not have restarted. If this occurred, you’ll receive an error when you try to perform the forced sync above. If this occurs, you’ll need to start the Microsoft Azure AD Sync service first and then perform the forced synchronization. 
 
@@ -206,13 +206,13 @@ In this task, you will validate whether the changes you made earlier were synchr
 
 9. You should begin by running the following command that connects your PowerShell session to the Microsoft Online Service:  <br/>
 
-	‎**Connect-MsolService**
+		Connect-MsolService
 
 10. In the **Sign in** dialog box, log in as **holly@M365xZZZZZZ.onmicrosoft.com** (where ZZZZZZ is the tenant ID provided by your lab hosting provider) with a password of **Pa55w.rd**.   
 
 11. Run the following command that displays a list of all the Microsoft 365 groups:   <br/>
 
-	‎**Get-MsolGroup** 
+	‎	Get-MsolGroup
 
 12. In the list of groups that’s displayed, you should verify that you can see the **Research** and **Manufacturing** groups, and that you do not see the  **Print Operators** group (this is the built-in group that did not synchronize from on-premises to Microsoft 365).
 
@@ -220,7 +220,7 @@ In this task, you will validate whether the changes you made earlier were synchr
 
 	‎Then run the following command to display the members of this group. In the command, replace **<ObjectId>** with the value that you copied in the prior step by pressing **Ctrl-V** to paste in the value. <br/>
 	
-	‎**Get-MsolGroupMember -GroupObjectId <ObjectID>**
+		Get-MsolGroupMember -GroupObjectId <ObjectID>
 
 14. Verify the membership of the Research group does **NOT** contain the following users that you earlier removed from the group in AD DS:  
 

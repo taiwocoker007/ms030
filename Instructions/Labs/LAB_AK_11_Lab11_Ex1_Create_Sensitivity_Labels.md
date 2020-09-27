@@ -152,27 +152,27 @@ Holly has decided to test creating sensitivity labels using both the Security an
 
 4. Maximize your PowerShell window. In **Windows PowerShell**, at the command prompt type the following command and then press Enter: <br/>
 
-	**Set-ExecutionPolicy -ExecutionPolicy RemoteSigned** <br/>
+		Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
 
 	You will be prompted to confirm whether you want to change the execution policy. Enter **A** for **[A] Yes to all**. 
 
 5.	At the command prompt enter the following command and then press Enter: <br/>
 
-	**Import-Module ExchangeOnlineManagement**
+		Import-Module ExchangeOnlineManagement
 
 6. 	At the command prompt enter the following command and then press Enter (remember to replace ZZZZZZ with the tenant ID provided by your lab hosting provider: <br/>
 
-	**Connect-IPPSSession -UserPrincipalName Admin@M365xZZZZZZ.onmicrosoft.com** <br/>
+		Connect-IPPSSession -UserPrincipalName Admin@M365xZZZZZZ.onmicrosoft.com
 
 	You will then be prompted to enter the Password for the MOD Administrator account. Enter the tenant admin password and then seelct **Sign in**.
 
 7. At the command prompt enter the following command and then press Enter to validate that your are connected to the Microsoft 365 Compliance center: <br/>
 
-	**Get-DlpSensitiveInformationType -Identity "Credit Card Number"** 
+		Get-DlpSensitiveInformationType -Identity "Credit Card Number"
 
 8.	At the command prompt enter the following command and then press Enter to create a new sensitivity label named “Secret”, set its Tooltip to “Use it for Government Contracts ONLY" and changes the text color to Red: <br/>
 
-	**New-Label -DisplayName Secret -Tooltip "For use with Government contracts ONLY" -AdvancedSettings @{Color="RED"} -Confirm** <br/>
+		New-Label -DisplayName Secret -Tooltip "For use with Government contracts ONLY" -AdvancedSettings @{Color="RED"} -Confirm
 
 	While the command updated the Display Name, you will be prompted to enter the label's Name. At the **Name** prompt, enter **Secret** and then press Enter. <br/>
 
@@ -180,7 +180,7 @@ Holly has decided to test creating sensitivity labels using both the Security an
 
 9. At the command prompt enter the following command and then press Enter to apply a Description to the Secret label (**Note:** At this time, this is the only label parameter you can set in PowerShell without extensive Scripts from JSON): <br/>
 
-	**Set-Label -Identity Secret -Comment "For use with Government contracts ONLY"** 
+		Set-Label -Identity Secret -Comment "For use with Government contracts ONLY"
 
 10.	On the taskbar, select the Edge browser icon, and then select the **Security and Compliance** tab. You should still be in the **sensitivity** page and it should be displaying the **Labels** tab for this page. 
 
@@ -284,23 +284,25 @@ Holly has decided to test creating sensitivity label policies using both the Sec
 
 2. Windows PowerShell should still be open from a prior task. If so, then skip to the next step. However, if you closed PowerShell, then open an elevated instance of it now (Run as administrator) and run the following commands to re-establish your session: <br/>
 
-	**Set-ExecutionPolicy -ExecutionPolicy RemoteSigned** <br/>
+		Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
 
 	You will be prompted to confirm whether you want to change the execution policy. Enter **A** for **[A] Yes to all**. <br/>
 
-	**Import-Module ExchangeOnlineManagement** <br/>
+		Import-Module ExchangeOnlineManagement
 
-	**Connect-IPPSSession -UserPrincipalName Admin@M365xZZZZZZ.onmicrosoft.com** (remember to replace ZZZZZZ with the tenant ID provided by your lab hosting provider: <br/>	
+		Connect-IPPSSession -UserPrincipalName Admin@M365xZZZZZZ.onmicrosoft.com 
+		
+		(remember to replace ZZZZZZ with the tenant ID provided by your lab hosting provider)	
 
 	You will then be prompted to enter the Password for the MOD Administrator account. Enter the tenant admin password and then seelct **Sign in**. <br/>
 
 3. At the command prompt enter the following command and then press Enter to create a new Sensitivity label policy named “Secret” using the secret Label that you created in the earlier task. This label policy will be applied to the PND Group group and will use the highest-level label as the default for documents and will automatically apply the label to emails and documents sent from this group. Do not forge to replace ZZZZZZ with the tenant ID provided by the lab hosting provider. <br/>
 
-	**New-LabelPolicy -Name "Secret policy" -Labels "Secret" -Comment "This policy is for the Microsoft 365 pilot project team related to Project New Day." -ModernGroupLocation PNDgroup@M365xZZZZZZ.onmicrosoft.com   -AdvancedSettings @{AttachmentAction="Automatic"}**
+		New-LabelPolicy -Name "Secret policy" -Labels "Secret" -Comment "This policy is for the Microsoft 365 pilot project team related to Project New Day." -ModernGroupLocation PNDgroup@M365xZZZZZZ.onmicrosoft.com   -AdvancedSettings @{AttachmentAction="Automatic"}
 
 4. At the command prompt enter the following command and then press Enter: <br/>
 
-	**Set-LabelPolicy -Identity "Secret policy" -AdvancedSettings @{DisableMandatoryInOutlook="True"}**
+		Set-LabelPolicy -Identity "Secret policy" -AdvancedSettings @{DisableMandatoryInOutlook="True"}
 
 5. On the taskbar, select the Edge browser icon, and then select the **Security and Compliance** tab. You should still be in the **sensitivity** page and it should be displaying the **Label policies** tab for this page. <br/>
 

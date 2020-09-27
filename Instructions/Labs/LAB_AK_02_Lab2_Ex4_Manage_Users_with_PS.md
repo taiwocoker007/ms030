@@ -44,7 +44,7 @@ The Microsoft Online Services Sign-In Assistant installs client components that 
 
 14. Maximize your PowerShell window. In **Windows PowerShell**, at the command prompt type the following command and then press Enter:<br/>
 
-	‎**Install-Module MSOnline** 
+		Install-Module MSOnline
 	
 15. If you are prompted to install the **NuGet provider**, enter **Y** to select **[Y] Yes**. 
 
@@ -52,7 +52,7 @@ The Microsoft Online Services Sign-In Assistant installs client components that 
 
 17. Once the installation is complete, the screen will return to the Windows PowerShell command prompt. At the command prompt type the following command to install the Azure AD PowerShell module that you just retrieved in the earlier step and then press Enter: <br>
 
-	**Install-Module AzureADPreview**   
+		Install-Module AzureADPreview 
 	
 18. If you are prompted to confirm whether you want to install the module from an untrusted repository (PSGallery), enter **A** to select **[A] Yes to All.** 
 
@@ -68,75 +68,75 @@ In a previous lab exercise, you created new user accounts using the **Microsoft 
 
 2. You should still have the **Windows PowerShell** window open from the prior task. At the command prompt type the following command that connects your PowerShell session to the Microsoft Online Service and then press Enter:<br/>
 
-	‎**Connect-MsolService**  
+		Connect-MsolService
 	
 3. In the **Sign in** dialog box that appears, log in as **Holly@M365xZZZZZZ.onmicrosoft.com** (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider) with a password of **Pa55w.rd**. 
 
 4. PowerShell's execution policy settings dictate what PowerShell scripts can be run on a Windows system. Setting this policy to **Unrestricted** enables Holly to load all configuration files and run all scripts. At the command prompt, type the following command and then press Enter:   <br/>
 
-	‎**Set-ExecutionPolicy unrestricted** <br/>
+		Set-ExecutionPolicy unrestricted
 
 	‎If you are prompted to verify that you want to change the execution policy, enter **A** to select **[A] Yes to All.** 
 
 5. At the command prompt, type the following command and then press Enter to create a new user named **Catherine Richard** with a password of **Pa55w.rd** and a location set to **CH**. In Catherine's username in the following command, don't forget to replace **ZZZZZZ** with the unique tenant ID provided by your lab hosting provider. Setting the -ForceChangePassword parameter to false means Catherine will not have to change her password when she signs in the first time. <br>
 
-	**New-MsolUser –UserPrincipalName Catherine@M365xZZZZZZ.onmicrosoft.com –DisplayName “Catherine Richard” –FirstName “Catherine” –LastName “Richard” –Password ‘Pa55w.rd’ –ForceChangePassword $false –UsageLocation “CH”**
+		New-MsolUser –UserPrincipalName Catherine@M365xZZZZZZ.onmicrosoft.com –DisplayName “Catherine Richard” –FirstName “Catherine” –LastName “Richard” –Password ‘Pa55w.rd’ –ForceChangePassword $false –UsageLocation “CH”
 
 6. At the command prompt, type the following command and then press Enter to create a new user named **Tameka Reed** with a password of **Pa55w.rd** and a location set to **CH**. In Tameka's username in the following command, don't forget to replace **ZZZZZZ** with the unique tenant ID provided by your lab hosting provider. <br>
 
-	**New-MsolUser –UserPrincipalName tameka@M365xZZZZZZ.onmicrosoft.com –DisplayName “Tameka Reed” –FirstName “Tameka” –LastName “Reed” –Password ‘Pa55w.rd’ –ForceChangePassword $false –UsageLocation “CH”**
+		New-MsolUser –UserPrincipalName tameka@M365xZZZZZZ.onmicrosoft.com –DisplayName “Tameka Reed” –FirstName “Tameka” –LastName “Reed” –Password ‘Pa55w.rd’ –ForceChangePassword $false –UsageLocation “CH”
 
 7. At the command prompt, type the following command and then press Enter to display all the users who are unlicensed: <br>
 
-	**Get-MsolUser -UnlicensedUsersOnly**
+		Get-MsolUser -UnlicensedUsersOnly
 
 8. At the command prompt, type the following command and then press Enter to show all available licenses inside Adatum's Microsoft 365 deployment: <br>
 
-	**Get-MsolAccountSku** <br>
+		Get-MsolAccountSku
 
 	The ENTERPRISEPREMIUM license is the Office 365 E5 license that was assigned to most of the user accounts. Note that 15 licenses were purchased with Adatum's subscription (Active Units) and 13 have been assigned (Consumed Units). That leaves two licenses available to be assigned. 
 
 9. At the command prompt, type the following command and then press Enter to assign a license to **Catherine Richard**. In the command, don't forget to replace the two instances of **ZZZZZZ** with the unique tenant ID provided by your lab hosting provider. This command will assign an Enterprise E5 license to Catherine. <br>
 
-	**Set-MsolUserLicense -UserPrincipalName Catherine@M365xZZZZZZ.onmicrosoft.com –AddLicenses “M365xZZZZZZ:ENTERPRISEPREMIUM”**
+		Set-MsolUserLicense -UserPrincipalName Catherine@M365xZZZZZZ.onmicrosoft.com –AddLicenses “M365xZZZZZZ:ENTERPRISEPREMIUM”
 
 10. At the command prompt, type the following command and then press Enter to assign a license to **Tameka Reed**. In the command, don't forget to replace the two instances of **ZZZZZZ** with the unique tenant ID provided by your lab hosting provider. This command will assign an Enterprise E5 license to Tameka. <br>
 
-	**Set-MsolUserLicense -UserPrincipalName Tameka@M365xZZZZZZ.onmicrosoft.com –AddLicenses “M365xZZZZZZ:ENTERPRISEPREMIUM”**
+		Set-MsolUserLicense -UserPrincipalName Tameka@M365xZZZZZZ.onmicrosoft.com –AddLicenses “M365xZZZZZZ:ENTERPRISEPREMIUM”
 
 11. At the command prompt, type the following command and then press Enter to block Catherine from signing in. In the command, don't forget to replace the **ZZZZZZ** with the unique tenant ID provided by your lab hosting provider. <br>
 
-	**Set-MsolUser -UserPrincipalName Catherine@M365xZZZZZZ.onmicrosoft.com -BlockCredential $true**
+		Set-MsolUser -UserPrincipalName Catherine@M365xZZZZZZ.onmicrosoft.com -BlockCredential $true
 
 12. At the command prompt, type the following command and then press Enter to delete Catherine's user account. In the command, don't forget to replace the **ZZZZZZ** with the unique tenant ID provided by your lab hosting provider. Note - This command will delete Catherine's user account without requesting a confirmation. <br>
 
-	**Remove-MsolUser –UserPrincipalName Catherine@M365xZZZZZZ.onmicrosoft.com –Force**
+		Remove-MsolUser –UserPrincipalName Catherine@M365xZZZZZZ.onmicrosoft.com –Force
 
 13. At the command prompt, type the following command and then press Enter to view the **Deleted Users** list: <br>
 
-	**Get-MsolUser –ReturnDeletedUsers**
+		Get-MsolUser –ReturnDeletedUsers
 
 14. Verify that Catherine Richard is in the list of deleted users. Note that it specifies that she is still licensed.
 
 15. At the command prompt, type the following command and then press Enter to restore Catherine's user account to an active user status. In the command, don't forget to replace the **ZZZZZZ** with the unique tenant ID provided by your lab hosting provider. <br>
 
-	**Restore-MsolUser –UserPrincipalName Catherine@M365xZZZZZZ.onmicrosoft.com**
+		Restore-MsolUser –UserPrincipalName Catherine@M365xZZZZZZ.onmicrosoft.com
 
 16. At the command prompt, type the following command and then press Enter to view the list of deleted users: <br>
 
-	**Get-MsolUser –ReturnDeletedUsers**
+		Get-MsolUser –ReturnDeletedUsers
 
 17. Since Catherine should have been the only deleted user prior to being restored, there will be no users to display, so PowerShell should simply display the command prompt.
 
 18. At the command prompt, type the following command and then press Enter to view the list of active users: <br>
 
-	**Get-MsolUser**
+		Get-MsolUser
 
 19. Verify that Catherine Richard is in the active users list.
 
 20. At the command prompt, type the following command and then press Enter to unblock Catherine from signing in to Microsoft 365. In the command, don't forget to replace the **ZZZZZZ** with the unique tenant ID provided by your lab hosting provider. <br>
 
-	**Set-MsolUser -UserPrincipalName Catherine@M365xZZZZZZ.onmicrosoft.com -BlockCredential $false**
+		Set-MsolUser -UserPrincipalName Catherine@M365xZZZZZZ.onmicrosoft.com -BlockCredential $false
 
 21. Leave the Windows PowerShell window open and proceed to the next task.
 
@@ -171,7 +171,7 @@ At first you will attempt to import the users and assign each an **Office 365 E5
 
 12. In **Windows PowerShell**, copy the following command and paste it in at the command prompt and then press Enter to bulk import the users from the O365Users.csv file into Microsoft 365:
 
-	**Import-Csv -Path C:\labfiles\O365Users.csv | ForEach-Object { New-MsolUser -UserPrincipalName $_."UPN" -AlternateEmailAddresses $_."AltEmail" -FirstName $_."FirstName" -LastName $_."LastName" -DisplayName $_."DisplayName" -BlockCredential $False -ForceChangePassword $False -LicenseAssignment $_."LicenseAssignment" -Password $_."Password" -PasswordNeverExpires $True -Title $_."Title" -Department $_."Department" -Office $_."Office" -PhoneNumber $_."PhoneNumber" -MobilePhone $_."MobilePhone" -Fax $_."Fax" -StreetAddress $_."StreetAddress" -City $_."City" -State $_."State" -PostalCode $_."PostalCode" -Country $_."Country" -UsageLocation $_."UsageLocation" }**
+		Import-Csv -Path C:\labfiles\O365Users.csv | ForEach-Object { New-MsolUser -UserPrincipalName $_."UPN" -AlternateEmailAddresses $_."AltEmail" -FirstName $_."FirstName" -LastName $_."LastName" -DisplayName $_."DisplayName" -BlockCredential $False -ForceChangePassword $False -LicenseAssignment $_."LicenseAssignment" -Password $_."Password" -PasswordNeverExpires $True -Title $_."Title" -Department $_."Department" -Office $_."Office" -PhoneNumber $_."PhoneNumber" -MobilePhone $_."MobilePhone" -Fax $_."Fax" -StreetAddress $_."StreetAddress" -City $_."City" -State $_."State" -PostalCode $_."PostalCode" -Country $_."Country" -UsageLocation $_."UsageLocation" }
 
 13. Notice what happens when you run this command. Each of users in the import file were rejected because Adatum had already consumed all of its Office 365 E5 licenses; therefore, there were no available licenses to assign to these users.<br>
 
@@ -191,7 +191,7 @@ At first you will attempt to import the users and assign each an **Office 365 E5
 
 19. At the command prompt, type the following command and then press Enter to view the list of active users: <br>
 
-	**Get-MsolUser**
+		Get-MsolUser
 
 20. Verify the new users from the .csv file are included in the active users list. 
 
@@ -219,31 +219,31 @@ In a previous lab exercise, you used the Microsoft 365 admin center to create se
 
 3. In **Windows PowerShell**, at the command prompt type the following command and press Enter to create a new Microsoft 365 group called **Marketing department users**: <br>
 
-	**New-MsolGroup –DisplayName “Marketing” –Description “Marketing department users”**
+		New-MsolGroup –DisplayName “Marketing” –Description “Marketing department users”
 
 4. At the command prompt, type the following command and then press Enter to configure a variable for the group. This command will create a macro cmdlet that will retrieve all objects that belong to Marketing. <br>
 
-	**$MktGrp = Get-MsolGroup | Where-Object {$_.DisplayName -eq "Marketing"}**
+		$MktGrp = Get-MsolGroup | Where-Object {$_.DisplayName -eq "Marketing"}
 
 5. At the command prompt, type the following command and then press Enter to configure a variable for the first user account. This command will create a macro cmdlet that retrieves all users that have a display name Catherine Richard.
 
-	**$Catherine = Get-MsolUser | Where-Object {$_.DisplayName -eq "Catherine Richard"}**
+		$Catherine = Get-MsolUser | Where-Object {$_.DisplayName -eq "Catherine Richard"}
 
 6. At the command prompt, type the following command and then press Enter to configure a variable for the first user account. This command will create a macro cmdlet that retrieves all users that have a display name Tameka Reed.
 
-	**$Tameka = Get-MsolUser | Where-Object {$_.DisplayName -eq "Tameka Reed"}**
+		$Tameka = Get-MsolUser | Where-Object {$_.DisplayName -eq "Tameka Reed"}
 
 7. At the command prompt, type the following command and then press Enter to add Catherine Richard to the newly created Marketing department users group:
 
-	**Add-MsolGroupMember -GroupObjectId $MktGrp.ObjectId -GroupMemberType "User" -GroupMemberObjectId $Catherine.ObjectId**
+		Add-MsolGroupMember -GroupObjectId $MktGrp.ObjectId -GroupMemberType "User" -GroupMemberObjectId $Catherine.ObjectId
 
 8. At the command prompt, type the following command and then press Enter to add Tameka Reed to the newly created Marketing department users group:
 
-	**Add-MsolGroupMember -GroupObjectId $MktGrp.ObjectId -GroupMemberType "User" -GroupMemberObjectId $Tameka.ObjectId**
+		Add-MsolGroupMember -GroupObjectId $MktGrp.ObjectId -GroupMemberType "User" -GroupMemberObjectId $Tameka.ObjectId
 
 9. At the command prompt, type the following command and then press Enter to retrieve all members associated with the new Marketing department users group:
 
-	**Get-MsolGroupMember -GroupObjectId $MktGrp.ObjectId**
+		Get-MsolGroupMember -GroupObjectId $MktGrp.ObjectId
 
 10. Verify that Catherine Richard and Tameka Reed appear in the list of group members for the Marketing department users group.
 
@@ -263,15 +263,15 @@ In a previous lab, you reset a user's password using the Microsoft 365 admin cen
 
 2. In **Windows PowerShell**, at the command prompt, type the following command and then press Enter to update the password policy for Adatum's **M365xZZZZZZ.onmicrosoft.com** domain. You will change the expiration period to **60 days** and the notification period to **10 days**. In the command, don't forget to replace the **ZZZZZZ** with the unique tenant ID provided by your lab hosting provider. <br>
 
-	**Set-MsolPasswordPolicy -DomainName “M365xZZZZZZ.onmicrosoft.com” –ValidityPeriod “90” -NotificationDays “10”**
+		Set-MsolPasswordPolicy -DomainName “M365xZZZZZZ.onmicrosoft.com” –ValidityPeriod “90” -NotificationDays “10”
 
 3. At the command prompt, type the following command and then press Enter to change Tameka Reed's password to **P@$$W0rd**. In the command, don't forget to replace the **ZZZZZZ** with the unique tenant ID provided by your lab hosting provider. <br>
 
-	**Set-MsolUserPassword –UserPrincipalName “Tameka@M365xZZZZZZ.onmicrosoft.com” –NewPassword ‘P@$$W0rd’**
+		Set-MsolUserPassword –UserPrincipalName “Tameka@M365xZZZZZZ.onmicrosoft.com” –NewPassword ‘P@$$W0rd’
 
 4. At the command prompt, type the following command and then press Enter to turn off **Password Never Expires** parameter for all users. This will ensure that all users will be subject to the new password policy in which their password will expire after 60 days.
 
-	**Get-MsolUser | Set-MsolUser –PasswordNeverExpires $false** 
+		Get-MsolUser | Set-MsolUser –PasswordNeverExpires $false
 
 5. Leave your Windows PowerShell session open for future lab exercises; simply minimize it before going on to the next exercise. In addition, leave your browser and all its tabs open.
 
