@@ -173,13 +173,13 @@ One of the key features of Exchange Online is the ability to maintain different 
 
 3. In the **new mail contact** window that appears, enter the following information.
 
-	- First name: **Hai**
+	- First name: **Bao**
 
 	- Initials: leave blank
 
 	- Last Name: **Chu**
 
-	- Display Name: tab into the field and **Hai Chu** is automatically displayed
+	- Display Name: tab into the field and **Bao Chu** is automatically displayed
 
 	- Alias: **Hai**
 
