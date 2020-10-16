@@ -43,26 +43,22 @@ In this task, you will begin in LON-CL1, where you will log into Outlook 2016 as
 
 12. If a **Networks** pane appears, select **Yes** to allow the PC to be discoverable by other PCs on this network. 
 
-13. Repeat steps 1 through 9 to configure Outlook 2016. However, instead of using the MOD Administrator account, this time enter the following information:
+13. 2. Open **Microsoft Edge** . In your browser go to the **Microsoft Office Home** page by entering the following URL in the address bar: **https://portal.office.com/** 
 
-	- Your Name: **Holly Dickson**
+14. In the **Pick an account** window, select **Holly@M365xZZZZZZ.onmicrosoft.com** (where ZZZZZZ is your tenant ID provided by your lab hosting provider).
 
-	- E-mail Address: **Holly@M365xZZZZZZ.onmicrosoft.com** (replace ZZZZZZ with the tenant ID provided by your lab hosting provider) 
+15. In the **Enter password** dialog box, enter **Pa55w.rd** and then select **Sign in**.
 
-	- Password: **Pa55w.rd**
+16. In the **Microsoft Office Home** page, select **outlook**, which opens the office 365 Outlook. 
 
-	- Retype Password: **Pa55w.rd**. 
+17. Once Outlook is  open, verify in Holly's **Inbox** that she received the email from the **MOD Administrator** that you just sent to her. In turn, reply to the email by sending a Reply message back to the **MOD administrator**.
 
-14. During the configuration process, Outlook will attempt to make an encrypted connection to the Exchange Online mail server using Holly's email address. An **Enter password** dialog box will appear that asks you to enter the password for the **Holly@M365xZZZZZZ.onmicrosoft.com** account. Enter **Pa55w.rd** and then select **Sign in**. 
+18. Close Outlook on LON-CL2.
 
-15. Once Outlook is configured and open, verify in Holly's **Inbox** that she received the email from the **MOD Administrator** that you just sent to her. In turn, reply to the email by sending a Reply message back to the **MOD administrator**.
+19. Switch back to LON-CL1.
 
-16. Close Outlook on LON-CL2.
+20. Verify that Holly's reply is received into the MOD Administrator's Inbox in Outlook. By configuring Outlook for the MOD Admin's mailbox and Holly's mailbox and sending emails back and forth between the two users using two different PCs, you have verified that Outlook is connected to Exchange Online in Microsoft 365 and that an encrypted connection to your mail server is available.
 
-17. Switch back to LON-CL1.
-
-18. Verify that Holly's reply is received into the MOD Administrator's Inbox in Outlook. By configuring Outlook for the MOD Admin's mailbox and Holly's mailbox and sending emails back and forth between the two users using two different PCs, you have verified that Outlook is connected to Exchange Online in Microsoft 365 and that an encrypted connection to your mail server is available.
-
-19. Close Outlook on LON-CL1.
+21. Close Outlook on LON-CL1.
 
 
