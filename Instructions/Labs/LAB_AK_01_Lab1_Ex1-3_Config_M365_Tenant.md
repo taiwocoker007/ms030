@@ -16,9 +16,9 @@ In your lab environment, your lab hosting provider has already:
  
 In this lab, you will complete the following exercises:
 
-Exercise 1 - Provision Adatum's Microsoft 365 tenant
-Exercise 2 - Complete the custom domain setup process
-Exercise 3 - Explore the Microsoft 365 administrator interfaces
+- Exercise 1 - Provision Adatum's Microsoft 365 tenant
+- Exercise 2 - Complete the custom domain setup process
+- Exercise 3 - Explore the Microsoft 365 administrator interfaces
 
 ## Exercise 1 - Provision Adatum's Microsoft 365 Tenant
 
