@@ -17,7 +17,7 @@ In this task, you will take on the persona of Holly Dickson, Adatum's Microsoft 
 
 	In the **Active users** list, you will see the list of existing user accounts that were created for Adatum by your lab hosting provider. Since you’re taking on the role of Holly Dickson in this lab scenario, you will create a user account for yourself, and you will assign yourself the Microsoft 365 role of Global Administrator, which gives Holly global access to all management features and data across Microsoft online services.
 
-3. In the **Active Users** window, select **Add a user** that appears on the menu bar above the list of active users.
+3. In the **Active Users** window, select **Add a user** then **Single user** that appears on the menu bar above the list of active users.
 
 4. In the **Set up the basics** window, enter the following information:
 
@@ -39,7 +39,7 @@ In this task, you will take on the persona of Holly Dickson, Adatum's Microsoft 
 
 		**Holly@M365xZZZZZZ.onmicrosoft.com**  
 	
-	- Password settings: select the **Let me create the password** option
+	- Password settings: uncheck **Automatically create a password** option
 
 	- Password: **Pa55w.rd** 
 
