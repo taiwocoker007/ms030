@@ -61,7 +61,7 @@ In this task, you will start another sync cycle and verify, that computer accoun
 
 ### Task 3 - Assign licenses
 
-In this task, you assign an Office 365 license to a synced user.
+In this task, you assign product licenses to a synced user.
 
 ‎1. You should still be logged into **LON-DC1** as the **Administrator** from the prior task.
 
@@ -73,7 +73,7 @@ In this task, you assign an Office 365 license to a synced user.
 
 5. In the menu bar above the list of users, select **Manage product licenses**. If you do not see this button, select the **ellipsis** icon (**More actions**). In the drop-down menu that appears, select **Manage product liceneses**.
 
-6. In the **Licenses and apps** pane that appears for Beth Burke, select **Office 365 E5**, and click **Save changes**.
+6. In the **Licenses and apps** pane that appears for Beth Burke, select **Office 365 E5** and **Enterprise Mobility + Security E5**, and click **Save changes**.
 
 
 ### Task 4 - Verify the Hybrid Azure AD Join
@@ -117,7 +117,8 @@ In this task, you will verify the Hybrid Azure AD Join by running the dsregcmd c
 16. Back in **Accounts**, click **Ready to go**.
 
 	**Note:** Syncing might not work yet, because the mailbox was not created. If Beth receives the first mail, syncing should work.
- 
+
+17. Select the Windows button, select **Administrator**, and select **Sign out**.
 
 # End of Lab 4
  
