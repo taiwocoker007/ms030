@@ -34,9 +34,11 @@ For this lab, Windows 10 1803 is the minimum requirement. Therefore, the clients
 
 9. Select **Update & security**.
 
-10. In **Windows Update**, select **Check for updates**. First, some essential updates are installed. This may take some time. You may continue with the tasks in this exercise and return to the remaining steps here later.
+10. In **Windows Update**, select **Advanced options**. Clear the Checkbox **Defer feature updates** and click the back button.
 
-11. 
+11. Under **Update status**, click **Check for updates**. First, some essential updates are installed. This may take some time. You may continue with the tasks in this exercise and return to the remaining steps here later.
+
+11. Restart if required and repeat the check for updates until the current feature update gets installed.
 
 
 ### Task 1 - Add Microsoft 365 apps to Windows 10 devices with Microsoft Intune
