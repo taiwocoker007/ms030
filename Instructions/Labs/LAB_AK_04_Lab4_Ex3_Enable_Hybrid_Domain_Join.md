@@ -130,7 +130,8 @@ In this task, you will verify the Hybrid Azure AD Join by running the dsregcmd c
 
 	**Note:** Syncing might not work yet, because the mailbox was not created. If Beth receives the first mail, syncing should work.
 
-19. Select the **Windows (Start)** icon in the lower left corner of the taskbar, select **Administrator**, and select **Sign out**.
+19. Sign out as Beth.
+
 
 # End of Lab 4
  
