@@ -39,24 +39,18 @@ This task is similar to the prior one in that you will assign administrator righ
 	
 3. In the **Sign in** dialog box that appears, log in as **Holly@M365xZZZZZZ.onmicrosoft.com** (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider) with password **Pa55w.rd**. 
 
-4. PowerShell's execution policy settings dictate what PowerShell scripts can be run on a Windows system. Setting this policy to **Unrestricted** enables Holly to load all configuration files and run all scripts. At the command prompt, type the following command and then press Enter:   <br/>
-
-		Set-ExecutionPolicy unrestricted
-
-	‎If you are prompted to verify that you want to change the execution policy, enter **A** to select **[A] Yes to All.** 
-
-5. The "official" name of all roles within Microsoft 365 includes the complete spelling of the word "administrator"; whereas, in the Office 365 admin center, "administrator" is abbreviated to "admin" simply for display purposes. When using PowerShell to perform role-related commands in the following steps, you must spell out the entire word "administrator". If you enter "admin" instead of "administrator", the command will return an error indicating that it cannot find the role.
+4. The "official" name of all roles within Microsoft 365 includes the complete spelling of the word "administrator"; whereas, in the Office 365 admin center, "administrator" is abbreviated to "admin" simply for display purposes. When using PowerShell to perform role-related commands in the following steps, you must spell out the entire word "administrator". If you enter "admin" instead of "administrator", the command will return an error indicating that it cannot find the role.
 
 	To view all the available roles in Microsoft 365, enter the following command in the Windows PowerShell window and then press Enter:
 	
 		Get-MsolRole |Select-Object -Property Name,Description |Out-GridView
 
-6. Holly now wants to assign **Patti Fernandez** to the **Service support admin** role. In the Windows PowerShell window, at the command prompt, type the following command, and then press Enter:  <br/>
+5. Holly now wants to assign **Patti Fernandez** to the **Service support admin** role. In the Windows PowerShell window, at the command prompt, type the following command, and then press Enter:  <br/>
 
 		Add-MsolRoleMember -RoleName "Service support administrator” –RoleMemberEmailAddress PattiF@M365xZZZZZZ.onmicrosoft.com 
 	(where ZZZZZZ is your unique tenant ID provided by your lab hosting provider) 
 
-7. You now want to verify which users have been assigned to certain roles. Displaying the users assigned to a role is a two-step process in PowerShell.<br/>
+6. You now want to verify which users have been assigned to certain roles. Displaying the users assigned to a role is a two-step process in PowerShell.<br/>
 
 	‎**Important:** Do NOT perform the following commands just yet – this is an informational step whose purpose is to describe what you will be doing in the remaining steps in this task. 
 	
@@ -67,23 +61,23 @@ This task is similar to the prior one in that you will assign administrator righ
 	
 			Get-MsolRoleMember -RoleObjectId $role.ObjectId
 			
-8. You should now run the following two commands as described in the previous step to verify that Patti Fernandez was assigned the Service support administrator role:  <br/> 
+7. You should now run the following two commands as described in the previous step to verify that Patti Fernandez was assigned the Service support administrator role:  <br/> 
 
 		$role = Get-MsolRole -RoleName "Service support administrator"
 
 		Get-MsolRoleMember -RoleObjectId $role.ObjectId
 	
-9. Verify that **Patti Fernandez** is in the list of users who have been assigned the **Service support administrator** role. 
+8. Verify that **Patti Fernandez** is in the list of users who have been assigned the **Service support administrator** role. 
 
-10. You should now run the following two commands to verify which Adatum users have been assigned to the **Billing administrator** role.  <br/>
+9. You should now run the following two commands to verify which Adatum users have been assigned to the **Billing administrator** role.  <br/>
 
 		$role = Get-MsolRole -RoleName "Billing administrator
 
 		Get-MsolRoleMember -RoleObjectId $role.ObjectId
 
-11. Verify that **Diego Siciliani** is in the list of users who have been assigned the **Billing administrator** role (you assigned Diego to this role in the prior task using the Microsoft 365 admin center). 
+10. Verify that **Diego Siciliani** is in the list of users who have been assigned the **Billing administrator** role (you assigned Diego to this role in the prior task using the Microsoft 365 admin center). 
 	
-12. Leave your Windows PowerShell session open for future lab exercises; simply minimize it before going on to the next task.
+11. Leave your Windows PowerShell session open for future lab exercises; simply minimize it before going on to the next task.
 
 
 ### Task 3 - Verify Delegated Administration  
