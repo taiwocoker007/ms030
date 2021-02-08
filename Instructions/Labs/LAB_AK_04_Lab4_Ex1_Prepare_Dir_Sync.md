@@ -98,39 +98,31 @@ In this task you will download and use the IdFix tool to fix the user accounts t
 
 	‎**Note:** If any **topleveldomain** errors appear, then ignore them as they cannot be fixed by the IdFix tool.  
 
-11. If you will recall, in the script that broke the users' accounts, Maj Hojski's email address attribute was set to all blank characters. In the row indicating blank characters, this is **Maj Hojski** row. Select the drop-down arrow in the **ACTION** field and select **EDIT**. 
+11. In the **Klemen Sic** row, select the drop-down arrow in the **ACTION** field and select **EDIT**. 
 
-12. In the **Klemen Sic** row, select the drop-down arrow in the **ACTION** field and select **EDIT**. 
+12. On the menu bar at the top of the window, select **Apply**. 
 
-13. On the menu bar at the top of the window, select **Apply**. 
-
-14. In the **Apply Pending** dialog box that appears, select **Yes**. <br/>
+13. In the **Apply Pending** dialog box that appears, select **Yes**. <br/>
 
 	‎**Note:** Notice that the value in the **Action** column changed from **EDIT** to **COMPLETE** for these two users; this indicates that IdFix updated the two user objects and corrected the errors. 
 
-15. Select the **File Explorer** icon on the taskbar. 
+14. Select the **IdFix tool** icon on the taskbar. 
 
-16. In the **C:\Deployment Tools\IdFix** folder, double-click the **Verbose {date} {time}.txt** file to open **Notepad** and view the updated transactions in the transaction log. Maximize the **Notepad** window and locate the three **Update** transactions that appear at the bottom of the file; these transactions reflect the updates you just initiated. When you have finished reviewing this log file, close Notepad. 
+15. On the menu bar at the top of the window, select **Query** to refresh the query results. 
 
-17. Select the **IdFix tool** icon on the taskbar. 
+16. In the query results, note how one of the two users who you just fixed no longer appears in the results (Klemen).
 
-18. On the menu bar at the top of the window, select **Query** to refresh the query results. 
-
-19. In the query results, note how one of the two users who you just fixed no longer appears in the results (Klemen). The exception is **Maj Hoski**. When you originally broke Maj's account by running the script in the prior task, it replaced her email address with blank characters. Then when you flagged her account to be edited in the earlier step, the IdFix tool replaced the blank characters with Maj's name. Now you need to fix this value by replacing her name with her actual email address. <br/>
-
-	Find the **Maj Hoski** row. Note how the **VALUE** for Maj is her name rather than her email address. To fix this email attribute for Maj, you must first select the **MajHojski** value in the **UPDATE** column and then replace it by typing **maj@adatum.com**. Then select the drop-down arrow in the **ACTION** field and select **EDIT**. 
-
-20. Find the **Logan Boyle** row. Note how the **VALUE** for Logan was incorrectly entered as **Lara@adatum.com**, which resulted in a duplicate error because this is the same email address as Lara Raisic, which appears above it. <br/>
+17. Find the **Logan Boyle** row. Note how the **VALUE** for Logan was incorrectly entered as **Lara@adatum.com**, which resulted in a duplicate error because this is the same email address as Lara Raisic, which appears above it. <br/>
 
 	To fix this email attribute for Logan, you must first select the **[E]Lara@adatum.com** value in the **UPDATE** column for Logan and then replace it by typing **logan@adatum.com**. Then select the drop-down arrow in the **ACTION** field and select **EDIT**. 
 
-21. On the menu bar at the top of the window, select **Apply**. 
+18. On the menu bar at the top of the window, select **Apply**. 
 
-22. In the **Apply Pending** dialog box that appears, select **Yes**.  <br/>
+19. In the **Apply Pending** dialog box that appears, select **Yes**.  <br/>
 
 	‎**Note:** This will update the two user objects and correct their UPN. 
 
-23. On the menu bar, select **Query**. In the query results, note how the two users who you just fixed no longer appear in the results. <br/>
+20. On the menu bar, select **Query**. In the query results, note how the two users who you just fixed no longer appear in the results. <br/>
 
 	**Note:** If a dialog box appears indicating an unhandled exception has occurred, select **Continue**. <br/>
 
@@ -138,7 +130,7 @@ In this task you will download and use the IdFix tool to fix the user accounts t
 
 	**Important:** When there are format and duplicate errors for distinguished names, the **UPDATE** column either contains the same string as the **VALUE** column (which is the case for these two final users), or the **UPDATE** column entry is blank. In either case, this means that IdFix cannot suggest a remediation for the error. You can either fix these errors outside IdFix, or manually remediate them within IdFix. You can also export the results and use Windows PowerShell to remediate many errors.  
 
-24. Close the IdFix and File Explorer windows. 
+21. Close the IdFix and File Explorer windows. 
 
 
 ### Task 4: Prepare for Directory Synchronization    
