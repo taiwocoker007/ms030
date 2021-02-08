@@ -16,49 +16,29 @@ The Microsoft Online Services Sign-In Assistant installs client components that 
 
 1. You should still be logged into the **LON-CL1** VM as the **Administrator** account with a password of **Pa55w.rd**.
 
-2. Your **Edge** browser should still be open from the prior lab exercise. You should be logged into Microsoft 365 as Holly Dickson, and the browser should have tabs open for the **Microsoft Office Home** page and the **Microsoft 365 admin center**. <br>
+2. In the Search box in the bottom left corner of your taskbar, enter **powershell**. 
 
-	Open a new tab in your browser and then enter the following URL in the address bar: **http://aka.ms/t01i1o**
+3. In the list of search results, right-click on **Windows PowerShell**, and in the menu that appears select **Run as administrator**.
 
-3. This will take you to the **Microsoft Download Center** for the **Microsoft Online Services Sign-In Assistant for IT Professionals RTW**. Select the **Download** button.
+4. If a **Do you want to allow this app to make changes to your device** dialog box appears, select **Yes**.
 
-4. On the **Choose the download you want** page, select the **msoidcli_64.msi** check box and then Select **Next**.
-
-5. In the notification bar that appears at the bottom of the page, once the **msoidcli_64.msi** file is saved, select **Open file**. 
-
-6. On the **Do you want to run this file?** dialog box, select **Run**.
-
-7. In the **Microsoft Online Services Sign-in Assistant Setup** wizard, select **I accept the terms in the License Agreement and Privacy Statement**, and then Select **Install**.
-
-8. If a **Do you want to allow this app to make changes to your device** dialog box appears, select **Yes**.
-
-9. On the **Completed the Microsoft Online Services Sign-in Assistant Setup Wizard** page, select **Finish**.
-
-10. Close the tab in your Edge browser for the **Download Center**.
-
-11. In the Search box in the bottom left corner of your taskbar, enter **powershell**. 
-
-12. In the list of search results, right-click on **Windows PowerShell**, and in the menu that appears select **Run as administrator**.
-
-13. If a **Do you want to allow this app to make changes to your device** dialog box appears, select **Yes**.
-
-14. Maximize your PowerShell window. In **Windows PowerShell**, at the command prompt type the following command and then press Enter:<br/>
+5. Maximize your PowerShell window. In **Windows PowerShell**, at the command prompt type the following command and then press Enter:<br/>
 
 		Install-Module MSOnline
 	
-15. If you are prompted to install the **NuGet provider**, enter **Y** to select **[Y] Yes**. 
+6. If you are prompted to install the **NuGet provider**, enter **Y** to select **[Y] Yes**. 
 
-16. If you are prompted to confirm whether you want to install the module from an untrusted repository (PSGallery), enter **A** to select **[A] Yes to All.** 
+7. If you are prompted to confirm whether you want to install the module from an untrusted repository (PSGallery), enter **A** to select **[A] Yes to All.** 
 
-17. Once the installation is complete, the screen will return to the Windows PowerShell command prompt. At the command prompt type the following command to install the Azure AD PowerShell module that you just retrieved in the earlier step and then press Enter: <br>
+8. Once the installation is complete, the screen will return to the Windows PowerShell command prompt. At the command prompt type the following command to install the Azure AD PowerShell module that you just retrieved in the earlier step and then press Enter: <br>
 
 		Install-Module AzureADPreview 
 	
-18. If you are prompted to confirm whether you want to install the module from an untrusted repository (PSGallery), enter **A** to select **[A] Yes to All.** 
+9. If you are prompted to confirm whether you want to install the module from an untrusted repository (PSGallery), enter **A** to select **[A] Yes to All.** 
 
-19. Once the installation is complete, the screen will return to the Windows PowerShell command prompt. You have now installed the **Windows Azure Active Directory PowerShell Module**.
+10. Once the installation is complete, the screen will return to the Windows PowerShell command prompt. You have now installed the **Windows Azure Active Directory PowerShell Module**.
 
-20. Leave the Windows PowerShell window open and proceed to the next task.
+11. Leave the Windows PowerShell window open and proceed to the next task.
 
 ### Task 2 - Create new users and assign licenses by using Windows PowerShell
 
