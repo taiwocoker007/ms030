@@ -22,7 +22,7 @@ As Holly Dickson, Adatum’s Enterprise Administrator (and Microsoft 365 Global 
 
 8. On the **Manage roles** window, select the **X** in the upper-right corner of the screen to close it. This returns you to the **Active users** list. 
 
-9. Repeat steps 3-8 for **Lynne Robbins.** Assign Lynne to both the **Helpdesk admin** role and the **User admin** role (both roles are in the list of commonly used admin roles that appear under the **Admin center access** option; you do not have to select **Show all by category**). 
+9. Repeat steps 3-8 for **Lynne Robbins.** Assign Lynne to the **User admin** role (the role is in the list of commonly used admin roles that appear under the **Admin center access** option; you do not have to select **Show all by category**). 
 
 10. Remain logged into the Microsoft 365 admin center as Holly Dickson.
 
@@ -102,7 +102,7 @@ In this task, you will begin by examining the administrative properties of two u
 
 5. In the **Active users** list, select **Lynne Robbins**. 
 
-6. In **Lynne Robbins's** properties window, it should indicate that Lynne has been assigned the **User admin** and **Helpdesk admin** roles. Close Lynne's properties window.
+6. In **Lynne Robbins's** properties window, it should indicate that Lynne has been assigned the **User admin** role. Close Lynne's properties window.
 
 7. Switch to **LON-CL1**.
 
@@ -134,7 +134,7 @@ In this task, you will begin by examining the administrative properties of two u
 
 20. On the **Microsoft 365 admin center**, select **Users** on the left-hand navigation pane and then select **Active users**. 
 
-21. As the **Helpdesk administrator**, Lynne has permission to change user passwords. Lynne was recently contacted by **Diego Siciliani** and **Allan Deyoung**, each of whom reported that their passwords may have been compromised. Per Adatum's company policy, Lynne must reset their passwords to a temporary value, and then force them to reset their password at their next login.   <br/>
+21. As the **User admin**, Lynne has permission to change user passwords. Lynne was recently contacted by **Diego Siciliani** and **Allan Deyoung**, each of whom reported that their passwords may have been compromised. Per Adatum's company policy, Lynne must reset their passwords to a temporary value, and then force them to reset their password at their next login.   <br/>
 
 	‎In the **Active users** list, as you move your mouse from one user account to another, notice the **key (Reset a password)** icon that appears to the right of each user's name. Select the key icon that appears to the right of **Diego Siciliani's** name.
 
