@@ -20,7 +20,7 @@ For this lab, Windows 10 1803 is the minimum requirement. Therefore, the clients
 
 2. Log into LON-CL3 as the **Adatum\Administrator** with the password **Pa55w.rd**.
 
-3. Select the Windows button, and start to type **Services**. When the **Services** app is found, select it.
+3. Select the **Windows (Start)** icon in the lower left corner of the taskbar, and start to type **Services**. When the **Services** app is found, select it.
 
 4. In **Services**, double-click **Windows Update**.
 
@@ -30,15 +30,15 @@ For this lab, Windows 10 1803 is the minimum requirement. Therefore, the clients
 
 7. Close **Services**.
 
-8. Select the Windows button, then select **Settings**.
+8. Select the **Windows (Start)** icon in the lower left corner of the taskbar, then select **Settings**.
 
 9. Select **Update & security**.
 
 10. In **Windows Update**, select **Advanced options**. Clear the Checkbox **Defer feature updates** and click the back button.
 
-11. Under **Update status**, click **Check for updates**. First, some essential updates are installed. This may take some time. You may continue with the tasks in this exercise and return to the remaining steps here later.
+11. Under **Update status**, click **Check for updates**. This will install the 1803 update among others.
 
-12. Restart if required and repeat the check for updates until the current feature update gets installed. Again, this can take some time.
+12. Restart if required and wait for the update to complete. This can take some time again.
 
 
 ### Task 1 - Add Microsoft 365 apps to Windows 10 devices with Microsoft Intune
@@ -111,7 +111,7 @@ Holly wants to show how the new auto-enrollment policy works. This is not recomm
 
 2. You should still be logged into LON-CL3 as **Adatum\Administrator**. 
 
-3. Select the Windows button, and type **gpedit**.
+3. Select the **Windows (Start)** icon in the lower left corner of the taskbar, and type **gpedit**.
 
 2. Under **Best match**, click **Edit group policy** to launch it.
 
@@ -135,7 +135,7 @@ In this task, Beth Burke verifies, that the computer is enrolled for Mobile Devi
 
 1. Log in to **LON-CL3** as **Beth@xxxUPNxxx.xxxCustomDomainxxx.xxx** (where xxxUPNxxx was the unique UPN name assigned to your tenant, and xxxCustomDomainxxx.xxx was the name your lab hosting provider assigned to the custom domain) account with a password of **Pa55w.rd**.
 
-2. Select the Windows button, select **Settings**.
+2. Select the **Windows (Start)** icon in the lower left corner of the taskbar, select **Settings**.
 
 3. Select **Accounts** and **Access work or school**.
 

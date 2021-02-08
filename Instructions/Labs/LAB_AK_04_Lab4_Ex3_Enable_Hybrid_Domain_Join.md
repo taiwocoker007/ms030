@@ -84,7 +84,7 @@ In this task, you will verify the Hybrid Azure AD Join by running the dsregcmd c
 
 2. On the log-in screen, you log in as **Beth@xxxUPNxxx.xxxCustomDomainxxx.xxx** (where xxxUPNxxx was the unique UPN name assigned to your tenant, and xxxCustomDomainxxx.xxx was the name your lab hosting provider assigned to the custom domain) account with a password of **Pa55w.rd**.
 
-3. Right-click the Windows button, and select **Command Prompt**.
+3. Right-click the **Windows (Start) icon** in the lower left corner of the taskbar, and select **Command Prompt**.
 
 4. Type
    ```
@@ -96,7 +96,7 @@ In this task, you will verify the Hybrid Azure AD Join by running the dsregcmd c
 
 6. Close **Command Prompt**.
 
-7. Select the Windows button, and select **Settings**.
+7. Select the **Windows (Start)** icon in the lower left corner of the taskbar, and select **Settings**.
 
 8. In **Windows Settings**, select **Accounts**.
 
@@ -104,7 +104,7 @@ In this task, you will verify the Hybrid Azure AD Join by running the dsregcmd c
 
 10. Close **Settings**.
 
-11. Select the Windows button, and select **Mail**.
+11. Select the **Windows (Start)** icon in the lower left corner of the taskbar, and select **Mail**.
 
 12. In **Mail**, click **Get started**.
 
@@ -118,7 +118,7 @@ In this task, you will verify the Hybrid Azure AD Join by running the dsregcmd c
 
 	**Note:** Syncing might not work yet, because the mailbox was not created. If Beth receives the first mail, syncing should work.
 
-17. Select the Windows button, select **Administrator**, and select **Sign out**.
+17. Select the **Windows (Start)** icon in the lower left corner of the taskbar, select **Administrator**, and select **Sign out**.
 
 # End of Lab 4
  
