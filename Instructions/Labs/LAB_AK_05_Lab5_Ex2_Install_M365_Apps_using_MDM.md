@@ -143,9 +143,7 @@ In this task, Beth Burke verifies, that the computer is enrolled for Mobile Devi
 
 5. Click **Info** to see the MDM enrollment information.
 
-6. After some moments, you should see a message, telling you that your IT department has to make some changes on your computer.
-
-7. Wait a few minutes and verify, that the Microsoft 365 apps were installed on LON-CL3.
+6. Wait a few minutes and verify, that the Microsoft 365 apps were installed on LON-CL3.
 
 
 # End of Lab 5
