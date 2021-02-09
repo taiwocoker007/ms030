@@ -178,51 +178,53 @@ In this task, you will force a sync between Adatum’s on-premises AD and Azure 
 
 In this task, you will validate whether the changes you made earlier were synchronized from Adatum’s on-premises AD to Azure AD. You will validate the changes using the Microsoft 365 admin center, and then you’ll perform the same validations using Windows PowerShell. This gives you experience in validating synchronization using both the Microsoft 365 admin center GUI and PowerShell.
 
-1. You should still be logged into LON-DC1 as the **Administrator** with a password of **Pa55w.rd.**
+1. Switch to the **LON-CL1** client VM. 
 
-2. Now let’s examine the synchronization results for the groups that you updated in the previous tasks. In your **Edge** browser, if tabs exists for the **Microsoft Office Home** page and the **Microsoft 365 admin center**, then proceed to the next step. <br/>
+2. Log into LON-CL1 as the **Administrator** with the password **Pa55w.rd**.
+
+3. Now let’s examine the synchronization results for the groups that you updated in the previous tasks. In your **Edge** browser, if tabs exists for the **Microsoft Office Home** page and the **Microsoft 365 admin center**, then proceed to the next step. <br/>
 
 	Otherwise, enter **https://portal.office.com/** in the address bar to open the **Microsoft Office Home** page, log in as **holly@M365xZZZZZZ.onmicrosoft.com** (where ZZZZZZ is the tenant ID provided by your lab hosting provider) with a password of **Pa55w.rd**, and then on the **Microsoft Office Home** page, select **Admin**. 
 
-3. In the **Microsoft 365 admin center**, in the left-hand navigation pane, select **Groups**, and then select **Active groups**. 
+4. In the **Microsoft 365 admin center**, in the left-hand navigation pane, select **Groups**, and then select **Active groups**. 
 
-4. In the **Active groups** window, verify that the **Manufacturing** group appears in the list, and that the **Print Operators** group does NOT appear. As mentioned previously, built-in groups such as the **Print Operators** security group are not synced from the on-premises environment to Microsoft 365, even when you add members to the group as you did in the earlier task. <br/>
+5. In the **Active groups** window, verify that the **Manufacturing** group appears in the list, and that the **Print Operators** group does NOT appear. As mentioned previously, built-in groups such as the **Print Operators** security group are not synced from the on-premises environment to Microsoft 365, even when you add members to the group as you did in the earlier task. <br/>
 
 	**Note:** You may need to wait up to 10 minutes before the **Manufacturing** group appears. Continue to refresh the list until you see the group.  
 
-5.	In the **Active groups** list, locate the **Manufacturing** group. <br/>
+6.	In the **Active groups** list, locate the **Manufacturing** group. <br/>
 
 	Scroll to the right and verify the group email address was changed during directory synchronization from **manufacturing@adatum.com** to **manufacturing@M365xZZZZZZ.onmicrosoft.com**, which is the mailbox in Exchange Online. <br/>
 
 	Scroll further to the right and verify the value in the **Sync status** indicates that it was **Synced from on-premises**. You can do this by holding your mouse over the icon that appears in the **Sync status** column to display to icon name.
 
-6. Select the **Manufacturing** group to open the **Manufacturing** group window. 
+7. Select the **Manufacturing** group to open the **Manufacturing** group window. 
 
-7. In the **Manufacturing** group window, note up under the Manufacturing title that it’s a mail-enabled security group that contains three members. Also note the message indicating that you can only manage this group in your on-premises environment using either Active Directory users and groups (i.e. Users and Computers) or the on-premises Exchange admin center. <br/>
+8. In the **Manufacturing** group window, note up under the Manufacturing title that it’s a mail-enabled security group that contains three members. Also note the message indicating that you can only manage this group in your on-premises environment using either Active Directory users and groups (i.e. Users and Computers) or the on-premises Exchange admin center. <br/>
 
 	The window currently displays the **General** tab. Select the **Members** tab. Note that the group has no owner (the system did not automatically assign Holly Dickson as the group owner). Verify that the three users that you added as members of the on-premises group have been synced up and are members of this cloud-based group as well. Close the **Manufacturing** group window.
 
-8. Now let’s examine this group using Windows PowerShell. If **Windows PowerShell** is already open on the taskbar, then select the PowerShell icon and proceed to the next step; otherwise, type **PowerShell** in the **Search** field on the taskbar and then right-click on the **Windows PowerShell** application and select **Run as administrator**. 
+9. Now let’s examine this group using Windows PowerShell. If **Windows PowerShell** is already open on the taskbar, then select the PowerShell icon and proceed to the next step; otherwise, type **PowerShell** in the **Search** field on the taskbar and then right-click on the **Windows PowerShell** application and select **Run as administrator**. 
 
-9. You should begin by running the following command that connects your PowerShell session to the Microsoft Online Service:  <br/>
+10. You should begin by running the following command that connects your PowerShell session to the Microsoft Online Service:  <br/>
 
 		Connect-MsolService
 
-10. In the **Sign in** dialog box, log in as **holly@M365xZZZZZZ.onmicrosoft.com** (where ZZZZZZ is the tenant ID provided by your lab hosting provider) with a password of **Pa55w.rd**.   
+11. In the **Sign in** dialog box, log in as **holly@M365xZZZZZZ.onmicrosoft.com** (where ZZZZZZ is the tenant ID provided by your lab hosting provider) with a password of **Pa55w.rd**.   
 
-11. Run the following command that displays a list of all the Microsoft 365 groups:   <br/>
+12. Run the following command that displays a list of all the Microsoft 365 groups:   <br/>
 
 	‎	Get-MsolGroup
 
-12. In the list of groups that’s displayed, you should verify that you can see the **Research** and **Manufacturing** groups, and that you do not see the  **Print Operators** group (this is the built-in group that did not synchronize from on-premises to Microsoft 365).
+13. In the list of groups that’s displayed, you should verify that you can see the **Research** and **Manufacturing** groups, and that you do not see the  **Print Operators** group (this is the built-in group that did not synchronize from on-premises to Microsoft 365).
 
-13. To verify that the group membership changes that you made in your on-premises Active Directory were synced to the **Research** group in Microsoft 365, you should copy the **ObjectID** for the **Research** group to your clipboard by dragging your mouse over the ObjectId string and then pressing **Ctrl-C**.   <br/>
+14. To verify that the group membership changes that you made in your on-premises Active Directory were synced to the **Research** group in Microsoft 365, you should copy the **ObjectID** for the **Research** group to your clipboard by dragging your mouse over the ObjectId string and then pressing **Ctrl-C**.   <br/>
 
 	‎Then run the following command to display the members of this group. In the command, replace **<ObjectId>** with the value that you copied in the prior step by pressing **Ctrl-V** to paste in the value. <br/>
 	
 		Get-MsolGroupMember -GroupObjectId <ObjectID>
 
-14. Verify the membership of the Research group does **NOT** contain the following users that you earlier removed from the group in AD DS:  
+15. Verify the membership of the Research group does **NOT** contain the following users that you earlier removed from the group in AD DS:  
 
 	- Cai Chu 
 
@@ -230,7 +232,7 @@ In this task, you will validate whether the changes you made earlier were synchr
 
 	- Tai Zecirevic  
 
-15. Repeat steps 13-14 for the **Manufacturing** security group. In the **Manufacturing** group, you added the following members in AD DS, each of which you should see in the list of group members:  
+16. Repeat steps 13-14 for the **Manufacturing** security group. In the **Manufacturing** group, you added the following members in AD DS, each of which you should see in the list of group members:  
 
 	- Bernardo Rutter
 
@@ -238,7 +240,7 @@ In this task, you will validate whether the changes you made earlier were synchr
 
 	- Dawn Williamson
 
-16. Once you have completed the validation steps, minimize your PowerShell window (do not close it) and proceed to the next Lab. 
+17. Once you have completed the validation steps, minimize your PowerShell window (do not close it) and proceed to the next Lab. 
  
 
 # Proceed to Lab 4 - Exercise 2
