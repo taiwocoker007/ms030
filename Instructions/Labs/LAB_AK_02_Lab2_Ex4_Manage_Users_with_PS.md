@@ -18,13 +18,13 @@ The Microsoft Online Services Sign-In Assistant installs client components that 
 
 2. Your **Edge** browser should still be open from the prior lab exercise. You should be logged into Microsoft 365 as Holly Dickson, and the browser should have tabs open for the **Microsoft Office Home** page and the **Microsoft 365 admin center**. <br>
 
-	Open a new tab in your browser and then enter the following URL in the address bar: **http://aka.ms/t01i1o**
+	Open a new tab in your browser and then enter the following URL in the address bar: **https://download.microsoft.com/download/7/1/E/71EF1D05-A42C-4A1F-8162-96494B5E615C/msoidcli_64bit.msi**
 
-3. This will take you to the **Microsoft Download Center** for the **Microsoft Online Services Sign-In Assistant for IT Professionals RTW**. Select the **Download** button.
+3. This will download the installer for the **Microsoft Online Services Sign-In Assistant for IT Professionals RTW**.
 
-4. On the **Choose the download you want** page, select the **msoidcli_64.msi** check box and then Select **Next**.
+4. Click **Open file** from the downloads dropdown in the browser.
 
-5. In the notification bar that appears at the bottom of the page, once the **msoidcli_64.msi** file is saved, select **Open file**. 
+5. Select **Yes** in any Action Control dialog boxes that may pop up. 
 
 6. On the **Do you want to run this file?** dialog box, select **Run**.
 
