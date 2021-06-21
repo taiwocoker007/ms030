@@ -13,7 +13,7 @@ In this task, you will take on the persona of Holly Dickson, Adatum's Microsoft 
 
 1. You should still be logged into the **LON-CL1** VM as the **Administrator** from the prior lab. The **Microsoft 365 admin center** should still be open in the Edge browser, and you should be signed into Microsoft 365 as the **MOD Administrator**. 
 
-2. In the **Microsoft 365 admin center**, in the left-hand navigation pane, select **Users** and then select **Active users**. <br>
+2. In the **Microsoft 365 admin center**, in the left-hand navigation pane, expand **Users** and then select **Active users**. <br>
 
 	In the **Active users** list, you will see the list of existing user accounts that were created for Adatum by your lab hosting provider. Since you’re taking on the role of Holly Dickson in this lab scenario, you will create a user account for yourself, and you will assign yourself the Microsoft 365 role of Global Administrator, which gives Holly global access to all management features and data across Microsoft online services.
 
@@ -215,7 +215,7 @@ In this task, you will verify several of the changes you made to user accounts i
 
 24. In the **Office 365 Home** page, select **Admin**.
 
-25. In the **Microsoft 365 admin center**, in the left-hand navigation pane, select **Users** and then select **Active users**.
+25. In the **Microsoft 365 admin center**, in the left-hand navigation pane, expand **Users** and then select **Active users**.
 
 26. In the **Active users** list, select **Alan Yoo**.
 
