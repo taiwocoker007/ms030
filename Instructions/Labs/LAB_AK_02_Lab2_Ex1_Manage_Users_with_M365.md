@@ -17,7 +17,7 @@ In this task, you will take on the persona of Holly Dickson, Adatum's Microsoft 
 
 	In the **Active users** list, you will see the list of existing user accounts that were created for Adatum by your lab hosting provider. Since you’re taking on the role of Holly Dickson in this lab scenario, you will create a user account for yourself, and you will assign yourself the Microsoft 365 role of Global Administrator, which gives Holly global access to all management features and data across Microsoft online services.
 
-3. In the **Active Users** window, select **Add a user** then **Single user** that appears on the menu bar above the list of active users.
+3. In the **Active Users** window, select **Add a user**.
 
 4. In the **Set up the basics** window, enter the following information:
 
@@ -51,7 +51,7 @@ In this task, you will take on the persona of Holly Dickson, Adatum's Microsoft 
 
 	- Select location: **United States**
 
-	- Licenses: Verify the **Assign user a product license** option is selected and then select the **Enterprise Mobility + Security E5** check box and the **Office 365 E5** check box 
+	- Licenses: Verify the **Assign user a product license** option is selected and then select the **Enterprise Mobility + Security E5** check box **and** the **Office 365 E5** check box 
 
 7. Select **Next.**
 
@@ -59,9 +59,9 @@ In this task, you will take on the persona of Holly Dickson, Adatum's Microsoft 
 
 9. In the **Roles** information that appears, select the **Admin center access** option. This displays a list of the most commonly assigned administrator roles. 
 
-10. If the role you are assigning is not in this list, then you can select the **Show all by category** drop-down arrow to display all the available roles (sorted by category). However, in this case, Holly wants to assign herself the Global Administrator role. She can do this since she is logged in as the MOD Administrator, which is also a Global admin. Only a Global admin can assign another user the Global admin role. <br>
+	**Note** If the role you are assigning is not in this list, then you can select the **Show all by category** drop-down arrow to display all the available roles (sorted by category). However, in this case, Holly wants to assign herself the Global Administrator role. She can do this since she is logged in as the MOD Administrator, which is also a Global admin. Only a Global admin can assign another user the Global Administrator role. <br>
 
-	Select **Global Admin** and then select **Next**.
+10. Select **Global Administrator** and then select **Next**.
 
 11. On the **Review and finish** window, review your selections. If anything needs to be changed, select the appropriate **Edit** link and make the necessary changes. Otherwise, if everything is correct, select **Finish adding**. 
 
@@ -104,7 +104,7 @@ You will then assign a product license to Ada Russell's account. Finally, you wi
 
 1. You should still be logged into the **LON-CL1** VM as the **Administrator** from the prior task. The **Microsoft 365 admin center** should still be open in the Edge browser, and you should be signed into Microsoft 365 as the **MOD Administrator**. 
 
-2. In the **Microsoft 365 admin center** tab, the **Active users** list should still be displayed from the prior task. Select **Alan Yoo** so that the check mark appears in the circle to the left of his name.
+2. In the **Microsoft 365 admin center** tab, the **Active users** list should still be displayed from the prior task. Select the row for **Alan Yoo** so that the check mark appears in the circle to the left of his name. **Note** The easiest way to do this is to hover your mouse pointer to the left of the name.
 
 3. In the menu bar above the list of users, select the **ellipsis** icon (**More actions**). In the drop-down menu that appears, select **Manage contact information**.
 
@@ -114,13 +114,13 @@ You will then assign a product license to Ada Russell's account. Finally, you wi
 
 6. In the **Block sign-in** pane, select the **Block this user from signing in** check box and then select **Save changes**. Note the message that appears at the top of the pane indicating that Alan is now blocked from signing in, and that he will automatically be signed out of all Microsoft services within 60 minutes. Select the X in the upper right corner to close the **Block sign-in** pane.
 
-7. In the **Active users** list, select **Alan Yoo** to unselect his account, and then select **Ada Russell**.
+7. In the **Active users** list, clear the check mark to the left of **Alan Yoo** to unselect his account, and then select **Ada Russell**.
 
 8. For Ada, you want to learn how to assign a new license to an existing user. In the menu bar above the list of users, select **Manage product licenses**.
 
-9. In the **Ada Russell** pane, the **Licenses and Apps** tab is displayed by default (since you selected the **Manage product licenses** option). Under the list of licenses, select the **Office 365 E5** license and then select **Save changes**. Note the message that appears at the top of the pane indicating the delayed availability for setting Ada up into Microsoft Teams. Select the X in the upper right corner to close the **Ada Russell** pane.
+9. In the **Ada Russell** pane, the **Licenses and apps** tab is displayed by default (since you selected the **Manage product licenses** option). Under the list of licenses, select the **Office 365 E5** license and then select **Save changes**. Select the X in the upper right corner to close the **Ada Russell** pane.
 
-10. In the **Active users** list, not that **Ada Russell** is now assigned an Office 365 E5 license. Select **Ada Russell** to unselect her account, and then select **Libby Hayward**.
+10. In the **Active users** list, note that **Ada Russell** is now assigned an Office 365 E5 license. Select **Ada Russell** to unselect her account, and then select **Libby Hayward**.
 
 11. To the right of Libby Hayward's **Display Name**, select the vertical ellipsis icon. In the drop-down menu that appears, note the options that are available are similar to the options from the ellipsis icon that you select in the menu bar for Alan and Ada, although there are less options to choose from. However, this menu has less choices. 
 
@@ -130,7 +130,7 @@ You will then assign a product license to Ada Russell's account. Finally, you wi
 
 14. On the **Libby Hayward has been deleted** pane, select the **Close** button.
 
-15. Select the **Refresh** icon at the top of the browser (to the left of the address bar). Verify that **Libby Hayward** no longer appears in the list of **Active users**.  
+15. Verify that **Libby Hayward** no longer appears in the list of **Active users**.  
 
 16. Now verify that Libby appears in the list of deleted users. In the **Microsoft 365 admin center**, in the left-hand navigation pane under **Users**, select **Deleted users**.
 
@@ -152,7 +152,7 @@ You will then assign a product license to Ada Russell's account. Finally, you wi
 
 23. Verify that **Libby Hayward** appears in the list.
 
-24. Leave the Edge browser session open as well as all the browser tabs. 
+24. Leave the Edge browser session open as well as all the open browser tabs. 
 
 
 ### Task 3 - Verifying user settings
@@ -167,7 +167,7 @@ In this task, you will verify several of the changes you made to user accounts i
 
 	In your web browser, select the **Microsoft Office Home** tab. In the **Microsoft Office Home** page, select the **Outlook** icon. This will open Outlook for the MOD Administrator's mailbox. 
 
-3. In the **Welcome** window that appears for Outlook, select the X in the upper right-hand corner to close it. 
+3. If the **Welcome** window appears for Outlook, select the X in the upper right-hand corner to close it. 
 
 4. In the MOD Administrator's **Inbox** in Outlook, select the email message in which the **From** account is **Microsoft on behalf of your organization** and the Subject line is **Account information for new or modified users**. <br>
 
@@ -181,7 +181,7 @@ In this task, you will verify several of the changes you made to user accounts i
 
 7. In the **Sign out** tab, enter the following URL in the address bar: **https://portal.office.com**
 
-8. In the **Pick and account** dialog box, select **Use another account**.
+8. In the **Pick an account** dialog box, select **Use another account**.
 
 9. In the **Sign in** window, enter **Libby@M365xZZZZZZ.onmicrosoft.com** (where ZZZZZZ should be replace with your tenant ID). Select **Next**.
 
@@ -193,19 +193,19 @@ In this task, you will verify several of the changes you made to user accounts i
 
 13. Verify that you can access the Office 365 Home page. Note that no Office 365 applications appear on the home page; this is because Libby was never assigned a Microsoft 365 license.
 
-14. You must now log out of Microsoft 365 as Libby Hayward and then log back in as Alan Yoo. To log out of the Libby Hayward account, select the circle in the upper right portion of the Edge browser that contains the **LH** initials. In the drop-down menu that appears, select **Sign out**. 
+14. You must now log out of Microsoft 365 as Libby Hayward and then log in as Alan Yoo. To log out of the Libby Hayward account, select the circle in the upper right portion of the Edge browser that contains the **LH** initials. In the drop-down menu that appears, select **Sign out**. 
 
 15. Once you are signed out, enter the following URL in the address bar: **https://portal.office.com**
 
-16. In the **Pick and account** dialog box, select **Use another account**.
+16. In the **Pick an account** dialog box, select **Use another account**.
 
 17. In the **Sign in** window, enter **Alan@M365xZZZZZZ.onmicrosoft.com** (where ZZZZZZ should be replace with your tenant ID). Select **Next**.
 
 18. In the **Enter password** window, enter **Pa55w.rd** and then select **Sign in**.
 
-19. In the **Pick and account** dialog box, note the error message that indicates Alan's account has been blocked. You have verified that Alan cannot log into Microsoft 365.
+19. In the **Pick an account** dialog box, note the error message that indicates Alan's account has been locked. You have verified that Alan cannot log into Microsoft 365.
 
-20. You will now log back into Microsoft 365 as Holly Dickson using the personal account that she previously set up for herself. In the **Pick and account** dialog box, select **Use another account**.
+20. You will now log back into Microsoft 365 as Holly Dickson using the personal account that she previously set up for herself. In the **Pick an account** dialog box, select **Use another account**.
 
 21. In the **Sign in** window, enter **Holly@M365xZZZZZZ.onmicrosoft.com** (where ZZZZZZ should be replace with your tenant ID). Select **Next**.
 
@@ -221,9 +221,10 @@ In this task, you will verify several of the changes you made to user accounts i
 
 27. In the menu bar that appears above the list of users, select the **ellipsis** (**More actions**) icon, and then in the drop-down menu that appears, select **Edit sign-in status**.
 
-28. On the **Unblock sign-in** pane, the **Block this user from signing in** check box is selected. Select this check box to clear it and then select **Save changes**.
+28. On the **Unblock sign-in** pane, the **Block this user from signing in** check box is selected. Unselect this check box and then select **Save changes**.
 
-29. Once a message appears at the top of the pane indicating that Alan Yoo is now unblocked from signing in, select the X in the upper right corner of the **Unblock sign in** pane to close it. Note the message that it may take up to 15 minutes before Alan can sign in again.
+29. Once a message appears at the top of the pane indicating that Alan Yoo is now unblocked from signing in, select the X in the upper right corner of the **Unblock sign in** pane to close it.
+	Note the message that it may take up to 15 minutes before Alan can sign in again.
 
 30. Remain signed into Microsoft 365 on LON-CL1 as Holly Dickson, and leave your browser and all tabs open for the next lab exercise.   
  
