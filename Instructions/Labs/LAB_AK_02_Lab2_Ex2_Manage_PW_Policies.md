@@ -9,7 +9,9 @@ Since Adatum is also interested in implementing Multi-factor authentication (MFA
 
 ### Task 1 - Configure the Microsoft 365 password policy
 
-In this task, you will change Adatum's password policy that controls how often users must change their password. A good practice is to have your users change their passwords every 90 days with a warning of 14 days prior to the update, both of which are the default settings in Microsoft 365. However, for this lab exercise, you will change password expiration to occur every 14 days, with a 14 day notification. 
+In this task, you will change Adatum's password policy that controls how often users must change their password. **Note** Microsoft no longer recommend password expiration for users stating "Password expiration requirements do more harm than good". Details on more information regarding this can be found in Step 5. Depending on your tenancy creation date, you may find that you have no password expiration enabled or the defaults mentioned below. 
+
+Historically, you had your users change their passwords every 90 days with a warning of 14 days prior to the update, both of which were the default settings in Microsoft 365. However, for this lab exercise, you will change password expiration to occur every 14 days, with a 14 day notification. 
 
 **Important** - You are making this change simply for testing purposes. Since all users' passwords will expire within 14 days, and with a notification window of 14 days, they will all be within the 14 day notification window. This will enable you to see what happens when a user falls within the 14 day window prior to his or her password expiring. In this task you will make this policy change; in the next task, you will test the ramifications of this change.
 
@@ -21,7 +23,8 @@ In this task, you will change Adatum's password policy that controls how often u
 
 4. In the **Security & Privacy** page, select the **Password expiration policy** in the list of settings. 
 
-5. In the **Password expiration policy** pane that appears, select the check box for **Set user passwords to expire after a number of days**. <br>
+5. In the **Password expiration policy** pane that appears, select the check box for **Set user passwords to expire after a number of days**.
+	**Note** To learn why expiration is no longer considered best practice, click the 'Learn more about password policy recommendations' link near the top of the pane.
 
 6. Enter **14** in the **Days before passwords expire** field. Leave the **Days before a user is notified about expiration** field set to 14. Select **Save changes**.
 
@@ -37,7 +40,7 @@ In this task, you will validate the change that you made in the prior task when 
 
 2. To see the affect of the password policy change, first sign out of Microsoft 365 as Holly Dickson. On the **Microsoft 365 admin center** tab, select the **HD** icon in the upper right corner of the screen, and in the window that appears, select **Sign out**. 
 
-3. Close your **Edge** browser and all the tabs to clear your cache. Once the browser is closed, select the **Edge** browser icon on the taskbar to re-open it.
+3. Close your **Edge** browser. Once the browser is closed, select the **Edge** browser icon on the taskbar to re-open it.
 
 4. In the Edge browser, enter the following URL in the address bar: **https://portal.office.com**.
 
@@ -47,11 +50,11 @@ In this task, you will validate the change that you made in the prior task when 
 
 8. If the **Get your work done with Office 365** window appears, then select the X in the upper right-hand corner of the window to close it. 
 
-9. On the upper-right side of the window, verify that a notification appears with the following information: **Time to change your password. Your password will expire in 13 days.** <br>
+9. On the upper-right side of the window, verify that a notification appears with the following information: **Time to change your password. Your password will expire in 13 days.**
 
-	**Note:** It may take a few minutes before the password change notification message appears. <br>
+	**Note:** It may take a few minutes before the password change notification message appears.
 
-10. Now that you have verified that your revised password policy works since you received a notification message indicating you must change your password, you should reset the policy by setting the expiration days from 14 back to 90. <br>
+10. Now that you have verified that your revised password policy works since you received a notification message indicating you must change your password, you should reset the policy by unselecting the checkbox to remove the requirement altogether.
 
 	Since you just logged into Microsoft 365 as Holly Dickson, in the **Microsoft Office Home** page, select **Admin** to open the **Microsoft 365 admin center**.
 
@@ -61,9 +64,9 @@ In this task, you will validate the change that you made in the prior task when 
 
 13. In the **Security & Privacy** page, select the **Password expiration policy** in the list of settings. 
 
-14. In the **Password expiration policy** pane that appears, select the check box for **Set user passwords to expire after a number of days**. <br>
+14. Unelect the check box for **Set user passwords to expire after a number of days**.
 
-15. Enter **90** in the **Days before passwords expire** field. Leave the **Days before a user is notified about expiration** field set to 14. Select **Save changes**.
+15. Select **Save changes**.
 
 16. Verify that the **Changes saved** message appears at the top of the page and then select the X in the upper right corner of the pane to close it. 
 
@@ -88,11 +91,11 @@ This is the only task in this course that requires a mobile phone.
 
 2. The **Microsoft 365 admin center** should still be open in the Edge browser from the prior task, and you should be signed into Microsoft 365 as **Holly Dickson**. 
 
-3. To enable MFA for Holly Dickson's user account, you must first access the **Active users** list in the **Microsoft 365 admin center**. In the **Microsoft 365 admin center**, in the left-hand navigation pane, select **Users** and then select **Active users**.
+3. To enable MFA for Holly Dickson's user account, you must first access the **Active users** list in the **Microsoft 365 admin center**. In the **Microsoft 365 admin center**, in the left-hand navigation pane expand **Users** and then select **Active users**.
 
 4. In the **Active users** window, on the menu bar at the top of the user list, select **Multi-factor authentication**. This will open a **multi-factor authentication** window in a new tab in your browser.
 
-5. In the **multi-factor authentication** window, the **users** tab is displayed by default. Note the MFA status for all existing user accounts is **Disabled**.<br>
+5. In the **multi-factor authentication** window, the **users** tab is displayed by default. Note the MFA status for all existing user accounts is **Disabled**.
 
 	Select the check box for **Holly Dickson**, and in Holly's properties pane that appears on the right, select **Enable**.
 
@@ -100,7 +103,7 @@ This is the only task in this course that requires a mobile phone.
 
 7. When the **Updates successful** dialog box appears, select **close**. In the list of users in the **multi-factor authentication** window, verify Holly's MFA Status has changed to **Enabled**. 
 
-8. You must now sign out of Microsoft 365 as Holly, close your browser session (to clear cache), open a new session, and then log back into Microsoft 365 as Holly. During the log-in process, you will be required to enter a second form of authentication as per MFA. When Holly signs back in after having MFA enabled for her user account, she will be asked for the authentication information needed for MFA, such as her phone number and authentication options. In your role as Holly, you will enter your mobile phone number, and you will receive a text message containing a verification code that you must enter to validate the authentication. You will perform these steps in the remaining portion of this task.</br>
+8. You must now sign out of Microsoft 365 as Holly, close your browser session, open a new session, and then log back into Microsoft 365 as Holly. During the log-in process, you will be required to enter a second form of authentication as per MFA. When Holly signs back in after having MFA enabled for her user account, she will be asked for the authentication information needed for MFA, such as her phone number and authentication options. In your role as Holly, you will enter your mobile phone number, and you will receive a text message containing a verification code that you must enter to validate the authentication. You will perform these steps in the remaining portion of this task.</>
 
 	You must begin by signing out of Microsoft 365 as Holly, so select the **HD** user icon in the upper right corner of the browser (on the **multi-factor authenication** window, it may display Holly's username instead of her initials) and in the **My account** pane, select **Sign out**. 
 
@@ -112,38 +115,38 @@ This is the only task in this course that requires a mobile phone.
 
 12. Because MFA is enabled for Holly, a **More information required** window appears. Select **Next**.
 
-13. In the **Keep your account secure** window, it indicates that you can either use the Microsoft Authenticator app for MFA, or you can use a phone. <br>
+13. In the **Keep your account secure** window, it indicates that you can either use the Microsoft Authenticator app for MFA, or you can use a phone.
 
-	For the purposes of this lab, you should use the **Phone** method so that you do not have to take time installing the Microsoft Authenticator app that you may not use again after this training class. Since the window displays the Microsoft Authenticator method by default, select the **I want to set up a different method** option at the bottom of the window. 
+	For the purposes of this lab, you should use the **Phone** method so that you do not have to take time installing the Microsoft Authenticator app that you may not use again after this training class. Since the window displays the Microsoft Authenticator method by default, select the **I want to set up a different method** option at the **bottom** of the window. 
 
 14. In the **Choose a different method** dialog box that appears, select the drop-down arrow in the **Which method would you like to use** field and select **Phone**. Select **Confirm**.
 
-15. In the **Keep your account secure** window, the **Microsoft Authenticator** section has now been replaced by a **Phone** section. Select your country or region from the drop-down list, enter your mobile phone number (**xxx-xxx-xxxx**), and then select **Next**.<br>
+15. In the **Keep your account secure** window, the **Microsoft Authenticator** section has now been replaced by a **Phone** section. Select your country or region from the drop-down list, enter your mobile phone number (**xxx-xxx-xxxx**), and then select **Next**.
 
 	**Note:** If you receive a message indicating that an error occurred, you should close the browser (closing all tabs) and then repeat steps 10-15. 
 
-16. You will receive a text message on your mobile phone with a verification code to test whether the phone number you entered is correct. In the **Enter code** window that appears, enter the code that was sent in the text message and then select **Verify**.<br>
+16. You will receive a text message on your mobile phone with a verification code to test whether the phone number you entered is correct. In the **Enter code** window that appears, enter the code that was sent in the text message and then select **Verify**.
 
 	**Note:** If you take too long to complete this process, the **Enter password** window will appear with a message indicating you took too long to complete the sign in process, so you will be timed-out. If this occurs, you must sign in again with Holly's password of **Pa55w.rd**. Another verification code will be texted to your phone, so enter it in the **Enter code** screen that appears and select **Verify**.
 
 17. If a **Stay signed in?** window appears, select **Don't show this again** and then select **Yes**.
 
-18. The **Office 365 Home** page should now be displayed in your browser. While Adatum will institute MFA once it eventually goes live with Microsoft 365 in its production environment, for now Holly wants to turn MFA off for her account for the remainder of the pilot project. She has just verified that she can use MFA to sign into Microsoft 365, so she will turn it off through the remainder of the pilot. <br>
+18. The **Office 365 Home** page should now be displayed in your browser. While Adatum will institute MFA once it eventually goes live with Microsoft 365 in its production environment, for now Holly wants to turn MFA off for her account for the remainder of the pilot project. She has just verified that she can use MFA to sign into Microsoft 365, so she will turn it off through the remainder of the pilot.
 
-	To disable MFA for Holly Dickson's user account, select **Admin** on the **Office 365 home** page to open the **Microsoft 365 admin center**. In the left-hand navigation pane, select **Users** and then **Active users**.
+	To disable MFA for Holly Dickson's user account, select **Admin** on the **Office 365 home** page to open the **Microsoft 365 admin center**. In the left-hand navigation pane, expand **Users** and then select **Active users**.
 
 19. In the **Active users** window, on the menu bar at the top of the user list, select **Multi-factor authentication**.
 
-20. In the **multi-factor authentication** window, the **users** tab is displayed by default. Note the MFA status for all existing user accounts is **Disabled**, except for Holly's account, which displays a status of **Enforced**. <br>
+20. In the **multi-factor authentication** window, the **users** tab is displayed by default. Note the MFA status for all existing user accounts is **Disabled**, except for Holly's account, which displays a status of **Enforced**.
 
-	**Note:** When you originally enabled MFA for Holly, the status was changed from **Disabled** to **Enabled**. However, now that Holly has signed in using MFA, her the status has changed from **Enabled** to **Enforced**.<br>
+	**Note:** When you originally enabled MFA for Holly, the status was changed from **Disabled** to **Enabled**. However, now that Holly has signed in using MFA, her the status has changed from **Enabled** to **Enforced**.
 
 	Select the check box for **Holly Dickson**, and in Holly's properties pane on the right, select **Disable**.
 21. On the **Disable multi-factor authentication?** dialog box, select **yes**. 
 
 22. When the **Updates successful** dialog box appears, select **close**. In the **multi-factor authentication** window, verify Holly's MFA Status has changed to **Disabled**. 
 
-23. You must now sign out of Microsoft 365 as Holly, close your browser session (to clear your cache), open a new session, and then log back into the **Office 365 home** page as Holly (**Holly@M365xZZZZZZ.onmicrosoft.com**). You should be familiar with these processes, so perform them now. <br>
+23. You must now sign out of Microsoft 365 as Holly, close your browser session (to clear your cache), open a new session, and then log back into the **Office 365 home** page as Holly (**Holly@M365xZZZZZZ.onmicrosoft.com**). You should be familiar with these processes, so perform them now.
 
 	**Note:** with MFA turned off for Holly's account, you will simply need to enter Holly's password of **Pa55w.rd** when she logs in. Once you are logged in, you should then navigate to the **Microsoft 365 admin center**. 
 
