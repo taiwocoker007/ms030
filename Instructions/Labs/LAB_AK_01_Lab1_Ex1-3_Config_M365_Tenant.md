@@ -140,9 +140,9 @@ While your lab hosting provider created Adatum's Microsoft 365 tenant, Adatum mu
 
 4. In the left-hand navigation pane, under the **Admin centers** section, select **Exchange**.
 
-5. A new tab will open in your browser displaying the **Exchange admin center**. In the left-hand navigation pane, select **recipients**.
+5. A new tab will open in your browser displaying the **Exchange admin center**. In the left-hand navigation pane, under **Recipients**, select **Mailboxes**.
 
-6. On the **recipients** page, the **mailboxes** tab at the top of the page is displayed by default. This displays the existing Microsoft 365 user mailboxes. The same users who were displayed in the **Active users** list in the **Microsoft 365 admin center** should be displayed in the **mailboxes** tab. <br>
+6. The same users who were displayed in the **Active users** list in the **Microsoft 365 admin center** should be displayed on this  **Mailboxes** page. <br>
 	
 	If you see the same list of users, this confirms the fact that your Microsoft 365 tenant had been properly provisioned and does not have any issues at this time.
 
@@ -159,7 +159,7 @@ In this task, you will determine the service health of your Microsoft 365 tenant
 
 3. On the **Service health** page, the **All services** tab at the top of the page is displayed by default. This tab displays all the Microsoft 365 services that are available with your current subscriptions. <br>
 
-	Review the **Status** column for each service. If any service has a status other than **Healthy**, select the **status** for that service (the status value is hyperlinked, whereas the service name itself is not). 
+	Review the **Status** column for each service. If any service has a status other than **Healthy**, select the **Health** for that service (the Health value is hyperlinked, whereas the service name itself is not). 
 
 4. Selecting the status of an non-healthy service displays the **Advisories** tab at the top of the page. Review any service interruption records or additional information in this **Advisories** tab. <br>
 
@@ -222,7 +222,7 @@ Your lab hosting provider has already added a custom domain for Adatum; however,
 
 9. At the bottom of the **Add DNS records** page select **Advanced Options**.
 
-10.  Two additional services are displayed under the **Advanced Options** section: **Skype for Business** and **Intune and Mobile Device Management for Microsoft 365**.  <br> 
+10. Two additional services are displayed under the **Advanced Options** section: **Skype for Business** and **Intune and Mobile Device Management for Microsoft 365**.  <br> 
 ‎  
 ‎	Select the check box for each of these two services. This will display the DNS records required for each service.
 
@@ -236,7 +236,7 @@ Your lab hosting provider has already added a custom domain for Adatum; however,
 
 14. If the DNS records were correctly set up by your lab hosting provider, the **Domain setup is complete** page should appear. Select **Done**.
 
-15.  You will be returned to the custom domain page, which will display the **Overview** tab. The **Domain status** should now display **Healthy**. <br>  
+15. You will be returned to the custom domain page, which will display the **Overview** tab. The **Domain status** should now display **Healthy**. <br>  
 
 	‎Note how a second tab titled **DNS records** now appears next to the **Overview** tab on this page. Select the **DNS records** tab to review the DNS records that your lab hosting provider created.
 
@@ -275,7 +275,7 @@ While you have already been introduced to the Microsoft 365 admin center in the 
 
 4. On the taskbar at the bottom of the page, select the **Microsoft Edge** icon. Maximize your browser window when it opens.
 
-5. In your browser go to the **Microsoft Office Home** page by entering the following URL in the address bar: **https://portal.office.com/** 
+5. In your browser go to the **Microsoft 365 admin center** page by entering the following URL in the address bar: **https://admin.microsoft.com/** 
 
 6. In the **Sign in** dialog box, copy and paste in (or enter) the username of the Microsoft 365 Tenant administrator account provided by your lab hosting provider (**admin@M365xZZZZZZ.onmicrosoft.com**, where ZZZZZZ is your unique tenant ID provided by your lab hosting provider) and then select **Next**.
 
@@ -283,27 +283,21 @@ While you have already been introduced to the Microsoft 365 admin center in the 
 
 8. On the **Stay signed in?** dialog box, select the **Don’t show this again** check box and then select **Yes.**
 
-9. If a **Get your work done with Office 365** window appears, then close it now. 
+9. In Exercise 1, you already viewed the **Active Users** within the **Microsoft 365 admin center**. In this task, you will continue your exploration of Microsoft 365 clients by viewing the Microsoft 365 groups. In the left-hand navigation pane, select **Groups** and then select **Active groups**. This will display the two groups that were created by default for Adatum's Microsoft 365 tenant. 
 
-10. In the **Microsoft Office Home** page, you are now signed in as the **MOD Administrator** account (note the **MA** initials in the circle that appears in the upper right-hand corner of the screen). <br>
+10. In the left-hand navigation pane, select **...Show all** to display all the navigation menu options. 
 
-	On the **Office 365 Home** page, the list of available apps is displayed. If an **Office 365 apps** box appears on the screen, select the **Got it!** button to close the box, since it covers up several of the apps. Select the **Admin** app, which opens the **Microsoft 365 admin center**.
+11. In the left-hand navigation pane, expand **Health** and then select **Message center**.
 
-11. In Exercise 1, you already viewed the **Active Users** within the **Microsoft 365 admin center**. In this task, you will continue your exploration of Microsoft 365 clients by viewing the Microsoft 365 groups. In the left-hand navigation pane, select **Groups** and then select **Active groups**. This will display the two groups that were created by default for Adatum's Microsoft 365 tenant. 
+12. In the **Message center** window, the **All active messages** tab is displayed by default. Review the messages. If you are interested in a particular message, select the message to open it. This will open a pane on the right side of the screen that displays the details associated with that message. When you are finished reviewing the message, select the X in the upper right corner of the pane to close it. Review as many messages as you would like.
 
-12. In the left-hand navigation pane, select **...Show all** to display all the navigation menu options. 
-
-13. In the left-hand navigation pane, expand **Health** and then select **Message center**.
-
-14. In the **Message center** window, the **All active messages** tab is displayed by default. Review the messages. If you are interested in a particular message, select the message to open it. This will open a pane on the right side of the screen that displays the details associated with that message. When you are finished reviewing the message, select the X in the upper right corner of the pane to close it. Review as many messages as you would like.
-
-15. Leave your Edge browser open as well as the Microsoft Office Home tab and the Microsoft 365 admin center tab. All remaining tasks in this exercise will use LON-CL1 and the Microsoft 365 admin center.  
+13. Leave your Edge browser open as well as the Microsoft Office Home tab and the Microsoft 365 admin center tab. All remaining tasks in this exercise will use LON-CL1 and the Microsoft 365 admin center.  
 
 ### Task 2 - Explore the Exchange admin center
 
 1. After completing the prior task, you should still be in **LON-CL1** and logged into the **Microsoft 365 admin center**. In the left-hand navigation pane, under the **Admin centers** group, select **Exchange**. A new tab will open displaying the **Exchange admin center**.
 
-2. In the **Exchange admin center**, take turns selecting each of the items in the left-hand navigation pane. Review the information that is displayed for each item. Navigate through the available tabs that are displayed at the top of the page for each item.
+2. In the **Exchange admin center**, take turns selecting each of the items in the left-hand navigation pane. Review the information that is displayed for each item. Navigate through the available tabs (where applicable) that are displayed at the top of the page for each item.
 
 3. When you have finished exploring the Exchange admin center, close its tab in the Edge browser (leave all other tabs open).
 
@@ -311,7 +305,7 @@ While you have already been introduced to the Microsoft 365 admin center in the 
 
 1. After completing the prior task, you should still be in **LON-CL1** and logged into the **Microsoft 365 admin center**. In the left-hand navigation pane, under the **Admin centers** group, select **Teams**. A new tab will open displaying the **Teams admin center**.
 
-2. In the **Teams admin center**, take turns selecting each of the items in the left-hand navigation pane. Review the information that is displayed for each item. Navigate through the available tabs that are displayed at the top of the page for each item.
+2. In the **Teams admin center**, take turns selecting each of the items in the left-hand navigation pane. Review the information that is displayed for each item. Navigate through the available tabs (where applicable) that are displayed at the top of the page for each item.
 
 3. When you have finished exploring the Teams admin center, close its tab in the Edge browser (leave all other tabs open).
 
@@ -319,36 +313,36 @@ While you have already been introduced to the Microsoft 365 admin center in the 
 
 1. After completing the prior task, you should still be in **LON-CL1** and logged into the **Microsoft 365 admin center**. In the left-hand navigation pane, under the **Admin centers** group, select **SharePoint**. A new tab will open displaying the **SharePoint admin center**.
 
-2. In the **SharePoint admin center**, take turns selecting each of the items in the left-hand navigation pane. Review the information that is displayed for each item. Navigate through the available tabs that are displayed at the top of the page for each item.
+2. In the **SharePoint admin center**, take turns selecting each of the items in the left-hand navigation pane. Review the information that is displayed for each item. Navigate through the available tabs (where applicable) that are displayed at the top of the page for each item.
 
 3. When you have finished exploring the SharePoint admin center, close its tab in the Edge browser (leave all other tabs open).
 
 ### Task 5 - Explore the Microsoft 365 Security admin center 
 
-1. After completing the prior task, you should still be in **LON-CL1** and logged into the **Microsoft 365 admin center**. In the left-hand navigation pane, under the **Admin centers** group, select **Security**. A new tab will open displaying the **Security & Compliance admin center**.
+1. After completing the prior task, you should still be in **LON-CL1** and logged into the **Microsoft 365 admin center**. In the left-hand navigation pane, under the **Admin centers** group, select **Security**. A new tab will open displaying **Office 365 Security & Compliance center**.
 
-2. In the **Security & Compliance admin center**, take turns selecting each of the items in the left-hand navigation pane. Review the information that is displayed for each item. Navigate through the available tabs that are displayed at the top of the page for each item.
+2. In the **Office 365 Security & Compliance center** tab, take turns selecting each of the items in the left-hand navigation pane. Review the information that is displayed for each item. Navigate through the available tabs that are displayed at the top of the page for each item.
 
-3. In the **Security & Compliance admin center**, note the banner at the top of the page that indicates Microsoft 365 Security and Compliance functionality has been split into separate admin centers - a Microsoft 365 Security center and a Microsoft 365 Compliance center.<br>
+3. In the **Office 365 Security & Compliance center** tab, note the banner at the top of the page that indicates Microsoft 365 Security and Compliance functionality has been split into separate admin centers - a Microsoft 365 Security center and a Microsoft 365 Compliance center.<br>
 
-	In the banner, select the link to the **Microsoft 365 security center**. 
+	In the banner, select the link to the **Microsoft 365 security center**. **Note** this is the first link in the first sentence. 
 
-4. In the **Microsoft 365 Security center**, take turns selecting each of the items in the left-hand navigation pane. Review the information that is displayed for each item. Navigate through the available tabs that are displayed at the top of the page for each item.
+4. In **Microsoft 365 Defender** tab, take turns selecting each of the items in the left-hand navigation pane. Review the information that is displayed for each item. Navigate through the available tabs (where applicable) that are displayed at the top of the page for each item.
 
-5. When you have finished exploring the Microsoft 365 Security center, close its tab in the Edge browser (leave all other tabs open).
+5. When you have finished exploring Microsoft 365 Defender, close its tab in the Edge browser (leave all other tabs open).
 
 ### Task 6 - Explore the Microsoft 365 Compliance admin center 
 
-1. After completing the prior task, you should still be in **LON-CL1** and logged into the **Microsoft 365 admin center**. In the left-hand navigation pane, under the **Admin centers** group, select **Compliance**. A new tab will open displaying the **Microsoft 365 Compliance center**.
+1. After completing the prior task, you should still be in **LON-CL1** and logged into the **Microsoft 365 admin center**. In the left-hand navigation pane, under the **Admin centers** group, select **Compliance**. A new tab will open displaying the **Microsoft 365 compliance center**.
 
-2. In the **Microsoft 365 Compliance center**, take turns selecting each of the items in the left-hand navigation pane. Review the information that is displayed for each item. Navigate through the available tabs that are displayed at the top of the page for each item.<br>
+2. In the **Microsoft 365 compliance center**, take turns selecting each of the items in the left-hand navigation pane. Review the information that is displayed for each item. Navigate through the available tabs (where applicable) that are displayed at the top of the page for each item.<br>
 
-	**Note:** If you will recall, in the prior task when you selected **Security**, the **Security and Compliance Center** displayed a banner indicating that security and compliance had been split apart. If you had selected the link in the banner to the **Microsoft 365 Compliance center**, it would have displayed this same **Microsoft 365 Compliance center** that you navigated to from the Microsoft 365 admin center. 
+	**Note:** If you will recall, in the prior task when you selected **Security**, the **Security and Compliance Center** displayed a banner indicating that security and compliance had been split apart. If you had selected the link in the banner to the **Microsoft 365 Compliance center**, it would have displayed this same **Microsoft 365 compliance center** that you navigated to from the Microsoft 365 admin center. 
 
 
 3. When you have finished exploring the Microsoft 365 Compliance center, close its tab in the Edge browser (leave all other tabs open).
 
-4. At this point, you should just have the **Microsoft Office Home** tab and the **Microsoft 365 admin center** tab open in your Edge browser. Leave these tabs open in the browser as they will be used in the next lab.
+4. At this point, you should just have the **Microsoft 365 admin center** tab open in your Edge browser. Leave this tab open in the browser as it will be used in the next lab.
 
 
 
