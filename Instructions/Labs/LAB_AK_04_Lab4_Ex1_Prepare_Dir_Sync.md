@@ -98,39 +98,31 @@ In this task you will download and use the IdFix tool to fix the user accounts t
 
 	‎**Note:** If any **topleveldomain** errors appear, then ignore them as they cannot be fixed by the IdFix tool.  
 
-11. If you will recall, in the script that broke the users' accounts, Maj Hojski's email address attribute was set to all blank characters. In the row indicating blank characters, this is **Maj Hojski** row. Select the drop-down arrow in the **ACTION** field and select **EDIT**. 
+11. In the **Klemen Sic** row, select the drop-down arrow in the **ACTION** field and select **EDIT**. 
 
-12. In the **Klemen Sic** row, select the drop-down arrow in the **ACTION** field and select **EDIT**. 
+12. On the menu bar at the top of the window, select **Apply**. 
 
-13. On the menu bar at the top of the window, select **Apply**. 
-
-14. In the **Apply Pending** dialog box that appears, select **Yes**. <br/>
+13. In the **Apply Pending** dialog box that appears, select **Yes**. <br/>
 
 	‎**Note:** Notice that the value in the **Action** column changed from **EDIT** to **COMPLETE** for these two users; this indicates that IdFix updated the two user objects and corrected the errors. 
 
-15. Select the **File Explorer** icon on the taskbar. 
+14. Select the **IdFix tool** icon on the taskbar. 
 
-16. In the **C:\Deployment Tools\IdFix** folder, double-click the **Verbose {date} {time}.txt** file to open **Notepad** and view the updated transactions in the transaction log. Maximize the **Notepad** window and locate the three **Update** transactions that appear at the bottom of the file; these transactions reflect the updates you just initiated. When you have finished reviewing this log file, close Notepad. 
+15. On the menu bar at the top of the window, select **Query** to refresh the query results. 
 
-17. Select the **IdFix tool** icon on the taskbar. 
+16. In the query results, note how one of the two users who you just fixed no longer appears in the results (Klemen).
 
-18. On the menu bar at the top of the window, select **Query** to refresh the query results. 
-
-19. In the query results, note how one of the two users who you just fixed no longer appears in the results (Klemen). The exception is **Maj Hoski**. When you originally broke Maj's account by running the script in the prior task, it replaced her email address with blank characters. Then when you flagged her account to be edited in the earlier step, the IdFix tool replaced the blank characters with Maj's name. Now you need to fix this value by replacing her name with her actual email address. <br/>
-
-	Find the **Maj Hoski** row. Note how the **VALUE** for Maj is her name rather than her email address. To fix this email attribute for Maj, you must first select the **MajHojski** value in the **UPDATE** column and then replace it by typing **maj@adatum.com**. Then select the drop-down arrow in the **ACTION** field and select **EDIT**. 
-
-20. Find the **Logan Boyle** row. Note how the **VALUE** for Logan was incorrectly entered as **Lara@adatum.com**, which resulted in a duplicate error because this is the same email address as Lara Raisic, which appears above it. <br/>
+17. Find the **Logan Boyle** row. Note how the **VALUE** for Logan was incorrectly entered as **Lara@adatum.com**, which resulted in a duplicate error because this is the same email address as Lara Raisic, which appears above it. <br/>
 
 	To fix this email attribute for Logan, you must first select the **[E]Lara@adatum.com** value in the **UPDATE** column for Logan and then replace it by typing **logan@adatum.com**. Then select the drop-down arrow in the **ACTION** field and select **EDIT**. 
 
-21. On the menu bar at the top of the window, select **Apply**. 
+18. On the menu bar at the top of the window, select **Apply**. 
 
-22. In the **Apply Pending** dialog box that appears, select **Yes**.  <br/>
+19. In the **Apply Pending** dialog box that appears, select **Yes**.  <br/>
 
 	‎**Note:** This will update the two user objects and correct their UPN. 
 
-23. On the menu bar, select **Query**. In the query results, note how the two users who you just fixed no longer appear in the results. <br/>
+20. On the menu bar, select **Query**. In the query results, note how the two users who you just fixed no longer appear in the results. <br/>
 
 	**Note:** If a dialog box appears indicating an unhandled exception has occurred, select **Continue**. <br/>
 
@@ -138,50 +130,9 @@ In this task you will download and use the IdFix tool to fix the user accounts t
 
 	**Important:** When there are format and duplicate errors for distinguished names, the **UPDATE** column either contains the same string as the **VALUE** column (which is the case for these two final users), or the **UPDATE** column entry is blank. In either case, this means that IdFix cannot suggest a remediation for the error. You can either fix these errors outside IdFix, or manually remediate them within IdFix. You can also export the results and use Windows PowerShell to remediate many errors.  
 
-24. Close the IdFix and File Explorer windows. 
+21. Close the IdFix and File Explorer windows. 
 
-
-### Task 4: Prepare for Directory Synchronization    
-
-The Azure Active Directory Connect synchronization service is a main component of Azure AD Connect. It's responsible for processing all operations related to synchronizing identity data between your on-premises environment and Azure AD. The sync service consists of an on-premises component (Azure AD Connect sync) and a cloud service component (Azure AD Connect sync service).
-
-Before you can run Azure AD Connect, you must first configure several settings that control the synchronization process, which you will do in this task. Once you have completed the preparation process, you will then run the Azure AD Connect tool in the next exercise. 
-
-1. You should still be logged into **LON-DC1** as the **Administrator** from the prior task. 
-
-2. You want to begin by adding several trusted sites for Microsoft Edge. If you're familiar doing this with Internet Explorer, the process is basically the same for Edge; however, the location of the **Security** settings is different. With IE, you added trusted sites through IE's Internet Options; for Edge, you will add trusted sites through the Windows Control Panel. <br>
-
-	Select the magnifying glass icon on the taskbar and then enter **control** in the Search box. 
-
-3. In the list of search results, select **Control Panel**.
-
-4. In the **Control Panel**, select **Network and Internet**.
-
-5. On the **Network and Internet** window, select **Internet Options**.
-
-6. This opens the **Internet Properties** window. Select the **Security** tab. 
-
-7. The **Internet** zone should be selected by default. Towards the bottom of the window, select the **Custom Level** button. 
-
-8. In the **Security Settings – Internet Zone** window, scroll down to the **Downloads** section. The first option in this section is **File download**. Verify the **File download** option is set to **Enable** and then select **OK**. 
-
-9. This takes you back to the **Internet Options** window. Select the **Trusted sites** zone.
-
-10. In the **Trusted Sites** zone, you must add several sites. Select the **Sites** button. 
-
-11. In the **Trusted sites** window, in the **Add this website to the zone** field, enter the following URL and then select **Add**: **https://outlook.office365.com/** 
-
-12. Repeat step 11 to add the following site: **https://outlook.office.com/**  
-
-13. Repeat step 11 to add the following site: **https://portal.office.com/**  
-
-14. Select **Close** once you have added these three sites.
-
-15. In the **Internet Options** window, select **OK** to close the window.
-
-16. Close the **Network and Internet** window.
-
-17. Proceed to the next exercise. You are now ready to install the Azure AD Connect tool and enable synchronization. 
+22. Proceed to the next exercise. You are now ready to install the Azure AD Connect tool and enable synchronization. 
   
 
 # Proceed to Lab 4 - Exercise 2

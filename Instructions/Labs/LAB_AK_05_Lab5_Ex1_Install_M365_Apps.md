@@ -152,4 +152,5 @@ In the prior task, you logged into Alan Yoo’s client PC, and you verified that
 
 16. Leave your browser open and proceed to the next lab.
 
-# End of Lab 5
+
+# Proceed to Lab 5 - Exercise 2
