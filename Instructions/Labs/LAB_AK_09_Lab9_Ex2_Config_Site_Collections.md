@@ -13,29 +13,31 @@ In this task, you will use the SharePoint admin center to create a site collecti
 
 	Otherwise, open Microsoft Edge, navigate to **https://portal.office.com/**, log in as **Holly@M365xZZZZZZ.onmicrosoft.com** (where ZZZZZZ is the tenant ID provided by your lab hosting provider) and a password of **Pa55w.rd**, and then in the **Microsoft Office Home** page, select **Admin** to open the Microsoft 365 admin center, select **Show all** in the left-hand navigation pane, and then under **Admin centers** select **Sharepoint**.
 
-3. In the **SharePoint admin center**, in the left-hand navigation pane, select **More features**.
+3. In the **SharePoint admin center**, in the left-hand navigation pane, select **Active sites**.
 
-4. On the **More features** page, scroll to the bottom and in the **Classic site collections page** section, select **Open**.
+4. On the **Active sites** page, select the **Create option**.
 
-5. On the **Site collections** page, in the ribbon, select **New**, and then in the drop-down menu that appears, select **Private Site Collection**.
+5. On the **Create** page, select **other options**.
 
-6. In the **new site collection** window, enter **Marketing** in the **Title** field.
+6. In the **Other options** window, select the **choose a template dropdown menu** then select **More templates**.
 
-7. In the **Web Site Address** field, in the blank field to the right of **/sites/**, enter **Marketing**.
+7. In the **create site collection** page, in the **Title** field, enter **Marketing**.
+
+7. In the **create site collection** page, in the blank field to the right of **/sites/**, enter **Marketing**.
 
 8. In the **Administrator** field towards the bottom of the window, enter **Admin** and then select the **Check Names** icon. Once the value is verified, it will be replaced with **MOD Administrator**. 
 
-9. Leave the default values unchanged for the other settings and then select **OK**. This will return you to the **Site collections** page.
+9. Leave the default values unchanged for the other settings and then select **OK**. This will return you to the **classic SharePoint admin center** page, select the **Go to the active sites** hyperlink.
 
  **Note:** It can sometimes take a few minutes for SharePoint Online to provision a new site. Eventually, the **Marketing** site will appear in the list of site collections. Do not proceed to the next step until the **Marketing** site appears in the list.
 
-10. On the **Site collections** page, hover your mouse over the **URL** for the marketing site. Select the check box that appears to the left of the of the **Marketing** site's URL. 
+10. On the **Active sites** page, hover your mouse over the **URL** for the marketing site. Select the check box that appears to the left of the of the **Marketing** site's URL. 
 
-11. Selecting the check box for the marketing site will trigger the **Sharing** menu to appear on the ribbon. However, it may take a few minutes for the **Sharing** menu to appear. You can speed this up by refreshing the page by selecting the **Refresh** icon to the left of the address bar, or by pressing the F5 key.
+11. Selecting the check box for the marketing site select the **elispsis** on the **active sites** page. then select the **Sharing** option from the ellipsis menu. However, it may take a few minutes for the **Sharing** menu to appear. You can speed this up by refreshing the page by selecting the **Refresh** icon to the left of the address bar, or by pressing the F5 key.
 
 12. Select **Sharing** once the Sharing menu appears on the ribbon.
 
-13. In the **sharing** window, select **Allow sharing with all external users, and by using anonymous access links** and then select **Save**.
+13. In the **sharing** window, select **New and exisiting guests** and then select **Save**.
 
  **Note:** The site settings changes to allow external user sharing. This process is usually done within one minute. External user sharing is now enabled and you can use it for this marketing site.
 
