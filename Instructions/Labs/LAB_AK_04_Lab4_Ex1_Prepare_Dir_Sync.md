@@ -62,8 +62,7 @@ In this task, you will run a script that breaks various Adatum on-premises user 
 	- **Lara Raisic**. Update the emailAddress attribute for Lara to **lara@adatum.com**. 
 
 	- **Logan Boyle**. Update the emailAddress attribute for Logan to **logan@adatum.com**.
-
-	- **Maj Hojski**. Update the emailAddress attribute for Maj to blank characters (“ “).  
+  
 
 5. Close PowerShell.
 
@@ -78,7 +77,7 @@ In this task you will download and use the IdFix tool to fix the user accounts t
 
 	In your **Edge** browser, open a new tab and then enter the following URL in the address bar to access the Office 365 page for the IdFix Directory Synchronization Error Remediation Tool: <br>
 
-	**https://microsoft.github.io/idfix/installation/**
+	**https://github.com/microsoft/idfix/raw/master/publish/Application%20Files/IdFix_2_0_0_0/IdFix.exe**
 
 3. On the **Microsoft - IdFix** window, under the **Installation** section at the top of the page, the instructions direct you to run **setup.exe** to install the IdFix application on your machine. Select **setup.exe** to download the file to LON-DC1. 
 
@@ -116,21 +115,17 @@ In this task you will download and use the IdFix tool to fix the user accounts t
 
 18. On the menu bar at the top of the window, select **Query** to refresh the query results. 
 
-19. In the query results, note how one of the two users who you just fixed no longer appears in the results (Klemen). The exception is **Maj Hoski**. When you originally broke Maj's account by running the script in the prior task, it replaced her email address with blank characters. Then when you flagged her account to be edited in the earlier step, the IdFix tool replaced the blank characters with Maj's name. Now you need to fix this value by replacing her name with her actual email address. <br/>
-
-	Find the **Maj Hoski** row. Note how the **VALUE** for Maj is her name rather than her email address. To fix this email attribute for Maj, you must first select the **MajHojski** value in the **UPDATE** column and then replace it by typing **maj@adatum.com**. Then select the drop-down arrow in the **ACTION** field and select **EDIT**. 
-
-20. Find the **Logan Boyle** row. Note how the **VALUE** for Logan was incorrectly entered as **Lara@adatum.com**, which resulted in a duplicate error because this is the same email address as Lara Raisic, which appears above it. <br/>
+19. Find the **Logan Boyle** row. Note how the **VALUE** for Logan was incorrectly entered as **Lara@adatum.com**, which resulted in a duplicate error because this is the same email address as Lara Raisic, which appears above it. <br/>
 
 	To fix this email attribute for Logan, you must first select the **[E]Lara@adatum.com** value in the **UPDATE** column for Logan and then replace it by typing **logan@adatum.com**. Then select the drop-down arrow in the **ACTION** field and select **EDIT**. 
 
-21. On the menu bar at the top of the window, select **Apply**. 
+20. On the menu bar at the top of the window, select **Apply**. 
 
-22. In the **Apply Pending** dialog box that appears, select **Yes**.  <br/>
+21. In the **Apply Pending** dialog box that appears, select **Yes**.  <br/>
 
 	‎**Note:** This will update the two user objects and correct their UPN. 
 
-23. On the menu bar, select **Query**. In the query results, note how the two users who you just fixed no longer appear in the results. <br/>
+22. On the menu bar, select **Query**. In the query results, note how the two users who you just fixed no longer appear in the results. <br/>
 
 	**Note:** If a dialog box appears indicating an unhandled exception has occurred, select **Continue**. <br/>
 
@@ -138,7 +133,7 @@ In this task you will download and use the IdFix tool to fix the user accounts t
 
 	**Important:** When there are format and duplicate errors for distinguished names, the **UPDATE** column either contains the same string as the **VALUE** column (which is the case for these two final users), or the **UPDATE** column entry is blank. In either case, this means that IdFix cannot suggest a remediation for the error. You can either fix these errors outside IdFix, or manually remediate them within IdFix. You can also export the results and use Windows PowerShell to remediate many errors.  
 
-24. Close the IdFix and File Explorer windows. 
+23. Close the IdFix and File Explorer windows. 
 
 
 ### Task 4: Prepare for Directory Synchronization    
