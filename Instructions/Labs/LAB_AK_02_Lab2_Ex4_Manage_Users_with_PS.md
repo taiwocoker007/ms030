@@ -18,7 +18,7 @@ The Microsoft Online Services Sign-In Assistant installs client components that 
 
 2. Your **Edge** browser should still be open from the prior lab exercise. You should be logged into Microsoft 365 as Holly Dickson, and the browser should have tabs open for the **Microsoft Office Home** page and the **Microsoft 365 admin center**. <br>
 
-	Open a new tab in your browser and then enter the following URL in the address bar: **https://download.microsoft.com/download/7/1/E/71EF1D05-A42C-4A1F-8162-96494B5E615C/msoidcli_64bit.msi**
+	Open a new tab in your browser and then enter the following URL in the address bar: **https://www.microsoft.com/en-us/download/details.aspx?id=28177*
 
 3. This will download the installer for the **Microsoft Online Services Sign-In Assistant for IT Professionals RTW**.
 
