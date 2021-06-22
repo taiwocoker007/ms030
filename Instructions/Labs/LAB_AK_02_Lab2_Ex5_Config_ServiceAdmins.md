@@ -172,7 +172,7 @@ In this task, you will begin by examining the administrative properties of two u
 
 	In the **Unblock sign-in** window, the **Block this user from signing in** check box is currently selected. Unselect this check box to clear it, select **Save changes**, and once Alex has been unblocked from signing in, close this window.
 	
-37. Leave your browser and all tabs open and proceed to the next lab.
+37. On LON-Cl1, Close all instances of **Edge**.
 
 # End of Lab 2 
 
