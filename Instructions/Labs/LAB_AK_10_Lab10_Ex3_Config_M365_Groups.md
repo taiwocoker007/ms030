@@ -76,7 +76,7 @@ In this exercise, Holly will configure a private Microsoft 365 group through the
 
 8. At the command prompt type the following command and then press Enter to add the MOD Administrator as the owner for the group (replace ZZZZZZ with the tenant ID provided by your lab hosting provider):
 
-		Add-UnifiedGroupLinks "Planning" –Links Admin@C –LinkType Owner
+		- Add-UnifiedGroupLinks "Planning" –Links admin@M365xZZZZZZ.onmicrosoft.com –LinkType Owner
 
 
 9. At the command prompt type the following command and then press Enter to add Ada Russell as a member of the group (replace ZZZZZZ with the tenant ID provided by your lab hosting provider):
