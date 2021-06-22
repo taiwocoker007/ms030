@@ -8,7 +8,7 @@ The enrollment into Intune is triggered by a group policy created on your local 
 
 In the first task, Holly adds Microsoft 365 apps for enterprise as a managed app.
 
-In the tasks 2 and 3 in this exercise, Holly extends the Hybrid Azure AD domain-join setup to enroll devices for cloud-based Mobile Device and Mobile Application Management (MDM and MAM).
+In tasks 2 and 3 in this exercise, Holly extends the Hybrid Azure AD domain-join setup to enroll devices for cloud-based Mobile Device and Mobile Application Management (MDM and MAM).
 
 In the final task, you will verify the installation of Microsoft 365 apps for enterprise.
 
@@ -113,19 +113,19 @@ Holly wants to show how the new auto-enrollment policy works. This is not recomm
 
 3. Select the **Windows (Start)** icon in the lower left corner of the taskbar, and type **gpedit**.
 
-2. Under **Best match**, click **Edit group policy** to launch it.
+4. Under **Best match**, click **Edit group policy** to launch it.
 
-3. In **Local Computer Policy**, click **Administrative Templates** > **Windows Components** > **MDM**.
+5. In **Local Computer Policy**, click **Administrative Templates** > **Windows Components** > **MDM**.
 
-4. ‎Double-click **Enable automatic MDM enrollment using default Azure AD credentials**. 
+6. ‎Double-click **Enable automatic MDM enrollment using default Azure AD credentials**. 
 
-5. In **Enable automatic MDM enrollment using default Azure AD credentials**, select **Enabled**.
+7. In **Enable automatic MDM enrollment using default Azure AD credentials**, select **Enabled**.
 
-6. From the dropdown **Select Credential Type to Use**, select **User**.
+8. From the dropdown **Select Credential Type to Use**, select **User**.
 
    **Note:** In Windows 10, version 1903, the MDM.admx file was updated to include an option to select which credential is used to enroll the device. **Device Credential** is a new option that will only have an effect on clients that have installed Windows 10, version 1903 or later. The default behavior for older releases is to revert to **User Credential**. **Device Credential** is not supported for enrollment type when you have a ConfigMgr Agent on your device.
 
-7. Close **Local Group Policy Editor** and sign out from LON-CL3.
+9. Close **Local Group Policy Editor** and sign out from LON-CL3.
 
 ### Task 4 - Verify successful enrollment and app deployment
 
