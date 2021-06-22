@@ -137,5 +137,29 @@ In this task, you will verify the Hybrid Azure AD Join by running the dsregcmd c
 19. Close the **Mail** app and then Sign out as Beth.
 
 
+### Task 5 - Restore licenses
+
+1. Switch to **LON-DC1**.
+
+2. You should still have the **Microsoft 365 admin center** open in **Edge** from Task 2.
+
+3. In your **Edge** browser, select the **Microsoft 365 admin center** tab, and then in the left-hand navigation pane, expand **Users**, and then select **Active Users**.
+
+4. In **Active users**, in **Search active users list** enter **beth** and press Enter.
+
+5. Select the entry for **Beth Burke** that has the **Office 365 E5** license.
+
+6. In the menu bar above the list of users, select **Manage product licenses**. If you do not see this button, select the **ellipsis** icon (**More actions**). In the drop-down menu that appears, select **Manage product liceneses**.
+
+7. In the **Licenses and apps** pane that appears for **Beth Burke**, clear the checkbox next to **Office 365 E5**, and click **Save changes**, then close the pane by clicking the **X** in the upper right-hand corner.
+
+8. In **Search active users list** enter **holly** and press Enter.
+
+9. Select the **Holly Dickson** that has the **Enterprise Mobility + Security E5** license.
+
+10. In the menu bar above the list of users, select **Manage product licenses**. If you do not see this button, select the **ellipsis** icon (**More actions**). In the drop-down menu that appears, select **Manage product liceneses**.
+
+11. In the **Licenses and apps** pane that appears for **Holly Dickson**, select **Office 365 E5**, and click **Save changes**, then close the pane by clicking the **X** in the upper right-hand corner.
+
 # End of Lab 4
  
