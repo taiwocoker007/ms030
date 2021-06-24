@@ -14,11 +14,11 @@ This lab exercise will be performed within LON-CL2.
 
 2. If Microsoft Edge is open from an earlier lab, then close it now. 
 
-3. In an earlier lab, you logged into Microsoft 365 as Alan Yoo and you downloaded and installed **Microsoft 365 Apps for enterprise**. <br/>
+3. In an earlier lab, you logged into Microsoft 365 as Alan Yoo and you downloaded and installed **Microsoft 365 Apps for enterprise**. 
 
 	You should now open your local **Word** app again by selecting the **Windows** icon on the bottom-left corner of the taskbar, and then in the **Start** menu, selecting **Word**.
 
-4. When **Word** opens, verify which user account it is licensed to at the top of the Word document. If Alan's name appears along with his initials in a circle, then skip to the next step. <br/>
+4. When **Word** opens, verify which user account it is licensed to at the top of the Word document. If Alan's name appears along with his initials in a circle, then skip to the next step. 
 
 	However, if a different user account appears, then select the user account, and in the window that appears, select **Sign in with a different account**.    In the **Sign in** window, enter **alan@M365xZZZZZZ.onmicrosoft.com (where ZZZZZZ is the unique tenant ID provided by your lab hosting provider) and a password of **Pa55w.rd**. Verify that **Alan Yoo** now appears at the top of the Word form. 
 
@@ -32,7 +32,7 @@ This lab exercise will be performed within LON-CL2.
 
 9. If the **Welcome to OneDrive for Business** page appears, Select **Next**.
 
-10. In the **OneDrive** window, select **+New** at the top of the page, and then in the drop-down menu that appears, select **Word document**. 
+10. In the **OneDrive** window, select **+ New** at the top of the page, and then in the drop-down menu that appears, select **Word document**. 
 
 11. If a **Your privacy option** window appears, select **Close**.
 
@@ -80,13 +80,13 @@ Now that you have enabled file synchronization with OneDrive for Business, Holly
 
 4. You now want to create another folder, so select the **Home** tab again, and on the ribbon, select **New folder**, and then enter **Project A** as the folder name.
 
-5. You now want to create a new Word document in the **Private** folder. <br/>
+5. You now want to create a new Word document in the **Private** folder. 
 
-	If you double-click on the **Private** folder and then right-click in the detail pane and select **New** in the menu, it does NOT provide an option to create a Microsoft Word document. <br/>
+	If you double-click on the **Private** folder and then right-click in the detail pane and select **New** in the menu, it does NOT provide an option to create a Microsoft Word document. 
 
 	Instead, in the folder tree in the left-hand pane of the File Explorer window, you must select **OneDrive - Adatum Corporation** to expand it, then select the **Private** folder, right-click in the detail pane, and then select **New** in the menu. This will display a sub-menu with a variety of file types. Select **Microsoft Word Document** and name the document **Holidays.docx**.
 
-6. In the **File Explorer** window, note the document icon that appears to the left of the **Holidays.docx**. It may be hard to see, but the icon is an image of two blue arrows. This will come into play after you complete this step. <br/>
+6. In the **File Explorer** window, note the document icon that appears to the left of the **Holidays.docx**. It may be hard to see, but the icon is an image of two blue arrows. This will come into play after you complete this step. 
 
 	Double-click the **Holidays.docx** to open it (note Alan Yoo is the licensed user displayed in the top left-corner of the Word document). Type some text in the document, save the document, and then close Microsoft Word.
 
@@ -128,11 +128,11 @@ Now that you have enabled file synchronization with OneDrive for Business, Holly
 
 3. Microsoft Edge opens (if you receive a dialog box asking which app to use to open this folder, select Microsoft Edge). If you are prompted to sign in, then sign in as Alan Yoo (**alan@M365xZZZZZZ.onmicrosoft.com** (where ZZZZZZ is your tenant ID)) and a password of **Pa55w.rd**.
 
-4. In your Edge browser, a tab should open with Alan Yoo's **OneDrive for Business** account. The tab should be displaying Alan's **My Files**, and specifically the **Project A** folder. <br/>
+4. In your Edge browser, a tab should open with Alan Yoo's **OneDrive for Business** account. The tab should be displaying Alan's **My Files**, and specifically the **Project A** folder. 
 
 	Hover your mouse to the left of the **Project Targets.docx** field and select the circle so that it displays a check mark. With the file selected, select **Share** that appears in the menu bar at the top of the page..
 
-5. In the **Send link** window that appears, enter the following information: <br/>
+5. In the **Send link** window that appears, enter the following information: 
 
 	- Enter **MOD** in the **Enter a name or email address** field. This will return a list of users whose name starts with MOD. Select **MOD Administrator**. 
 	- In the **Add another** field, enter **Patti**. In the list of users, select **Patti Fernandez**. 
@@ -156,7 +156,7 @@ Now that you have enabled file synchronization with OneDrive for Business, Holly
 
 14. Close the InPrivate Microsoft Edge window. 
 
-15. You now want to turn off sharing for this document. In the Microsoft Edge window, the **Project targets** document should still be selected. Note in the file list, the **Sharing** column indicates the file is **Shared**. <br/>
+15. You now want to turn off sharing for this document. In the Microsoft Edge window, the **Project targets** document should still be selected. Note in the file list, the **Sharing** column indicates the file is **Shared**. 
 
 	Select the **Shared** status in the **Sharing** column. This will open a **Manage access** window. (Note - Nother way to open the **Manage access** window for this file is to select **Share** in the menu bar just as you did when you originally shared the file, and then select the ellipsis icon in the **Share** window, and then select **Manage access**). 
 
