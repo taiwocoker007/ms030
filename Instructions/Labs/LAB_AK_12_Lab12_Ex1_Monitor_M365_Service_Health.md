@@ -32,18 +32,18 @@ In this exercise, Holly will view the Microsoft 365 service health and several s
 
 13. Leave the Edge browser and all its tabs open and proceed to the next task.
 
-### Task 2 -  View reports in the Microsoft 365  admin center
+### Task 2 - View reports in the Microsoft 365  admin center
 
 1. On **LON-CL1** you should still be logged in as the **Administrator** from the prior lab exercise. In your Edge browser, you should also be logged into Microsoft 365 as Holly Dickson.
 
 2. In the **Microsoft 365  admin center**, in the left-hand navigation pane, select **Reports**. Note that as of this writing there are only 3 reports listed in this group. Select each of the reports to view information related to it.
 
-3. Microsoft 365 includes a variety of additional reports, which can be found in the portals to which they apply. For example: <br/>
+3. Microsoft 365 includes a variety of additional reports, which can be found in the portals to which they apply. For example: 
 
 	- **Security reports** are included in the Reports dashboard in the Security and Compliance Center. In the **Microsoft 365 admin center**, under the **Admin centers** group, select **Security**. This opens the **Security and Compliance Center**. In the navigation pane under **Reports**, select **Dashbaoard**.
 	- **Auditing reports** are included in the Exchange admin center. In the **Microsoft 365 admin center**, under the **Admin centers** group, select **Exchange**. This opens the **Exchange admin center**. In the navigation pane select **Compliance management**, and then on the **Compliance management** page, select the **auditing** tab.
 
-	Review any of the reports that are of interest to you. <br/>
+	Review any of the reports that are of interest to you. 
 
 	**Note:** Most of the reports have limited data due to the lack of data in your virtualized lab environment for the fictitious Adatum Corporation. 
 
