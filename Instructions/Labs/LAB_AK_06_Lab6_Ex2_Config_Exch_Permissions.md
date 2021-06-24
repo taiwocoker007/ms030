@@ -12,39 +12,39 @@ In this task you will configure Exchange admin roles through Windows PowerShell.
 
 2. Windows PowerShell should be open from an earlier lab exercise. However, if you closed it, then re-open an elevated instance of it (Run as administrator) now. 
 
-3. In the **Windows PowerShell** window, at the command prompt type the following command and then press Enter to set the execution policy to remote signed, which requires that all scripts and configuration files downloaded from the Internet are signed by a trusted publisher. <br/>
+3. In the **Windows PowerShell** window, at the command prompt type the following command and then press Enter to set the execution policy to remote signed, which requires that all scripts and configuration files downloaded from the Internet are signed by a trusted publisher.
 
 		Set-ExecutionPolicy RemoteSigned
 
 	If you are prompted to verify that you want to change the execution policy, enter **A** to select **[A] Yes to All.**  
 
-4. At the command prompt, enter the following command and then press Enter to install the Exchange Online Management Module into Windows PowerShell. <br/>
+4. At the command prompt, enter the following command and then press Enter to install the Exchange Online Management Module into Windows PowerShell.
 
 		Install-Module -Name ExchangeOnlineManagement
 
 	If you are prompted to verify that you want to install the module from an untrusted repository, enter **A** to select **[A] Yes to All.**  
 
-5. At the command prompt, enter the following command and then press Enter to prompt you for the sign-in credentials of the user who will be signing into Exchange Online. For each subsequent command that is run, these credentials will be verified to determine if the user has the permissions necessary to make the change. <br/>
+5. At the command prompt, enter the following command and then press Enter to prompt you for the sign-in credentials of the user who will be signing into Exchange Online. For each subsequent command that is run, these credentials will be verified to determine if the user has the permissions necessary to make the change.
 
 		$UserCredential = Get-Credential
 
 6. In the **Windows PowerShell credential request** window that appears, enter the credentials of Adatum's MOD Administrator. Enter **admin@M365xZZZZZZ.onmicrosoft.com** in the **User name** field (where ZZZZZZ is your tenant ID), enter the tenant password provided by your lab hosting partner in the **Password** field, and then select **OK**.   
 
-7. At the command prompt, enter the following command and then press Enter to connect you to Exchange Online and sign in automatically with your stored credentials. <br/>
+7. At the command prompt, enter the following command and then press Enter to connect you to Exchange Online and sign in automatically with your stored credentials.
 
 		Connect-ExchangeOnline -Credential $UserCredential -ShowProgress $true
 
-8. At the command prompt, enter the following command and then press Enter. This command is specific to this task. Normally running the following commands would result in an unauthorized access error; however, this command enables you to run them. Note: This command is only for Exchange Online use. <br/>	
+8. At the command prompt, enter the following command and then press Enter. This command is specific to this task. Normally running the following commands would result in an unauthorized access error; however, this command enables you to run them. Note: This command is only for Exchange Online use.
 		
 		Enable-OrganizationCustomization
 
-9. At the command prompt, enter the following command and then press Enter to create a new role group called **BranchOfficeAdmins**, with the following roles assigned to it: **Mail Recipients**, **Distribution Groups**, **Move Mailboxes**, **Mail Recipient Creation**. <br/>
+9. At the command prompt, enter the following command and then press Enter to create a new role group called **BranchOfficeAdmins**, with the following roles assigned to it: **Mail Recipients**, **Distribution Groups**, **Move Mailboxes**, **Mail Recipient Creation**. 
 
 		New-RoleGroup -Name BranchOfficeAdmins -roles “Mail Recipients”, “Distribution Groups”, “Move Mailboxes”, “Mail Recipient Creation”
 
 	**Note:** This command may take a few minutes to complete. 
 
-10. At the command prompt, enter the following command and then press Enter to add Nestor Wilke to the Branch Office Admins role group: <br/>
+10. At the command prompt, enter the following command and then press Enter to add Nestor Wilke to the Branch Office Admins role group: 
 		
 		Add-RoleGroupMember "BranchOfficeAdmins" -Member 'Nestor Wilke'
 
@@ -54,7 +54,7 @@ In this task you will configure Exchange admin roles through Windows PowerShell.
 
 12. Minimize the Windows PowerShell window.
 
-13. You will now verify the changes that you made in PowerShell are visible in the Exchange admin center. Your Edge browser should be open from the prior task, with tabs open for the **Microsoft Office Home** page, the **Microsoft 365 admin center**, and the **Exchange admin center**. You should still be signed into Microsoft 365 as Holly Dickson. <br/>
+13. You will now verify the changes that you made in PowerShell are visible in the Exchange admin center. Your Edge browser should be open from the prior task, with tabs open for the **Microsoft Office Home** page, the **Microsoft 365 admin center**, and the **Exchange admin center**. You should still be signed into Microsoft 365 as Holly Dickson. 
 
 	If you closed the Exchange admin center tab after the prior lab exercise, then in the **Microsoft 365 Admin center**, under **Admin Centers** in the left-hand navigation pane, select **Exchange**.
 
@@ -72,19 +72,19 @@ Exchange Online comes with a default user role policy titled **Default Role Assi
 
 Holly Dickson wants to add an additional role assignment policy and set it as the default policy for Adatum. In this task, she will use PowerShell to create the policy and set it as Adatum's new default policy.
 
-1. At the end of the prior task, you were in **LON-CL1** in the **Exchange admin center**, and you displayed the **permissions** tab. On the **permissions** page, you had selected the **admin roles** tab. <br/>
+1. At the end of the prior task, you were in **LON-CL1** in the **Exchange admin center**, and you displayed the **permissions** tab. On the **permissions** page, you had selected the **admin roles** tab. 
 
-	On the **permissions** page, you should now select **user roles**. Note that there is only one role, the **Default Role Assignment Policy**.  <br/>
+	On the **permissions** page, you should now select **user roles**. Note that there is only one role, the **Default Role Assignment Policy**.  
 
 	In this task, you are going to create a new role assignment policy, but instead of doing it through the Exchange admin center, you will do it through Windows PowerShell. Therefore, minimize your Edge browser. 
 
 2. In the prior task, you minimized the Windows PowerShell console once you were done with PowerShell. Now that you will be using PowerShell again, select the **Windows PowerShell** icon on the taskbar. 
 
-3. In the **Windows PowerShell** console, at the command prompt, enter the following command and then press Enter to create a new user role policy titled **Limited Mailbox Configuration**, with the following roles assigned to it: **MyBaseOptions**, **MyAddressInformation**, and **MyDisplayName**. <br/>
+3. In the **Windows PowerShell** console, at the command prompt, enter the following command and then press Enter to create a new user role policy titled **Limited Mailbox Configuration**, with the following roles assigned to it: **MyBaseOptions**, **MyAddressInformation**, and **MyDisplayName**. 
 
 		New-RoleAssignmentPolicy "Limited Mailbox Configuration" -Roles MyBaseOptions,MyAddressInformation,MyDisplayName
 
-4. At the command prompt, enter the following command and then press Enter to change the default role assignment policy for new mailboxes. This command will set the **"Limited Mailbox Configuration"** policy to be the new default Role assignment policy. <br/>
+4. At the command prompt, enter the following command and then press Enter to change the default role assignment policy for new mailboxes. This command will set the **"Limited Mailbox Configuration"** policy to be the new default Role assignment policy. 
 
 		Set-RoleAssignmentPolicy "Limited Mailbox Configuration" -IsDefault
 
