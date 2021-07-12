@@ -59,9 +59,9 @@ In this task, you will take on the persona of Holly Dickson, Adatum's Microsoft 
 
 9. In the **Roles** information that appears, select the **Admin center access** option. This displays a list of the most commonly assigned administrator roles. 
 
-10. If the role you are assigning is not in this list, then you can select the **Show all by category** drop-down arrow to display all the available roles (sorted by category). However, in this case, Holly wants to assign herself the Global Administrator role. She can do this since she is logged in as the MOD Administrator, which is also a Global admin. Only a Global admin can assign another user the Global admin role. <br>
+10. If the role you are assigning is not in this list, then you can select the **Show all by category** drop-down arrow to display all the available roles (sorted by category). However, in this case, Holly wants to assign herself the Global Administrator role. She can do this since she is logged in as the MOD Administrator, which is also a Global administrator. Only a Global administrator can assign another user the Global administrator role. <br>
 
-	Select **Global Admin** and then select **Next**.
+	Select **Global Administrator** and then select **Next**.
 
 11. On the **Review and finish** window, review your selections. If anything needs to be changed, select the appropriate **Edit** link and make the necessary changes. Otherwise, if everything is correct, select **Finish adding**. 
 
@@ -120,7 +120,7 @@ You will then assign a product license to Ada Russell's account. Finally, you wi
 
 9. In the **Ada Russell** pane, the **Licenses and Apps** tab is displayed by default (since you selected the **Manage product licenses** option). Under the list of licenses, select the **Office 365 E5** license and then select **Save changes**. Note the message that appears at the top of the pane indicating the delayed availability for setting Ada up into Microsoft Teams. Select the X in the upper right corner to close the **Ada Russell** pane.
 
-10. In the **Active users** list, not that **Ada Russell** is now assigned an Office 365 E5 license. Select **Ada Russell** to unselect her account, and then select **Libby Hayward**.
+10. In the **Active users** list, now that **Ada Russell** is now assigned an Office 365 E5 license. Select **Ada Russell** to unselect her account, and then select **Libby Hayward**.
 
 11. To the right of Libby Hayward's **Display Name**, select the vertical ellipsis icon. In the drop-down menu that appears, note the options that are available are similar to the options from the ellipsis icon that you select in the menu bar for Alan and Ada, although there are less options to choose from. However, this menu has less choices. 
 
