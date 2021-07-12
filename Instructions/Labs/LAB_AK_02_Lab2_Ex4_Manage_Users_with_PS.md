@@ -241,7 +241,7 @@ In a previous lab, you reset a user's password using the Microsoft 365 admin cen
 
 2. In **Windows PowerShell**, at the command prompt, type the following command and then press Enter to update the password policy for Adatum's **M365xZZZZZZ.onmicrosoft.com** domain. You will change the expiration period to **60 days** and the notification period to **10 days**. In the command, don't forget to replace the **ZZZZZZ** with the unique tenant ID provided by your lab hosting provider. <br>
 
-		Set-MsolPasswordPolicy -DomainName “M365xZZZZZZ.onmicrosoft.com” –ValidityPeriod “90” -NotificationDays “10”
+		Set-MsolPasswordPolicy -DomainName “M365xZZZZZZ.onmicrosoft.com” –ValidityPeriod “60” -NotificationDays “10”
 
 3. At the command prompt, type the following command and then press Enter to change Tameka Reed's password to **P@$$W0rd**. In the command, don't forget to replace the **ZZZZZZ** with the unique tenant ID provided by your lab hosting provider. <br>
 
