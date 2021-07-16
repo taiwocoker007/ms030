@@ -12,7 +12,7 @@ Holly will then configure a mailbox policy for mobile devices that requires a pa
 
 	If you closed the Exchange admin center tab after the prior lab exercise, then in the **Microsoft 365 Admin center**, under **Admin Centers** in the left-hand navigation pane, select **Exchange**.
 
-3. In the **Exchange admin center**, in the left-hand navigation pane, select **permissions**.
+3. In the **classic Exchange admin center** tab, in the left-hand navigation pane, select **permissions**.
 
 4. On the **permissions** page, the **admin roles** tab at the top of the page is displayed by default. Select the **Outlook Web App policies** tab.
 

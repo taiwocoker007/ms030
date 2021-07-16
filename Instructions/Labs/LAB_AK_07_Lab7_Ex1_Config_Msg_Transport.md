@@ -13,63 +13,65 @@ In this task you will create two connectors to enforce Transport Layer Security 
 
 1. You should still be logged into **LON-CL1** as the **Administrator** account with a password of **Pa55w.rd**.
 
-2. Your Edge browser should be open from the prior lab, with tabs open for the **Microsoft Office Home** page, the **Microsoft 365 admin center**, and the **Exchange admin center**. You should still be signed into Microsoft 365 as Holly Dickson. <br/>
+2. Your Edge browser should be open from the prior lab, with tabs open for the **Microsoft Office Home** page, the **Microsoft 365 admin center**, and the **Exchange admin center**. You should still be signed into Microsoft 365 as Holly Dickson. 
 
 	If you closed the Exchange admin center tab after the prior lab exercise, then in the **Microsoft 365 Admin center**, under **Admin Centers** in the left-hand navigation pane, select **Exchange**.
 
-3. In the **Exchange admin center**, in the left-hand navigation pane, select **mail flow**. 
+3. In the **Exchange admin center**, in the left-hand navigation pane, expand **Mail flow**. 
 
-4. On the **mail flow** page, the **rules** tab is displayed by default. In the list of tabs across the top of the page, select **connectors**.
+4. Under **Mail flow** , select **Connectors**.
 
-5. On the **connectors** page, you want to add a new send connector. Select the **plus sign icon (+)** that appears on the menu bar above the list of connectors.
+5. On the **Connectors** page, you want to add a new send connector. Select **+ Add a connector** that appears on the menu bar above the list of connectors.
 
-6. On the **Select your mail flow scenario** page, select the drop-down arrow in the **From** box and then select **Office 365 ** from the menu. <br/>
+6. On the **New connector** page, select **Office 365** under **Connection from**. 
 
-	In the **To** box, select the drop-down arrow, select **Partner organization**, and then Select **Next**.
+	Under **Connection to**, select **Partner organization**, and then Select **Next**.
 
-7. On the **New connector** page, enter **Trey Research Outgoing** in the **Name** box and then select **Next**.
+7. On the **Connector name** page, enter **Trey Research Outgoing** in the **Name** box and then select **Next**.
 
-8. On the **When do you want to use this connector?** page, select the **Only when email messages are sent to these domains** option, and then select the **plus (+) sign** icon to add domains.
+8. On the **Use of connector** page, select the **Only when email messages are sent to these domains** option.
 
-9. On the **add domain** page, enter **treyresearch.net**, select **OK**, and then select **Next**.
+	In the textbox, enter **treyresearch.net** and then select the **+**.
 
-10. On the **How do you want to route email messages?** page, select the  **Use the MX record associated with the partner’s domain** option and then select **Next**.
+9. On the **Use of connector** page, select **Next**.
 
-11. On the **How should Office 365 connect to your partner organization's email server?** page, select the **Always use Transport Layer Security (TLS) to secure the connection** check box, select the **Issued by a trusted certificate authority (CA)** option, and then select **Next.**
+10. On the **Routing** page, select the  **Use the MX record associated with the partner’s domain** option and then select **Next**.
 
-12. On the **Confirm your settings** page, select **Next**.
+11. On the **Security restrictions** page, select the **Always use Transport Layer Security (TLS) to secure the connection** check box, select the **Issued by a trusted certificate authority (CA)** option, and then select **Next.**
 
-13. On the **Validate this connector** page, select the **plus (+) sign** icon to add an email address for the partner domain, which in this case is **treyresearch.net**.
+12. On the **Validation email** page, in the textbox, enter **postmaster@treyresearch.net** and then select the **+**.
 
-14. On the **add email** page, enter **postmaster@treyresearch.net** in the email address field, select **OK**, and then select **OK** once the information is successfully saved. 
-
-15. On the **Validate this connector** page, select **Validate**. <br/>
+13. On the **Validation email** page, select **Validate**. 
 
 	Wait while validation completes and then select **Close**. 
 
-16. On the **Validation Result** page, select **Save**. Note the status of the **Send test email** task is **Failed**.
+14. On the **Validation email** page, select **Next**. Note the status of the **Send test email** task is **Failed**.
 
-17. In the **Warning** window, select **Yes** to still save the connector even though the validation failed, and then select **OK** once the connector is successfully saved. <br/>
+15. On the **Validation email** page, select **Yes** to still save the connector even though the validation failed, and then select **Next** once the connector is successfully saved. 
 
 	**Note:** Validation of mail flow to this connector will fail because the connector is for a fictitious organization that does not exist. This is expected behavior for this lab.
 
-18. You just added a send (outbound) connector from Adatum to Trey Research. You will now create a receive (inbound) connector from Trey Research to Adatum. In the **Exchange admin center**, on the **connectors** tab, select the **plus sign (+)** icon on the menu bar to add another connector.
+16. On the **Validation email** page, select **Create connector**.
 
-19. On the **Select your mail flow scenario** page, in the **From** box, select **Partner organization**. <br/>
+17. On the **Connector created** page, select **Done**.
 
-	In the **To** box, select **Office 365** and then select **Next**.
+18. You just added a send (outbound) connector from Adatum to Trey Research. You will now create a receive (inbound) connector from Trey Research to Adatum. In the **Exchange admin center**, on the **Connectors** page, select the **+ Add a connector** icon on the menu bar to add another connector.
 
-20. In he **New connector** page, enter **Trey Research Incoming** in the **Name** field and then select **Next**.
+19. On the **New connector** page, under the **Connection from** box, select **Partner organization**. 
 
-21. In the **How do you want to identify the partner organization?** page, select the **Use the sender’s domain** option and then select **Next**.
+	Note that the **Connection to** is automatically set to **Office 365**. Select **Next**.
 
-22. In the **What sender domain do you want to use to identify your partner?** page, select the **plus (+) sign** icon to add domains.
+20. In he **Connector name** page, enter **Trey Research Incoming** in the **Name** field and then select **Next**.
 
-23. On the **add domain** page, enter **treyresearch.net**, select **OK**, and then select **Next**.
+21. In the **Authenticating sent email** page, select the **By verifying that the sender domain matches one of the following domains**.
 
-24. On the **What security restrictions do you want to apply?** page, select the **Reject email messages if they aren’t sent over TLS** check box and then select **Next**.
+22. In the textbox, enter **treyresearch.net**, then select the **+**.
 
-25. On the **Confirm your settings** page, select **Save**, and then select **OK** once the information is successfully saved.
+23. On the **Authenticating sent email** page, select **Next**.
+
+24. On the **Security restrictions** page, select the **Reject email messages if they aren’t sent over TLS** check box and then select **Next**.
+
+25. On the **Review connector** page, select **Create connector**, and then select **Done** once the information is successfully saved.
 
 26. On the **Connectors** page, you should now see the send (outbound) and receive (inbound) connectors that you just created.  
 
@@ -81,13 +83,13 @@ In the next few tasks, you will create a series of mail flow rules that are desi
 
 1. You should still be logged into **LON-CL1** as the **Administrator** account with a password of **Pa55w.rd**.
 
-2. Your Edge browser should be open from the prior task, with tabs open for the **Microsoft Office Home** page, the **Microsoft 365 admin center**, and the **Exchange admin center**. You should still be signed into Microsoft 365 as Holly Dickson. <br/>
+2. Your Edge browser should be open from the prior task, with tabs open for the **Microsoft Office Home** page, the **Microsoft 365 admin center**, and the **Exchange admin center**. You should still be signed into Microsoft 365 as Holly Dickson. 
 
-3. In the **Exchange admin center**, the **mail flow** tab in the left-hand navigation pane should still be selected from the prior task, and on this page, the **connectors** tab should be displayed. Since you want to create a message transport rule, select the **rules** tab at the top of the page.
+3. In the **Exchange admin center**, the **Mail flow** section in the left-hand navigation pane should still be expanded from the prior task, and on this page, the **Connectors** page should be displayed. Since you want to create a message transport rule, select **Rules** in the left-hand navigation pane.
 
-4. You will begin by creating a rule that adds a disclaimer message to each received email. On the **rules** tab, select the **plus (+) sign** icon on the menu bar. In the menu that appears, select **Apply disclaimers**.
+4. You will begin by creating a rule that adds a disclaimer message to each received email. On the **Rules** page, select the **plus (+) sign** icon on the menu bar. In the menu that appears, select **Apply disclaimers**.
 
-5. In the **new rule** window, enter the following information: <br/>
+5. In the **new rule** window, enter the following information: 
 
 	- In the **Name** field, enter **A. Datum Disclaimer**
 	- In the **Apply this rule if** box, select **The recipient is located**. This opens a **Select sender location** window. Select **Inside the organization** and then Select **OK**.
@@ -100,11 +102,11 @@ In the next few tasks, you will create a series of mail flow rules that are desi
 
 7. If the **Warning** window appears, select **Yes**.
 
-8. You will now create a second mail flow rule that automatically forwards to the MOD Administrator any email intended for Megan Bowen; the MOD Administrator must approve the email before it can be forwarded to Megan. <br/>
+8. You will now create a second mail flow rule that automatically forwards to the MOD Administrator any email intended for Megan Bowen; the MOD Administrator must approve the email before it can be forwarded to Megan. 
 
 	On the **rules** tab, select the **plus (+) sign** icon on the menu bar. In the menu that appears, select **Send messages to a moderator**.
 
-9. In the **new rule** window, enter the following information: <br/>
+9. In the **new rule** window, enter the following information: 
 
 	- In the **Name** field, enter **Messages that must be moderated** 
 	- In the **Apply the rule if** box, select **The recipient is**.
@@ -125,7 +127,7 @@ In this task, you will test the new transport rules that you created in the prio
 
 1. Switch to **LON-CL2**. You should still be logged in as the **Administrator**.
 
-2. If **Microsoft Edge** is open, you should still be logged into Microsoft 365 as Alan Yoo from an earlier lab. Log out as Alan, then close all tabs except for the **Sign out** tab. Then close your Edge browser session. <br/>
+2. If **Microsoft Edge** is open, you should still be logged into Microsoft 365 as Alan Yoo from an earlier lab. Log out as Alan, then close all tabs except for the **Sign out** tab. Then close your Edge browser session. 
 
 	Once Edge is closed, then the **Edge** icon on the taskbar to open a new browser session. 
 
@@ -151,7 +153,7 @@ In this task, you will test the new transport rules that you created in the prio
 
 13. In **Outlook on the web**, close the **Welcome** window.
 
-14. In **Outlook on the web**, check the MOD Administrator's **Inbox**. If you see the message from Patti to Megan, open the message and verify the disclaimer message was added to the body of the email. <br/>
+14. In **Outlook on the web**, check the MOD Administrator's **Inbox**. If you see the message from Patti to Megan, open the message and verify the disclaimer message was added to the body of the email. 
 
 	However, if the email is not in the MOD Admin's Inbox, check the **Junk** folder. If the email is not there, then sign out of Outlook on the web as the MOD Admin, repeat steps 11-12 to sign into Outlook on the web as **Megan Bowen** (where the username will be **MeganB@M365xZZZZZZ.onmicrosoft.com** and the password provided by your lab hosting provider for the tenant admin account. <br>
 
@@ -166,11 +168,11 @@ In this task, you will create a transport rule whereby, if the Manufacturing gro
 
 1. Switch to **LON-CL1**, where you should still be logged in as the **Administrator**.
 
-2. The Edge browser should be open from the prior lab, with tabs open for the **Microsoft Office Home** page, the **Microsoft 365 admin center**, and the **Exchange admin center**. You should still be signed into Microsoft 365 as Holly Dickson. <br/>
+2. The Edge browser should be open from the prior lab, with tabs open for the **Microsoft Office Home** page, the **Microsoft 365 admin center**, and the **Exchange admin center**. You should still be signed into Microsoft 365 as Holly Dickson. 
 
 	If you closed the Exchange admin center tab after the prior lab exercise, then in the **Microsoft 365 Admin center**, under **Admin Centers** in the left-hand navigation pane, select **Exchange**.
 
-3. In the **Exchange admin center**, in the left-hand navigation pane, select **compliance management**. 
+3. In the **Exchange admin center**, scroll down the left-hand navigation menu and open **Classic Exchange admin center** in a new tab. Then in the classic **Exchange admin center**, in the left-hand navigation pane, select **compliance management**. 
 
 4. On the **compliance management** page, the **In-place eDiscovery & Hold** tab is displayed by default. In the list of tabs across the top of the page, select **journal rules**.
 
@@ -197,7 +199,7 @@ In this task, you will create a transport rule whereby, if the Manufacturing gro
 
 1. You should still be logged into LON-CL1 as the **Administrator**.
 
-2. The Edge browser should be open from the prior task, with tabs open for the **Microsoft Office Home** page, the **Microsoft 365 admin center**, and the **Exchange admin center**. You should still be signed into Microsoft 365 as Holly Dickson. <br/>
+2. The Edge browser should be open from the prior task, with tabs open for the **Microsoft Office Home** page, the **Microsoft 365 admin center**, and the **Exchange admin center**. You should still be signed into Microsoft 365 as Holly Dickson. 
 
 	If you closed the Exchange admin center tab after the prior lab exercise, then in the **Microsoft 365 Admin center**, under **Admin Centers** in the left-hand navigation pane, select **Exchange**.
 

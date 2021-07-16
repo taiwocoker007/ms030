@@ -19,7 +19,7 @@ Meeting policies control the features that are available to participants in meet
 
 As Holly Dickson, Adatum's Enterprise Administrator, you want to customize the company's Global meeting policy as part of Adatum’s pilot project for implementing Microsoft Teams.
 
-1. Switch to **LON-DC1**, where you should still be logged in as **ADATUM\Administrator** and password **Pa55w.rd**.
+1. Switch to **LON-CL1**, where you should still be logged in as **ADATUM\Administrator** and password **Pa55w.rd**.
 
 2. You should still have Microsoft Edge and the Microsoft 365 admin center open from an earlier lab. If so, proceed to the next step; otherwise, open Microsoft Edge, navigate to **https://portal.office.com/**, log in as **Holly@M365xZZZZZZ.onmicrosoft.com** (where ZZZZZZ is the tenant ID provided by your lab hosting provider) with a password of **Pa55w.rd**, and then in the **Microsoft Office Home** page, select **Admin** to open the Microsoft 365 admin center.
 
@@ -50,7 +50,7 @@ As Holly Dickson, Adatum's Enterprise Administrator, you want to customize the c
 
 As Holly Dickson, Adatum’s Microsoft 365 Enterprise Administrator, you use the Teams meetings settings to control whether anonymous users can join Teams meetings and customize meeting invitations. You can also use these settings to enable Quality of Service (QoS) and set port ranges for real-time traffic. These settings apply to all Teams meetings that users schedule in your organization. As part of Adatum’s pilot project for implementing Microsoft Teams, you want to configure Teams meeting settings to see how they handle email invitations.
 
-1. On **LON-DC1** you should still have the **Microsoft Teams admin center** open from the prior task. In the left-hand navigation pane, under the **Meetings** group, select **Meeting settings.**
+1. On **LON-CL1** you should still have the **Microsoft Teams admin center** open from the prior task. In the left-hand navigation pane, under the **Meetings** group, select **Meeting settings.**
 
 2. On the **Meetings settings** page, under the **Email invitation** section, enter (or copy and paste in) the following information:
 
@@ -81,11 +81,11 @@ Messaging policies are used to control which chat and channel messaging features
 
 As part of her Microsoft Teams pilot project for Adatum, Holly wants to create a new messaging policy that addresses the chat and channel messaging requirements set forth by Adatum’s project team. 
 
-1. On **LON-DC1** you should still have the **Microsoft Teams admin center** open from the prior task. In the left-hand navigation pane, select **Messaging policies**.
+1. On **LON-CL1** you should still have the **Microsoft Teams admin center** open from the prior task. In the left-hand navigation pane, select **Messaging policies**.
 
-2. In the **Messaging policies** window, view the list of messaging policies. As you can see, only the **Global (Org-wide default)** policy exists. Select **+Add** in the menu bar that appears above the list of policies.
+2. In the **Messaging policies** window, view the list of messaging policies. As you can see, only the **Global (Org-wide default)** policy exists. Select **+ Add** in the menu bar that appears above the list of policies.
 
-3. In the **Messaging policies\Add** window, enter **Chat and Channel Messaging Policy** in the **New messaging policy** field at the top of the form.
+3. In the **Messaging policies \ Add** window, enter **Chat and Channel Messaging Policy** in the **New messaging policy** field at the top of the form.
 
 4. Select the following values for each setting:
 
@@ -136,9 +136,9 @@ As part of Adatum’s pilot project for implementing Microsoft Teams, Holly Dick
 
 Creating a calling queue is a two-step process. In this task, you will first create a resource account that represents the call queue. In the next task, you will create the actual call queue and associate it with this resource account. 
 
-1. On **LON-DC1** you should still have the **Microsoft Teams admin center** open from the prior task. In the left-hand navigation pane, select **Org-wide Settings** and then select **Resource accounts.**
+1. On **LON-CL1** you should still have the **Microsoft Teams admin center** open from the prior task. In the left-hand navigation pane, select **Org-wide Settings** and then select **Resource accounts.**
 
-2. In the **Resource accounts** window, select **+Add** in the menu bar at the top of the page.
+2. In the **Resource accounts** window, select **+ Add** in the menu bar at the top of the page.
 
 3. In the **Add resource account** pane that appears on the right, enter the following information:
 
@@ -159,11 +159,11 @@ Creating a calling queue is a two-step process. In this task, you will first cre
 
 Now that you have created the resource account for your calling queue, you will create the call queue itself and assign it the resource account.
 
-1. On **LON-DC1** you should still have the **Microsoft Teams admin center** open from the prior task. In the left-hand navigation pane, select **Voice** and then select **Call queues.**
+1. On **LON-CL11** you should still have the **Microsoft Teams admin center** open from the prior task. In the left-hand navigation pane, select **Voice** and then select **Call queues.**
 
-2. In the **Call queues** window, select **+Add** in the menu bar at the top of the page.
+2. In the **Call queues** window, select **+ Add** in the menu bar at the top of the page.
 
-3. In the **Call queues\Add** window, enter **Call Queue 1** in the **Call queue name** field at the top of the form.
+3. In the **Call queues \ Add** window, enter **Call Queue 1** in the **Call queue name** field at the top of the form.
 
 4. The page displays a message indicating **You haven’t added any resource accounts yet.** Below this message, select the **Add accounts** button.
 
@@ -179,11 +179,11 @@ Now that you have created the resource account for your calling queue, you will 
 
 	- Call answering: 
 	
-		- **Choose which call agents to associate with this call queue:** Select the **Add users** button. In the **Add users** pane that appears on the right-side of the screen, in the **Add a user or users** box, enter **Allan**. As you type **Allan**, a window appears listing users whose name starts with **Allan**. As you hover your mouse over **Allan Deyoung**, an **Add** button appears to the right of it. Select the **Add** button.
+		- Select **Choose users and groups**, and then select the **Add users** button. In the **Add users** pane that appears on the right-side of the screen, in the **Add a user or users** box, enter **Allan**. As you type **Allan**, a window appears listing users whose name starts with **Allan**. As you hover your mouse over **Allan Deyoung**, an **Add** button appears to the right of it. Select the **Add** button.
 		
 		**Important:** Note the red error message that appears across the top of the page. The error message indicates that Allan cannot be associated with this call queue because he is not enterprise-voice enabled. In the **Add users** window, select **Cancel**. In the red error message, select the **X** on the right side of the error message to close it. 
 		
-		- **Choose which groups to associate with this call queue:** Select the **Add groups** button. In the **Add call agents** pane on the right-side of the screen, in the **Add distribution lists or groups** box, enter **Sales.** As you type Sales, a window appears listing the groups whose name starts with Sales. As you hover your mouse over **Sales Department**, an **Add** button appears to the right of it. Select the **Add** button.
+		- Select the **Add groups** button. In the **Add call agents** pane on the right-side of the screen, in the **Add distribution lists or groups** box, enter **Sales.** As you type Sales, a window appears listing the groups whose name starts with Sales. As you hover your mouse over **Sales Department**, an **Add** button appears to the right of it. Select the **Add** button.
 		
 		In the **Add call agents** pane, the Sales Department appears under **Selected groups**. Select the **Add** button at the bottom of the pane.
 
@@ -210,11 +210,11 @@ In Microsoft Teams, calling policies control which calling and call forwarding f
 
 As part of her Microsoft Teams pilot project, Holly Dickson has been tasked with creating a custom calling policy for Adatum. Instead of customizing the default global policy, she will follow best practice guidelines and create her own customized policy that will be used as Adatum’s default policy.
 
-1. On **LON-DC1** you should still have the **Microsoft Teams admin center** open from the prior task. In the left-hand navigation pane, under the **Voice** group, select **Calling policies.**
+1. On **LON-CL1** you should still have the **Microsoft Teams admin center** open from the prior task. In the left-hand navigation pane, under the **Voice** group, select **Calling policies.**
 
-2. In the **Calling policies** window, scroll down through the list to see the predefined calling policies and then select **+Add** in the menu bar that appears above the list of calling policies.
+2. In the **Calling policies** window, scroll down through the list to see the predefined calling policies and then select **+ Add** in the menu bar that appears above the list of calling policies.
 
-3. In the **Calling policies\Add** window, enter **Default Adatum Calling Policy** in the **Add new calling policy** field at the top of the form.
+3. In the **Calling policies \ Add** window, enter **Default Adatum Calling Policy** in the **Add new calling policy** field at the top of the form.
 
 4. Scroll down the page and select the following values for each setting:
 
@@ -232,9 +232,9 @@ As part of her Microsoft Teams pilot project, Holly Dickson has been tasked with
 
 	- Prevent toll bypass and send calls through the PSTN: **On**
 
-	- Busy on busy is available when in a call: **On**
+	- Busy on busy is available when in a call: **Enabled**
 
-	- Allow web PSTN calling: **On**
+	- Web PSTN calling: **On**
 
 5. Select **Save**. A Saved message will appear across the top of the page once the changes have been saved. This message will eventually disappear, and **Default Adatum Calling Policy** will appear in the list of Calling policies. Note how it is flagged as a Custom policy.
 
@@ -247,11 +247,11 @@ With Microsoft Teams’ external access feature, Teams users from other domains 
 
 As part of her Microsoft Teams pilot project, Holly Dickson wants to block communication with users from a specific domain (spam.com) that has been the source of multiple spam attacks within Adatum over the past year. At the same time, Holly wants to allow communication with the users from another domain (microsoft.com) that is one of Adatum's key business partners.
 
-1. On **LON-DC1** you should still have the **Microsoft Teams admin center** open from the prior task. In the left-hand navigation pane, under the **Org-wide settings** group, select **External access.**
+1. On **LON-CL1** you should still have the **Microsoft Teams admin center** open from the prior task. In the left-hand navigation pane, under the **Org-wide settings** group, select **External access.**
 
 2. In the **External access** window, leave the first two settings involving Skype for Business/Teams and Skype users set to **On**. 
 
-3. To add the domain in which you want to allow communication, select **+Add a domain** in the menu bar that appears above the list of domains.  
+3. To add the domain in which you want to allow communication, select **+ Add a domain** in the menu bar that appears above the list of domains.  
 
 4. In the **Add a domain** window, enter the following information:
 
@@ -284,11 +284,13 @@ Microsoft Teams’ guest access feature is a tenant-level setting that is turned
 
 As part of your Microsoft Teams pilot project for Adatum, you will turn on guest access and then customize a variety of the guest settings as defined by Adatum’s project team.
 
-1. On **LON-DC1** you should still have the **Microsoft Teams admin center** open from the prior task. In the left-hand navigation pane, under the **Org-wide settings** group, select **Guest access.**
+1. On **LON-CL1** you should still have the **Microsoft Teams admin center** open from the prior task. In the left-hand navigation pane, under the **Org-wide settings** group, select **Guest access.**
 
-2. In the **Guest access** window, set the **Allow guest access in Teams** setting to **On**. 
+2. In the **Guest access** window, ensure the **Allow guest access in Teams** setting is to **On**. 
 
-3. Once you set this switch to **On**, a variety of additional settings are displayed. Scroll down the page and select the following values for each setting:
+	**Note**: The service default is set to **On**.
+
+3. Once the setting is **On**, a variety of additional settings are displayed. Scroll down the page and select the following values for each setting:
 
 	- Calling
 
@@ -329,12 +331,12 @@ As part of your Microsoft Teams pilot project for Adatum, you will turn on guest
 
 Microsoft Teams includes a variety of global settings that control performance within Teams. As part of her Microsoft Teams pilot project, Holly Dickson will configure a number of these settings as determined by Adatum’s project team.
 
-1. On **LON-DC1** you should still have the **Microsoft Teams admin center** open from the prior task. In the left-hand navigation pane, under the **Org-wide settings** group, select **Teams settings.**
+1. On **LON-CL1** you should still have the **Microsoft Teams admin center** open from the prior task. In the left-hand navigation pane, under the **Org-wide settings** group, select **Teams settings.**
 
 2. In the **Teams settings** window, select the following values for each setting:
 
 	- Notifications and feeds
-	
+
 		- Suggested feeds can appear in a user's activity feed: **On**
 		
 	- Tagging
@@ -346,6 +348,8 @@ Microsoft Teams includes a variety of global settings that control performance w
 		- Suggested tags: **Sales** (press the space bar after entering this value); **Manufacturing** (press the space bar after entering this value); **Accounting** (press the space bar after entering this value)
 
 		- Let custom tags be created: **On**
+
+		- Allow Shifts app to apply tags: **Off**
 
 	- Email integration
 
@@ -381,8 +385,11 @@ Microsoft Teams includes a variety of global settings that control performance w
 
 		- Scope directory search using an Exchange address book policy: **On**
 
+	- Safety and communications
+
+		- Role-based chat permissions: **Off**
+
 3. Select **Save.** Note the message that appears at the top of the form that it may take a few hours to see these changes applied.
 
-4. Leave all tabs open in your browser and proceed to the next task. 
 
 # End of Lab 8

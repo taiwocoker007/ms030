@@ -17,7 +17,7 @@ In this task, Holly will enable external sharing at the organization level. The 
 
 1. You should still be on **LON-CL1**, where you should be logged in as the **Administrator** with a password of **Pa55w.rd**.
 
-2. You should still have Microsoft Edge open from an earlier lab, along with tabs for the **Microsoft Office Home** page, **Microsoft 365 admin center**, and **SharePoint admin center**. <br/>
+2. You should still have Microsoft Edge open from an earlier lab, along with tabs for the **Microsoft Office Home** page, **Microsoft 365 admin center**, and **SharePoint admin center**. 
 
 	If so, proceed to the next step; otherwise, open Microsoft Edge, navigate to **https://portal.office.com/**, log in as **Holly@M365xZZZZZZ.onmicrosoft.com** (where ZZZZZZ is the tenant ID provided by your lab hosting provider) and **Pa55w.rd**, and then in the **Microsoft Office Home** page, select **Admin**, and then in the **Microsoft 365 admin center**, select **SharePoint**.
 
@@ -45,7 +45,7 @@ In the prior lab exercise, you created a new Marketing site collection. In this 
 
 6. In the **Policies** tab, under the **External sharing** group, select **Edit**.
 
-7. On the **Sharing** window that appears, under the **External sharing** group, the **Anyone** option should be selected by default. <br/>
+7. On the **Sharing** window that appears, under the **External sharing** group, the **Anyone** option should be selected by default.
 
 	If this option is not selected, then select it now and select **Save**. If the **Anyone** option was already selected, then close the **Sharing** window.
 
@@ -65,19 +65,19 @@ In the prior lab exercise, you created a new Marketing site collection. In this 
 
 15. In the **Marketing** site, in the top-right corner, select **SHARE**.
 
-16. In the **Share ‘Marketing’** window, you can see that the site is currently shared with Nestor Wilke, Joni Sherman, and Patti Fernandez. 
+16. In the **Share site** window, you can expand the owners, members, and groups to see that the site is currently shared with Nestor Wilke, Joni Sherman, and Patti Fernandez. 
 
-17. On the **Share 'Marketing'** window, the **Invite People** tab is displayed by default. In the **Enter names or email addresses** field, enter your personal email address. Your email address will appear in a list below this field; select this address now.  <br/>
+17. On the **Share site** window, below the **Add users, Microsoft 365 Groups...** text, enter your personal email address. Your email address will appear in a list below this field; select this address now.  
 
 	Your email addres will appear below this field, along with a message indicating it is outside of Adatum's organization. 
 
-18. In the **Include a personal message with this invitation (optional)** field, enter the following message: **You can now access the SharePoint site collection for Adatum's Marketing team.** 
+18. In the **Add a message** field, enter the following message: **You can now access the SharePoint site collection for Adatum's Marketing team.** 
 
 19. Select **Share**.
 
-20. On the **Marketing** page, in the left-hand navigation pane, select **Documents**.
+20. On the **Marketing** page, in the menu-bar, select **Documents**.
 
-21. On the **Documents** page, in the menu bar, select **+New**, and then in the drop-down menu that appears, select **Word document**.
+21. On the **Documents** page, in the menu bar, select **+ New**, and then in the drop-down menu that appears, select **Word document**.
 
 22. **Word Online** will open in a new tab in your browser. In the **Your privacy option** window that appears, select **Close**.
 
@@ -115,7 +115,7 @@ In the prior lab exercise, you created a new Marketing site collection. In this 
 
 6. In your Inbox, open the second invitation email message with the subject of **MOD Administrator wants to share the document**.
 
-7. Select the **Document** link. <br/>
+7. Select the **Document** link. 
 
 	**Note:** You are redirected directly to the Word Document. Word Online opens and displays the document.
 

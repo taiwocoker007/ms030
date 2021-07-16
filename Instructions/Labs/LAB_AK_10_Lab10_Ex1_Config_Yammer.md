@@ -8,7 +8,7 @@ In this exercise Holly will configure the Yammer organizational settings for Ada
 
 1. On **LON-CL1**, you should still be logged in as the **Administrator** with a password of **Pa55w.rd**.
 
-2. At the end of the prior lab, you were instructed to sign out of Microsoft 365 as Holly Dickson and close your Microsoft Edge browsing session. If you did not do it, then please do so now. This will enable you to start with a fresh browsing session. <br/>
+2. Please close all browser sessions you currently have open. This will enable you to start with a fresh browsing session. 
 
 	With Edge closed, select the **Edge** icon on the taskbar to open a new session. 
 
@@ -20,24 +20,26 @@ In this exercise Holly will configure the Yammer organizational settings for Ada
 
 6. On the **Microsoft Office Home** page, select **Yammer**.
 
+	- If the **Welcome to the new Yammer** window appears, close it by selecting the **X** in the upper right-hand corner.
+
 7. On the **Yammer** home page, on the right-side of the title bar at the top of the page, select the **gear (Settings)** icon.
 
 8. In the **Settings** pane that appears, under the **Yammer** section, select **Edit network admin settings**. This opens the **Yammer admin center**.
 
 9. In the **Yammer admin center**, in the left-hand navigation pane, under the **Network** group, select **Usage Policy**.
 
-10. In the **Usage Policy** window, update the following settings: <br/>
+10. In the **Usage Policy** window, update the following settings: 
 
 	- Select the **Require users to accept policy during sign up and after any changes are made to the policy** check box.
 	- Select the **Display policy reminder in sidebar** check box.
-	- In the **Custom Policy Title** field, enter**M365x Acceptable Use Policy**.
+	- In the **Custom Policy Title** field, enter **M365x Acceptable Use Policy**.
 	- In the **Enter your policy in the textbox below** field, copy and paste in the following text: **Welcome to Yammer! Our goal is to provide a collaborative environment to connect with colleagues and bridge various departments and geographic locations to share meaningful information.**
 
 11. Select **Save**.
 
 12. In the **M365x Acceptable Use Policy** window that appears, select **I Accept**. 
 
-13. In the **Welcome to the new Yammer!** window, select the X in the upper right corner to close it.
+13. If the **Welcome to the new Yammer!** window appears again, select the **X** in the upper right-hand corner to close it.
 
 14. On the **Yammer** home page, on the right-side of the title bar at the top of the page, select the **gear (Settings)** icon.
 
@@ -84,7 +86,7 @@ In this exercise Holly will configure the Yammer organizational settings for Ada
 
 6. the **Account Settings** page, select the **Notifications** tab at the top of the page.
 
-7. In the list of notifications, all the check boxes in the **Email me when...** section are selected. Unselect all the check boxes except for these three: <br/>
+7. In the list of notifications, all the check boxes in the **Email me when...** section are selected. Unselect all the check boxes except for these three: 
 
 	- **I receive a message in my inbox**
 	- **I log in from somewhere new**
@@ -111,7 +113,7 @@ In this task, you will log into Yammer as Nestor Wilke and verify that you recei
 
 5. If a **Welcome to the new Yammer!** window appears, then close it.
 
-6. A **M365x Acceptable Use Policy** dialog box should appear that displays the Welcome message that Holly configured in the earlier task. Select **I accept**. <br/>
+6. A **M365x Acceptable Use Policy** dialog box should appear that displays the Welcome message that Holly configured in the earlier task. Select **I accept**. 
 
 	You have now verified that a user who is signing into Yammer for the first time receives the Acceptable Use Policy statment. If Nestor were to sign out of Yammer and then sign back in, the **M365x Acceptable Use Policy** dialog box would not appear, since he already accepted it. 
 
