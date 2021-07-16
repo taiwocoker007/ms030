@@ -290,11 +290,10 @@ Holly has decided to test creating sensitivity label policies using both the Sec
 
 		Import-Module ExchangeOnlineManagement
 
-		Connect-IPPSSession -UserPrincipalName Admin@M365xZZZZZZ.onmicrosoft.com 
-		
-		(remember to replace ZZZZZZ with the tenant ID provided by your lab hosting provider)	
+		Connect-IPPSSession -UserPrincipalName Admin@M365xZZZZZZ.onmicrosoft.com 	
 
 	You will then be prompted to enter the Password for the MOD Administrator account. Enter the tenant admin password and then seelct **Sign in**. <br/>
+	**Note:** (remember to replace ZZZZZZ with the tenant ID provided by your lab hosting provider).
 
 3. At the command prompt enter the following command and then press Enter to create a new Sensitivity label policy named “Secret” using the secret Label that you created in the earlier task. This label policy will be applied to the PND Group group and will use the highest-level label as the default for documents and will automatically apply the label to emails and documents sent from this group. Do not forge to replace ZZZZZZ with the tenant ID provided by the lab hosting provider. <br/>
 
