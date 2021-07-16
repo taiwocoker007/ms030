@@ -188,7 +188,9 @@ In this task, you will validate whether the changes you made earlier were synchr
 
 2. Log into LON-CL1 as the **Administrator** with the password **Pa55w.rd**.
 
+
 3. Now let’s examine the synchronization results for the groups that you updated in the previous tasks. In your **Edge** browser, if a tab exists for the **Microsoft 365 admin center**, then proceed to the next step. 
+
 
 	Otherwise, enter **https://admin.microsoft.com/** in the address bar to open the **Microsoft 365 admin center** page, log in as **holly@M365xZZZZZZ.onmicrosoft.com** (where ZZZZZZ is the tenant ID provided by your lab hosting provider) with a password of **Pa55w.rd**. 
 
@@ -206,25 +208,33 @@ In this task, you will validate whether the changes you made earlier were synchr
 
 7. Select the **Manufacturing** group to open the **Manufacturing** group window. 
 
+
 8. In the **Manufacturing** group window, note up under the Manufacturing title that it’s a mail-enabled security group that contains three members. Also note the message indicating that you can only manage this group in your on-premises environment using either Active Directory users and groups (i.e. Users and Computers) or the on-premises Exchange admin center. 
 
 	The window currently displays the **General** tab. Select the **Members** tab. Note that the group has no owner (the system did not automatically assign Holly Dickson as the group owner). Verify that the three users that you added as members of the on-premises group have been synced up and are members of this cloud-based group as well. Close the **Manufacturing** group window.
 
 9. Now let’s examine this group using Windows PowerShell. If **Windows PowerShell** is already open on the taskbar, then select the PowerShell icon and proceed to the next step; otherwise, type **PowerShell** in the **Search** field on the taskbar and then right-click on the **Windows PowerShell** application and select **Run as administrator**. 
 
+
 10. You should begin by running the following command that connects your PowerShell session to the Microsoft Online Service:  
+
 
 		Connect-MsolService
 
 11. In the **Sign in** dialog box, log in as **holly@M365xZZZZZZ.onmicrosoft.com** (where ZZZZZZ is the tenant ID provided by your lab hosting provider) with a password of **Pa55w.rd**.   
 
+
 12. Run the following command that displays a list of all the Microsoft 365 groups:   
+
+
 
 	‎	Get-MsolGroup
 
 13. In the list of groups that’s displayed, you should verify that you can see the **Research** and **Manufacturing** groups, and that you do not see the  **Print Operators** group (this is the built-in group that did not synchronize from on-premises to Microsoft 365).
 
+
 14. To verify that the group membership changes that you made in your on-premises Active Directory were synced to the **Research** group in Microsoft 365, you should copy the **ObjectID** for the **Research** group to your clipboard by dragging your mouse over the ObjectId string and then pressing **Ctrl-C**.   
+
 
 	‎Then run the following command to display the members of this group. In the command, replace **<ObjectId>** with the value that you copied in the prior step by pressing **Ctrl-V** to paste in the value. 
 	

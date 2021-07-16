@@ -30,8 +30,8 @@ In your role as Holly Dickson, you now want to implement Microsoft 365 groups as
 
 9. On the **Review and finish adding group** window, review the information and if anything needs to be changed, select the appropriate **Edit** option; otherwise, select the **Create group** button at the bottom of the page.
 
-10. On the **New group created** window, the message that appears at the top of the page that indicates it may take up to 5 minutes before the group appears in the list of active groups.
 
+10. On the **New group created** window, the message that appears at the top of the page that indicates it may take up to 5 minutes before the group appears in the list of active groups.
 	Since you will adding additional groups, under the **Next step** section towards the bottom of the page select **Add another group**. If you already closed this window, then from the **Active groups** page, select **Add a group**.
 
 11. Repeat steps 4-9 to add another group with the following information (this time select **Close** once the group is added and not the **Add another group** option):
@@ -80,28 +80,32 @@ In your role as Holly Dickson, you now want to implement Microsoft 365 groups as
 
 26. Select the **<-** in the upper left-hand corner of the window to go back to the **Accounts Receivable** window.
 
-27. In the **Members** tab of the **Accounts Receivable** window, select **View all and manage members** to add members to the group. 
+27. In the **Accounts Receivable** group window, select **+Add owners**. This displays the list of current users.
 
-28. In the **Accounts Receivable** window, select **+Add members**. This displays the list of active users.
+28. In the list of users, select **Libby Hayward** and then select **Save**. 
 
-29. In the list of users, select **Adam Hobbs** and **Libby Hayward** and then select **Add (2)**. 
+29. Select **Close**. This displays the list of owners for this group. Select **Close** again. 
 
-30. Select the X in the upper right-hand corner to close the window. This will return you to the list of **Active groups**. 
+28. In the **Members** tab of the **Accounts Receivable** window, select **View all and manage members** to add members to the group. 
 
-31. You now want to test the effect of deleting a group. In the list of **Active groups,** select the vertical ellipsis icon (**More actions**) to the right of the **Inside Sales** group. In the menu box, select **Delete group**. 
+29. In the **Accounts Receivable** window, select **+Add members**. This displays the list of active users.
 
-32. In the **Delete Inside Sales?** window, select the **Delete group** button.
+30. In the list of users, select **Adam Hobbs** and **Libby Hayward** and then select **Add (2)**. 
 
-33. On the **Inside Sales was deleted** window, select **Close**. 
+31. Select the X in the upper right-hand corner to close the window. This will return you to the list of **Active groups**. 
 
-34. This will return you to the list of **Active groups** in the **Microsoft 365 admin center**. The **Inside Sales** group should no longer appear. 
+32. You now want to test the effect of deleting a group. In the list of **Active groups,** select the vertical ellipsis icon (**More actions**) to the right of the **Inside Sales** group. In the menu box, select **Delete group**. 
 
-35. To verify whether deleting this group affected any of its members, in the left-hand navigation pane of the **Microsoft 365 admin center**, expand **Users** and then **Active Users**. 
+33. In the **Delete Inside Sales?** window, select the **Delete group** button.
 
-36. In the list of **Active** **Users** verify that the two members of this group, **Ada Russell** and **Alan Yoo**, still appear in the list of users. This verifies that deleting a group does not delete the user accounts that were members of the group.
+34. On the **Inside Sales was deleted** window, select **Close**. 
 
-37. Leave your browser and all tabs open and proceed to the next lab exercise.
+35. This will return you to the list of **Active groups** in the **Microsoft 365 admin center**. The **Inside Sales** group should no longer appear. 
 
+36. To verify whether deleting this group affected any of its members, in the left-hand navigation pane of the **Microsoft 365 admin center**, expand **Users** and then **Active Users**. 
 
+37. In the list of **Active** **Users** verify that the two members of this group, **Ada Russell** and **Alan Yoo**, still appear in the list of users. This verifies that deleting a group does not delete the user accounts that were members of the group.
+
+38. Leave your browser and all tabs open and proceed to the next lab exercise.
 
 **Results**: After completing this exercise, you should have created and managed Microsoft 365 groups and security groups.

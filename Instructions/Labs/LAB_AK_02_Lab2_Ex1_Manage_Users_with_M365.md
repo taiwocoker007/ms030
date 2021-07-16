@@ -59,6 +59,7 @@ In this task, you will take on the persona of Holly Dickson, Adatum's Microsoft 
 
 9. In the **Roles** information that appears, select the **Admin center access** option. This displays a list of the most commonly assigned administrator roles. 
 
+
 	**Note** If the role you are assigning is not in this list, then you can select the **Show all by category** drop-down arrow to display all the available roles (sorted by category). However, in this case, Holly wants to assign herself the Global Administrator role. She can do this since she is logged in as the MOD Administrator, which is also a Global admin. Only a Global admin can assign another user the Global Administrator role. <br>
 
 10. Select **Global Administrator** and then select **Next**.

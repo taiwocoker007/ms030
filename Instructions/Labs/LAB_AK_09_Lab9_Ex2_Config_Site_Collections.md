@@ -13,6 +13,7 @@ In this task, you will use the SharePoint admin center to create a site collecti
 
 	Otherwise, open Microsoft Edge, navigate to **https://portal.office.com/**, log in as **Holly@M365xZZZZZZ.onmicrosoft.com** (where ZZZZZZ is the tenant ID provided by your lab hosting provider) and a password of **Pa55w.rd**, and then in the **Microsoft Office Home** page, select **Admin** to open the Microsoft 365 admin center, select **Show all** in the left-hand navigation pane, and then under **Admin centers** select **Sharepoint**.
 
+
 3. In the left-hand navigation page, expand **Sites** and select **Active sites**.
 
 4. On the menu-bar above the list of sites, select **+ Create**.
@@ -25,7 +26,9 @@ In this task, you will use the SharePoint admin center to create a site collecti
 
 8. Leave the default values unchanged for the other settings and then select **Finish**. This will return you to the **Active sites** page.
 
+
  **Note:** It can sometimes take a few minutes for SharePoint Online to provision a new site. Eventually, the **Marketing** site will appear in the list of active sites. Do not proceed to the next step until the **Marketing** site appears in the list.
+
 
 9. On the **Active sites** page, hover your mouse over the **URL** for the marketing site. Select the check box that appears to the left of the of the **Marketing** site's URL. 
 

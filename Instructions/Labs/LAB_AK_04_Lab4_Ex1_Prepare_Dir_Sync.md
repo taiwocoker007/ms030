@@ -61,11 +61,14 @@ In this task, you will run a script that breaks various Adatum on-premises user 
 
 	- **Lara Raisic**. Update the emailAddress attribute for Lara to **lara@adatum.com**. 
 
+
 	- **Logan Boyle**. Update the emailAddress attribute for Logan to **lara@adatum.com**.
 
 	- **Maj Hojski**. Update the emailAddress attribute for Maj to blank characters (“ “). 
 
 	- **Holly Dickson**. Update the emailAddress attribute for Holly to **holly @adatum.com**. 
+
+	
 
 5. Close PowerShell.
 
@@ -78,9 +81,11 @@ In this task you will download and use the IdFix tool to fix the user accounts t
 
 2. In your **Microsoft Edge** browser, you should still be logged into Microsoft 365 as the **MOD Administrator** (**admin@M365xZZZZZZ.onmicrosoft.com**). You should have tabs open for the **Microsoft Office Home** page and the **Microsoft 365 admin center**. Open a new instance of **Edge** if you don't have one open.
 
+
 	In your **Edge** browser, open a new tab and then enter the following URL in the address bar to access the Office 365 page for the IdFix Directory Synchronization Error Remediation Tool:
 	
 	**https://microsoft.github.io/idfix/installation/**
+
 
 3. On the **Microsoft - IdFix** window, under the **Installation** section at the top of the page, the instructions direct you to run **setup.exe** to install the IdFix application on your machine. Select **setup.exe** to download the file to LON-DC1. 
 
@@ -109,6 +114,7 @@ In this task you will download and use the IdFix tool to fix the user accounts t
 	‎**Note:** Notice that the value in the **Action** column changed from **EDIT** to **COMPLETE** for Klemen, this indicates that IdFix updated the user object and corrected the error. 
 
 14. On the menu bar at the top of the window, select **Query** to refresh the query results. 
+
 
 15. In the query results, note how Klemen no longer appears in the results.
 

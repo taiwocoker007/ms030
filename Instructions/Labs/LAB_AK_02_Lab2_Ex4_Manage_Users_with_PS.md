@@ -1,3 +1,4 @@
+
 # Module 2 - Lab 2 - Exercise 4 - Managing Microsoft 365 users and groups with Windows PowerShell
 
 Windows Powershell can improve the way an administrator can automate and streamline complicated or simple tasks that can be time-consuming when performed in the Microsoft 365 user interface. By entering commands directly to the tenant, tasks that would take hours by hand can be reduced to minutes or even seconds with PowerShell.

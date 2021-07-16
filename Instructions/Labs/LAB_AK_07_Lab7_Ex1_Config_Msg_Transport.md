@@ -109,7 +109,7 @@ In the next few tasks, you will create a series of mail flow rules that are desi
 9. In the **new rule** window, enter the following information: 
 
 	- In the **Name** field, enter **Messages that must be moderated** 
-	- In the **Apply the rule if** box, select **The recipient is a member of**.
+	- In the **Apply the rule if** box, select **The recipient is**.
 	- In the **Select Members** window, select **Megan Bowen**, select **add**, and then select **OK**.
 	- In the **Do the following** box, select **Forward the message for approval to**.
 	- In the **Select Members** window, select **MOD Administrator**, select **add**, and then select **OK**.
