@@ -20,7 +20,7 @@ As you continue in your role as Holly Dickson, you are ready to review the steps
 
 5. In the **Mailboxes** view, the mailboxes that appear include all the user accounts that were pre-created in your tenant by the lab hosting provider, along with mailboxes for users that you created in Lab 2 that were assigned an Office 365 license (Holly, Ada Russell, Alan Yoo, Catherine Richard, and Tameka Reed). Note the users that you created in the earlier lab that were not assigned a license (such as Adam Hobbs) do not have an Exchange Online mailbox.
 
-	Select the mailbox for **Joni Sherman** by clicking on her **DISPLAY NAME.** This will open the **User Mailbox** window with Joni’s data prefilled. 
+	Select the mailbox for **Joni Sherman** by selecting on her **DISPLAY NAME.** This will open the **User Mailbox** window with Joni’s data prefilled. 
 
 6.  The **Mailbox** tab is displayed by default. 
 
@@ -46,7 +46,7 @@ As you continue in your role as Holly Dickson, you are ready to review the steps
 
 	‎**Note:** After about an hour Holly Dickson will be able to access Joni’s mailbox without needing a password.
 
-12. On the **Mailbox permissions added** window, select **Close**, and then click the **X** in the upper right-hand corner **three** times to return to the list of mailboxes.
+12. On the **Mailbox permissions added** window, select **Close**, and then select the **X** in the upper right-hand corner **three** times to return to the list of mailboxes.
 
 13. Leave your browser and all the tabs open for the next task.
 
@@ -57,7 +57,7 @@ In this task you will create two types of groups within Exchange Online. The fir
 
 1. You should still be in LON-CL1 and your browser should still be open to the **Exchange admin center** from the prior task, where it should still be displaying **Mailboxes**. In the prior task, you worked with user accounts using **Mailboxes**. In this task, you will be creating groups, so select **Groups** under the **Recipients** group.
 
-	**Note:** If you click the **Mail-enabled security** tab, you should see the Manufacturing group that you created in an earlier lab.
+	**Note:** If you select the **Mail-enabled security** tab, you should see the Manufacturing group that you created in an earlier lab.
 
 2.	From any of the four tabs, select **Add a group**.
 
@@ -81,7 +81,7 @@ In this task you will create two types of groups within Exchange Online. The fir
 
 10. Select **Allan Deyoung**. Then hold down the **Ctrl** key and select **Diego Siciliani** and **Lynne Robbins**. This will select all three users at once, at which point you should select the **Add (3)** button and then select **OK**. 
 
-11. Close the **Members** window by clicking the **X** in the upper right-hand corner.
+11. Close the **Members** window by selecting the **X** in the upper right-hand corner.
 
 12. From any of the four tabs, select **Add a group**. Ensure **Microsoft 365 (recommended)** is selected and select **Next**.
 
@@ -105,7 +105,7 @@ In this task you will create two types of groups within Exchange Online. The fir
 
 20. In the **Dynamics CRM Project Team** window that opens, select the **Settings** tab and then select **Send copies of group conversations and events to group members**.
 
-21. Select **Save**, and once saved, close the window by clicking the **X** in the upper right-hand corner.
+21. Select **Save**, and once saved, close the window by selecting the **X** in the upper right-hand corner.
 
 
 ### Task 3 – Manage Resources
@@ -148,13 +148,13 @@ A room mailbox is a resource mailbox that is assigned to a physical location, su
 
 9. Select the **Conference Room 1** resource from the list, and in the window that opens, select **Manage delegates**, and then select **Search name or email**.
 
-10. Type **holly** and then click the result for **Holly Dickson**, then type **nestor** and select **Nestor Wilke**.
+10. Type **holly** and then select the result for **Holly Dickson**, then type **nestor** and select **Nestor Wilke**.
 
 11. Set the **Select permission types** for both users to **Full access**, and then select **Save**.
 
 12. In the **Delegates updated window**, select **Close**.
 
-13. Close the **Conference Room 1** window by clicking the **X** in the upper right-hand corner.
+13. Close the **Conference Room 1** window by selecting the **X** in the upper right-hand corner.
 
 14. Leave your browser and all the tabs open for the next task.
 

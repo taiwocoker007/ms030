@@ -14,7 +14,7 @@ In your role as Holly Dickson, you now want to implement Microsoft 365 groups as
 
 4. In the **Choose a group type** pane that appears, the **Microsoft 365** group type is selected by default. Accept this value by selecting **Next**.
 
-5. In the **Set up the basics** window, enter **Inside Sales** in the **Name** field and **Collaboration group for the Inside Sales team** in the **Description field** and then select **Next** (Note - if you leave the **Description** field blank, you must still select it to enable the **Next** button).
+5. In the **Set up the basics** window, enter **Inside Sales** in the **Name** field and **Collaboration group for the Inside Sales team** in the **Description field** and then select **Next** (if you leave the **Description** field blank, you must still select it to enable the **Next** button).
 
 6. In the **Assign owners** window, select **+ Assign owners**, which displays the list of active users. Select **Alan Yoo**, then select **Add (1)** and then select **Next**. 
 
@@ -30,7 +30,7 @@ In your role as Holly Dickson, you now want to implement Microsoft 365 groups as
 
 9. On the **Review and finish adding group** window, review the information and if anything needs to be changed, select the appropriate **Edit** option; otherwise, select the **Create group** button at the bottom of the page.
 
-10. On the **New group created** window, note the message that appears at the top of the page that indicates it may take up to 5 minutes before the group appears in the list of active groups.
+10. On the **New group created** window, the message that appears at the top of the page that indicates it may take up to 5 minutes before the group appears in the list of active groups.
 
 	Since you will adding additional groups, under the **Next step** section towards the bottom of the page select **Add another group**. If you already closed this window, then from the **Active groups** page, select **Add a group**.
 

@@ -130,7 +130,7 @@ In this task, you will begin by examining the administrative properties of two u
 
 20. You should receive an error message indicating that you cannot reset Diego’s password because he has been assigned an admin role. In Diego’s case, he was assigned to the Billing Admin role. Since only Global Admins can change another admin’s password, Lynne will need to ask Holly Dickson to make this change. Select **Close**. 
 
-21. If a survey request window appears, close it by clickcing the **X**.
+21. If a survey request window appears, close it by selecting the **X**.
 
 22. In the **Active users** list, select the **key (Reset a password)** icon for **Allan Deyoung**.
 

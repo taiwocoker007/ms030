@@ -20,7 +20,7 @@ In this exercise Holly will configure the Yammer organizational settings for Ada
 
 6. On the **Microsoft Office Home** page, select **Yammer**.
 
-	- If the **Welcome to the new Yammer** window appears, close it by clicking the **X** in the upper right-hand corner.
+	- If the **Welcome to the new Yammer** window appears, close it by selecting the **X** in the upper right-hand corner.
 
 7. On the **Yammer** home page, on the right-side of the title bar at the top of the page, select the **gear (Settings)** icon.
 

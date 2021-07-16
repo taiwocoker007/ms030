@@ -70,7 +70,9 @@ In a previous lab exercise, you created new user accounts using the **Microsoft 
 
 		Get-MsolAccountSku
 
-	The ENTERPRISEPREMIUM license is the Office 365 E5 license that was assigned to most of the user accounts. Note that 15 licenses were purchased with Adatum's subscription (Active Units) and 13 have been assigned (Consumed Units). That leaves two licenses available to be assigned. 
+	The ENTERPRISEPREMIUM license is the Office 365 E5 license that was assigned to most of the user accounts.
+	
+	**Note**:  15 licenses were purchased with Adatum's subscription (Active Units) and 13 have been assigned (Consumed Units). That leaves two licenses available to be assigned. 
 
 9. At the command prompt, type the following command and then press Enter to assign a license to **Catherine Richard**. In the command, don't forget to replace the two instances of **ZZZZZZ** with the unique tenant ID provided by your lab hosting provider. This command will assign an Enterprise E5 license to Catherine.
 
@@ -84,7 +86,9 @@ In a previous lab exercise, you created new user accounts using the **Microsoft 
 
 		Set-MsolUser -UserPrincipalName Catherine@M365xZZZZZZ.onmicrosoft.com -BlockCredential $true
 
-12. At the command prompt, type the following command and then press Enter to delete Catherine's user account. In the command, don't forget to replace the **ZZZZZZ** with the unique tenant ID provided by your lab hosting provider. Note - This command will delete Catherine's user account without requesting a confirmation.
+12. At the command prompt, type the following command and then press Enter to delete Catherine's user account. In the command, don't forget to replace the **ZZZZZZ** with the unique tenant ID provided by your lab hosting provider. 
+
+	**Note**:This command will delete Catherine's user account without requesting a confirmation.
 
 		Remove-MsolUser –UserPrincipalName Catherine@M365xZZZZZZ.onmicrosoft.com –Force
 

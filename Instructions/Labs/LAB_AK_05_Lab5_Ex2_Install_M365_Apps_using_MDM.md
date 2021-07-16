@@ -34,9 +34,9 @@ For this lab, Windows 10 1803 is the minimum requirement. Therefore, the clients
 
 9. Select **Update & security**.
 
-10. In **Windows Update**, select **Advanced options**. Clear the Checkbox **Defer feature updates** and click the back button.
+10. In **Windows Update**, select **Advanced options**. Clear the Checkbox **Defer feature updates** and select the back button.
 
-11. Under **Update status**, click **Check for updates**. This will install the 1803 update among others.
+11. Under **Update status**, select **Check for updates**. This will install the 1803 update among others.
 
 12. Restart if required and wait for the update to complete. This can take some time again.
 
@@ -71,7 +71,7 @@ Holly wants to add Microsoft 365 apps automatically to managed devices. To manag
 
 14. In the **App suite information** page, confirm the default values and select **Next**.
 
-15. In the **Configure app suite** page, beside **Select Office apps**, select the drop-down. Confirm, that all apps are selected, except **OneDrive (Groove)**. Click the drop-down again to close it.
+15. In the **Configure app suite** page, beside **Select Office apps**, select the drop-down. Confirm, that all apps are selected, except **OneDrive (Groove)**. Select the drop-down again to close it.
 
 16. Beside **Select other Office apps (license required)**, select the drop-down, select **Project Online Desktop client** and **Visio Online Plan 2**, and select the drop-down again to close it.
 
@@ -113,9 +113,9 @@ Holly wants to show how the new auto-enrollment policy works. This is not recomm
 
 3. Select the **Windows (Start)** icon in the lower left corner of the taskbar, and type **gpedit**.
 
-4. Under **Best match**, click **Edit group policy** to launch it.
+4. Under **Best match**, select **Edit group policy** to launch it.
 
-5. In **Local Computer Policy**, click **Administrative Templates** > **Windows Components** > **MDM**.
+5. In **Local Computer Policy**, select **Administrative Templates** > **Windows Components** > **MDM**.
 
 6. ‎Double-click **Enable automatic MDM enrollment using default Azure AD credentials**. 
 
@@ -141,7 +141,7 @@ In this task, Beth Burke verifies, that the computer is enrolled for Mobile Devi
 
 4. Select Beth's domain account.
 
-5. Click **Info** to see the MDM enrollment information.
+5. Select **Info** to see the MDM enrollment information.
 
 6. Wait a few minutes and verify, that the Microsoft 365 apps were installed on LON-CL3.
 

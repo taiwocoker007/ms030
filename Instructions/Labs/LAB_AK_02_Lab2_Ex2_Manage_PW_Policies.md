@@ -9,7 +9,9 @@ Since Adatum is also interested in implementing Multi-factor authentication (MFA
 
 ### Task 1 - Configure the Microsoft 365 password policy
 
-In this task, you will change Adatum's password policy that controls how often users must change their password. **Note** Microsoft no longer recommend password expiration for users stating "Password expiration requirements do more harm than good". Details on more information regarding this can be found in Step 5. Depending on your tenancy creation date, you may find that you have no password expiration enabled or the defaults mentioned below. 
+In this task, you will change Adatum's password policy that controls how often users must change their password.
+
+**Note**: Microsoft no longer recommend password expiration for users stating "Password expiration requirements do more harm than good". Details on more information regarding this can be found in Step 5. Depending on your tenancy creation date, you may find that you have no password expiration enabled or the defaults mentioned below.
 
 Historically, you had your users change their passwords every 90 days with a warning of 14 days prior to the update, both of which were the default settings in Microsoft 365. However, for this lab exercise, you will change password expiration to occur every 14 days, with a 14 day notification. 
 
@@ -24,7 +26,7 @@ Historically, you had your users change their passwords every 90 days with a war
 4. In the **Security & Privacy** page, select the **Password expiration policy** in the list of settings. 
 
 5. In the **Password expiration policy** pane that appears, select the check box for **Set user passwords to expire after a number of days**.
-	**Note** To learn why expiration is no longer considered best practice, click the 'Learn more about password policy recommendations' link near the top of the pane.
+	**Note** To learn why expiration is no longer considered best practice, select the 'Learn more about password policy recommendations' link near the top of the pane.
 
 6. Enter **14** in the **Days before passwords expire** field. Leave the **Days before a user is notified about expiration** field set to 14. Select **Save changes**.
 
@@ -95,7 +97,9 @@ This is the only task in this course that requires a mobile phone.
 
 4. In the **Active users** window, on the menu bar at the top of the user list, select **Multi-factor authentication**. This will open a **multi-factor authentication** window in a new tab in your browser.
 
-5. In the **multi-factor authentication** window, the **users** tab is displayed by default. Note the MFA status for all existing user accounts is **Disabled**.
+5. In the **multi-factor authentication** window, the **users** tab is displayed by default. 
+
+	**Note**: the MFA status for all existing user accounts is **Disabled**.
 
 	Select the check box for **Holly Dickson**, and in Holly's properties pane that appears on the right, select **Enable**.
 
@@ -137,7 +141,7 @@ This is the only task in this course that requires a mobile phone.
 
 19. In the **Active users** window, on the menu bar at the top of the user list, select **Multi-factor authentication**.
 
-20. In the **multi-factor authentication** window, the **users** tab is displayed by default. Note the MFA status for all existing user accounts is **Disabled**, except for Holly's account, which displays a status of **Enforced**.
+20. In the **multi-factor authentication** window, the **users** tab is displayed by default. The MFA status for all existing user accounts is **Disabled**, except for Holly's account, which displays a status of **Enforced**.
 
 	**Note:** When you originally enabled MFA for Holly, the status was changed from **Disabled** to **Enabled**. However, now that Holly has signed in using MFA, her the status has changed from **Enabled** to **Enforced**.
 

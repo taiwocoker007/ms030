@@ -34,7 +34,9 @@ You will then use the **LON-CL2** VM for installing Microsoft 365 Apps for enter
 
 6. If a **Stay signed in?** window appears, select the **Don't show this again** check box and then select **Yes.**
 
-7. In the **Microsoft Office Home** page for Laura, notice that no Microsoft 365 apps appear since Laura has not been assigned an Office 365 license. Also note the message that appears at the top of page. Laura has not been assigned an Office license that includes the Office desktop apps, so she’s unable to install Microsoft 365 Apps for enterprise. 
+7. In the **Microsoft Office Home** page for Laura, notice that no Microsoft 365 apps appear since Laura has not been assigned an Office 365 license.  
+
+	**Note**: the message that appears at the top of page. Laura has not been assigned an Office license that includes the Office desktop apps, so she’s unable to install Microsoft 365 Apps for enterprise. 
 
 8. Select the **Install Office** drop-down arrow, and then select **Install software**.
 
@@ -140,7 +142,7 @@ In the prior task, you logged into Alan Yoo’s client PC, and you verified that
 
 9. In the **Start** menu, select **Word**.
 
-10. Click **Sign-in** and in the **Sign in** window, enter **Alan@M365xZZZZZZ.onmicrosoft.com** (where ZZZZZZ is your tenant ID provided by your lab hosting provider) and then select **Next**.
+10. Select **Sign-in** and in the **Sign in** window, enter **Alan@M365xZZZZZZ.onmicrosoft.com** (where ZZZZZZ is your tenant ID provided by your lab hosting provider) and then select **Next**.
 
 11. In the **Enter password** window, enter **Pa55w.rd** and then select **Sign in.**
 
