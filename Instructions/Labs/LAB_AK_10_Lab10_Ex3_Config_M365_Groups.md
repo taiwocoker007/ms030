@@ -22,11 +22,11 @@ In this exercise, Holly will configure a private Microsoft 365 group through the
 
 7. In the **Assign owners** window, enter **MOD** in the **Owners** field, which will display the list of active users whose first name starts with MOD. Select **MOD Administrator** and then select **Next**.
 
-8. In the **Edit settings** window, enter **Finance** in the **Group email address** field. <br/>
+8. In the **Edit settings** window, enter **Finance** in the **Group email address** field. 
 
-	**Note:** To the right of the **Group email address** field is the domain field. It’s already prefilled with the **M365xZZZZZZ.onmicrosoft.com** domain, which is set as Adatum's Default domain. This is different from adding users in that no other domains appear; therefore, you must leave this value as is.   <br/>
+	**Note:** To the right of the **Group email address** field is the domain field. It’s already prefilled with the **M365xZZZZZZ.onmicrosoft.com** domain, which is set as Adatum's Default domain. This is different from adding users in that no other domains appear; therefore, you must leave this value as is.   
 
-	After configuring this field, the Finance group email address should appear as: **Finance@M365xZZZZZZ.onmicrosoft.com** <br>
+	After configuring this field, the Finance group email address should appear as: **Finance@M365xZZZZZZ.onmicrosoft.com** 
 
 	After configuring the email address, under the **Privacy** section, select **Private**, and leave the check box selected to **Create a team for this group**. Select **Next**.
 
@@ -40,7 +40,7 @@ In this exercise, Holly will configure a private Microsoft 365 group through the
 
 13. In the **Members** tab, under the **Members** group, select **View all and manage members**.
 
-14. In the **Finance** group window, select **+Add members**. This displays the list of current users.
+14. In the **Finance** group window, select **+ Add members**. This displays the list of current users.
 
 15. In the list of users, select **Joni Sherman** and then select **Save**. 
 
@@ -64,30 +64,25 @@ In this exercise, Holly will configure a private Microsoft 365 group through the
 
 5. At the command prompt type the following command and then press Enter to create a session with Microsoft Exchange Online:
 
-		$session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $cred -Authentication Basic -AllowRedirection
+		Connect-ExchangeOnline -Credential $cred
 
-6. At the command prompt type the following command and then press Enter to  import the session into the PowerShell console (Ignore the warning message that is generated):
-
-		Import-PSSession $Session –AllowClobber
-
-7. At the command prompt type the following command and then press Enter to   create a new public Microsoft 365 group called Planning (replace ZZZZZZ with the tenant ID provided by your lab hosting provider):
+6. At the command prompt type the following command and then press Enter to   create a new public Microsoft 365 group called Planning (replace ZZZZZZ with the tenant ID provided by your lab hosting provider):
 
 		New-UnifiedGroup –DisplayName "Planning" -Alias "Planning" –EmailAddresses Planning@M365xZZZZZZ.onmicrosoft.com
 
-8. At the command prompt type the following command and then press Enter to add the MOD Administrator as the owner for the group (replace ZZZZZZ with the tenant ID provided by your lab hosting provider):
+7. At the command prompt type the following command and then press Enter to add the MOD Administrator as the owner for the group (replace ZZZZZZ with the tenant ID provided by your lab hosting provider):
 
-		- Add-UnifiedGroupLinks "Planning" –Links admin@M365xZZZZZZ.onmicrosoft.com –LinkType Owner
+		Add-UnifiedGroupLinks "Planning" –Links Admin@M365xZZZZZZ.onmicrosoft.com –LinkType Owner
 
-
-9. At the command prompt type the following command and then press Enter to add Ada Russell as a member of the group (replace ZZZZZZ with the tenant ID provided by your lab hosting provider):
+8. At the command prompt type the following command and then press Enter to add Ada Russell as a member of the group (replace ZZZZZZ with the tenant ID provided by your lab hosting provider):
 
 		Add-UnifiedGroupLinks "Planning" –Links Ada@M365xZZZZZZ.onmicrosoft.com –LinkType Member
 
-10. Minimize the Windows PowerShell window and proceed to the next task.
+9. Minimize the Windows PowerShell window and proceed to the next task.
 
 
 
-### Task 3 - Explore the Microsoft 365  group components
+### Task 3 - Explore the Microsoft 365 group components
 
 In this task, you will log into Microsoft 365 as the MOD Administrator, who is the owner of the Planning group. You will then see how the Planning group is accessible to the MOD Administrator in Outlook, since the MOD Administrator is an owner of this group. You will send an email from the MOD Administrator to the Planning group. You will also send a meeting request from the Planning group to Joni Sherman. You will then create a document for the Planning group. Finally, Joni Sherman will join the Planning group and verify that received the email from the MOD Admin to the Planning group, and that she can access the document created for the group.
 
@@ -145,9 +140,9 @@ In this task, you will log into Microsoft 365 as the MOD Administrator, who is t
 
 27. Close the InPrivate browsing session for Joni Sherman.
 
-28. On the **Microsoft Office Home** page, select the user icon (the circle with MOD Administrator's **MA** initials in it) in the upper right-hand corner, and in the **My account** window that appears, select **Sign out**. Once you are signed out, close all other tabs, and then close Microsoft Edge.  
+28. On the **Microsoft Office Home** page, select the user icon (the circle with MOD Administrator's **MA** initials in it) in the upper right-hand corner, and in the **My account** window that appears, select **Sign out**. Once you are signed out, close all other tabs, and then close Microsoft Edge.
 
 
-**Results**: After completing this exercise, you should have configured Microsoft Microsoft 365  groups at Adatum.
+**Results**: After completing this exercise, you should have configured Microsoft Microsoft 365 groups at Adatum.
 
 # End of Lab 10

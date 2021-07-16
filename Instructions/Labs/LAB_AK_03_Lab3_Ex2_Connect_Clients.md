@@ -31,7 +31,7 @@ In this task, you will begin in LON-CL1, where you will log into Outlook 2016 as
 
 6. During the configuration process, Outlook will attempt to make an encrypted connection to the Exchange Online mail server using the MOD Administrator's email address. An **Enter password** dialog box will appear that asks you to enter the password for the **admin@M365xZZZZZZ.onmicrosoft.com** account. Copy and paste in the tenant password provided by your lab hosting provider and then select **Sign in**. 
 
-7. Once the configuration is complete and a message is displayed indicating your email account was successfully configures and is ready to use, select **Finish**.
+7. Once the configuration is complete and a message is displayed indicating your email account was successfully configured and is ready to use, select **Finish**.
 
 8. The **Microsoft Office Activation Wizard** will begin. Select **Close**.
 
@@ -39,7 +39,7 @@ In this task, you will begin in LON-CL1, where you will log into Outlook 2016 as
 
 10. Verify that you are connected to Exchange Online by creating a new email message and sending it to Holly Dickson's email account. On the ribbon at the top of the page, select **New Email**. In the new email message form, select **To**, and then in the **Global Address List** select **Holly Dickson**, select **To**, and then select **OK**. Enter **Test message** in the **Subject** line and the body of the message and then select **Send**.
 
-11. Switch to **LON-CL2**. Log in as the **Admin** with a password of **Pa55w.rd**.
+11. Switch to **LON-CL2**. Log in as the **Administrator** with a password of **Pa55w.rd**.
 
 12. If a **Networks** pane appears, select **Yes** to allow the PC to be discoverable by other PCs on this network. 
 
@@ -49,11 +49,11 @@ In this task, you will begin in LON-CL1, where you will log into Outlook 2016 as
 
 15. In the **Enter password** dialog box, enter **Pa55w.rd** and then select **Sign in**.
 
-16. In the **Microsoft Office Home** page, select **outlook**, which opens the office 365 Outlook. 
+16. In the **Microsoft Office Home** page, select **Outlook**, which opens the Outlook in a new tab. 
 
 17. Once Outlook is  open, verify in Holly's **Inbox** that she received the email from the **MOD Administrator** that you just sent to her. In turn, reply to the email by sending a Reply message back to the **MOD administrator**.
 
-18. Close Outlook on LON-CL2.
+18. Close **Edge** on LON-CL2.
 
 19. Switch back to LON-CL1.
 
@@ -62,3 +62,4 @@ In this task, you will begin in LON-CL1, where you will log into Outlook 2016 as
 21. Close Outlook on LON-CL1.
 
 
+# End of Lab 3
