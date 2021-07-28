@@ -1,4 +1,4 @@
-# Module 5 - Lab 5 - Exercise 1 - Deploying Microsoft 365 apps for enterprise using Mobile Device Management
+# Module 5 - Lab 5 - Exercise 2 - Deploying Microsoft 365 apps for enterprise using Mobile Device Management
 
 You have taken on the persona of Holly Dickson, Adatum's Enterprise Administrator, and you have Microsoft 365 deployed in a virtualized lab environment. In this exercise, you will perform the tasks necessary to manage a Microsoft 365 Apps for enterprise installation using Mobile Device Management. 
 
